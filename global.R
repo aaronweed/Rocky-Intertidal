@@ -19,9 +19,10 @@ ParkList<-unique(levels(motile$Site_Name))
 
 SiteList<-unique(levels(motile$Loc_Name))
 
-SppList<-unique(levels(motile$Spp_Name))
+SppList<-unique(levels(motile$Com_Sp))
 
 VarList<-unique(levels(motile$variable))
+
 
 
 

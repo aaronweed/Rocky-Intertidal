@@ -8,6 +8,8 @@ library(reshape)
 
 echino <- read.csv("~/R/NETN/Rocky-Intertidal/qryR_FlatFile_Echinoderm_Counts_wide.csv")
 echino_size <- read.csv("~/R/NETN/Rocky-Intertidal/NETN_Echinoderm_Measurements.csv")
+tlu_echino_spp <- read.csv("~/R/NETN/Rocky-Intertidal/tlu_echino_Spp.csv")
+
 
 ############################################################################################
 #############        Setup count df's for summary            #########################
@@ -24,21 +26,31 @@ head(echino)
 echino.melt<-melt(echino, id.vars=c("Site_Name", "Loc_Name" ,"Start_Date", "Year", "Plot_Name"), measure.vars=c("Count_STRDRO", "Count_HENSAN", "Count_ASTRUB", "Count_ASTFOR"))
 head(echino.melt)
 
+## create logscaled values
+echino.melt$logAbundance<-log(echino.melt$value) # calc log
+echino.melt$logAbundance[is.infinite(echino.melt$logAbundance)]=0
+
 ### rename species names
-echino.melt$variable<-mapvalues(echino.melt$variable, from=c("Count_STRDRO", "Count_HENSAN", "Count_ASTRUB", "Count_ASTFOR"), 
-                                               to=c("Strongylocentrotus droebachiensis", "Hemigrapsus sanguineus", "Asterias rubens", "Asterias forbesii"))
-head(echino.melt)
+echino.melt$Spp_Name<-echino.melt$variable
+echino.melt$Spp_Name<-mapvalues(echino.melt$Spp_Name, from=c("Count_STRDRO", "Count_HENSAN", "Count_ASTRUB", "Count_ASTFOR"), 
+                                to=c("Strongylocentrotus droebachiensis", "Hemigrapsus sanguineus", "Asterias rubens", "Asterias forbesii"))
+echino.melt$variable<-NULL
+              
+## recreate molten data frame to include logAbundance (all values are represented for each site*time combination)
+ echino.melt2<-melt(echino.melt, id.vars=c("Site_Name", "Loc_Name" ,"Start_Date", "Year", "Plot_Name", "Spp_Name"), measure.vars=c("value","logAbundance"))
+ head(echino.melt2)                                                              
 ############ Summarize species counts by site, zone, and Year
 summ<-function (x) c(mean =mean(x,na.rm = TRUE),se= sd(x,na.rm = TRUE)/sqrt(length(!is.na(x))), N= length(!is.na(x)))
 
 # aggregate data by site and year
 
-sum.echino<-cast(echino.melt, Site_Name+ Loc_Name + Year + variable ~ . , value = "value", fun = summ, fill=NA, add.missing = TRUE)
+sum.echino<-cast(echino.melt2, Site_Name+ Loc_Name + Year + Spp_Name + variable ~ . , value = "value", fun = summ, fill=NA, add.missing = TRUE)
 
+sum.echino<-join(sum.echino, tlu_echino_spp, by ="Spp_Name")
 
 head(sum.echino)
 
 ### export to use in R viz
-write.table(sum.echino, "./Data/echino_count.csv", sep=",", row.names= FALSE)
+write.table(sum.echino, "./Data/echino_count.csv", sep= ",", row.names= FALSE)
 
 

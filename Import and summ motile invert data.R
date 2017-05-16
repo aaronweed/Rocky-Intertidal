@@ -60,7 +60,7 @@ summ<-function (x) c(mean =mean(x,na.rm = TRUE),se= sd(x,na.rm = TRUE)/sqrt(leng
 
 ######################## motile inverts#####################
 # look up table for labelling etc
-mot_spp<-unique(motile[,c("Spp_Name", "Species")])
+motile_spp <- read.csv("~/R/NETN/Rocky-Intertidal/tlu_motile_spp.csv")
 mot_sites<-unique(motile[,c("Site_Name", "Loc_Name")])
 
 

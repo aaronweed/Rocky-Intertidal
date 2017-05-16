@@ -11,7 +11,7 @@ shinyUI(navbarPage(title=HTML("<div> <a href='https://science.nature.nps.gov/im/
           alt='WQ Visualizer'> </a> NETN Rocky Intertidal Community Visualizer</div>"),position = "static-top", inverse=TRUE, collapsible = FALSE, fluid=TRUE, 
            windowTitle = "NETN Rocky Intertidal Community Visualizer", id="MainNavBar",
      
-######################################### Plot per site Panel ####################################################################
+######################################### Vertical transect data Panel ####################################################################
 tabPanel(title="Vertical transect data",
          #style="padding: 0",
          useShinyjs(),
@@ -25,7 +25,7 @@ tabPanel(title="Vertical transect data",
          fluidPage(
            sidebarPanel(
              h1(""),
-             h3("Plot mean annual cover of species or substrate type over time at rocky intertidal sites."),
+             h3("Plot average cover of species or substrate types over time."),
              br(),
              #Park selection
              tags$div(title="Choose a park",selectInput(inputId='park', label='Select Park', choices= ParkList_trans, selectize = TRUE,selected ="Acadia NP")),
@@ -39,7 +39,6 @@ tabPanel(title="Vertical transect data",
              # Site selection
              conditionalPanel(condition = "input.many == 'One site'", uiOutput("SiteResultsA")),
              br(),
-             h4("Plot diplays the mean annual cover of the 10 most abundant species/cover types estimated from point-intercept sampling along three, parallel transects."),
              
              # plot combined years or by year
             # tags$div(title="Plot abundance on log-scale ", checkboxInput(inputId='logscale', label='Plot across all years', value=FALSE))),
@@ -60,7 +59,8 @@ tabPanel(title="Vertical transect data",
              br()
            ),
            
-           mainPanel(plotOutput("plot1",  width = "100%")
+           mainPanel(h3(textOutput("captionVertTrans",  container = span)),
+                     plotOutput("plot1",  width = "100%")
                      
                      
            )
@@ -81,10 +81,10 @@ tabPanel(title="Mollusks",
 fluidPage(
   sidebarPanel(
     h1(""),
-    h3("Plot mean abundance of motile invertebrate species within zones of the rocky intertidal."),
+    h3("Plot average abundance and predation damage of motile invertebrates within rocky intertidal zones."),
     br(),
     #Park selection
-    tags$div(title="Choose the park you want to work with",selectInput(inputId='park', label='Select Park', choices= ParkList, selectize = TRUE)),
+    tags$div(title="Choose the park you want to work with",selectInput(inputId='parkMoll', label='Select Park', choices= ParkList_trans, selectize = TRUE)),
     
     # Selection to plot single or multple species
     tags$div(title="Choose the park you want to work with",radioButtons(inputId='SPP', label='Do you want to plot single or multiple species?', choices= c("Single","All species"), selected = "Single")),
@@ -104,7 +104,7 @@ fluidPage(
     tags$div(title="Compare sites within same zone", checkboxInput(inputId='compare', label='Compare data among sites within an intertidal zone', value=FALSE)),
     
     br(),
-
+   
     #downloadButton('downloadData', 'Download Data'),
     #img(src = "BMI_sampling.jpg", height = 140, width = 180),
     br(),
@@ -113,18 +113,19 @@ fluidPage(
     a("NETN Rocky Intertidal Community protocol page.", href= "https://science.nature.nps.gov/im/units/netn/monitor/programs/rockyIntertidal/rockyIntertidal.cfm")),
     br()
     ),
+   #img(src = "transects.jpg", height = 280, width = 360),
+      
+  mainPanel(h3(textOutput("captionMoll",  container = span)),
+      plotOutput("plot",  width = "100%")
     
-    mainPanel(plotOutput("plot",  width = "100%")
-    
-              
                         )
     
   )
   ), #end navbarPage
 
-######################################### Seastars Plot Panel ####################################################################
+######################################### Tidepool Plot Panel ####################################################################
 
-tabPanel(title="Seastars",
+tabPanel(title="Tidepool invertebrate surveys",
          #style="padding: 0",
          useShinyjs(),
          div(class="outer",
@@ -137,39 +138,36 @@ tabPanel(title="Seastars",
              h3("Plot mean abundance of seastars counted in tidal pools within the rocky intertidal."),
              br(),
              #Park selection
-             tags$div(title="Choose the park you want to work with",selectInput(inputId='park', label='Select Park', choices= ParkList, selectize = TRUE)),
+             tags$div(title="Choose the park you want to work with",selectInput(inputId='parkSS', label='Select Park', choices= ParkList, selectize = TRUE)),
+             
+             
+             # Selection to plot single or multple sites
+             tags$div(title="Choose between plotting one or multiple sites",radioButtons(inputId='manySS', label='Do you want to plot data from one or multiple sites?', choices= c("One site","All sites"), selected = "All sites")),
+             
              
              # Site selection
-             #uiOutput("SiteResultsA"),
-             
-             # Species selection
-            # tags$div(title="Choose the species abundance data you want to plot",selectInput(inputId='species', label='Select species to plot', choices=SeaStarList),
-                      
-                      # Variable selection
-                  #    tags$div(title="Choose the data you want to plot",selectInput(inputId='variable', label='Select species to plot', selected = "Abundance" ,choices=  c("Abundance","Proportion.Damaged")))),
-             
+             conditionalPanel(condition = "input.manySS == 'One site'", uiOutput("SiteResultsSS")),
              
              ##Add in options
-             
-             # tags$div(title="Plot Type ",selectInput(inputId='plottype', label='Plot type',choices=c("Time Series", "Histogram", "Box Plot (monthly)"), selected = "Time Series")),
-             # tags$div(title="Add a trend line ", conditionalPanel(condition = "input.plottype == 'Time Series'",checkboxInput(inputId='trend', label='Add Linear trend line', value=FALSE))),
-             # tags$div(title="Binwidth control ", conditionalPanel(condition = "input.plottype == 'Histogram'",sliderInput(inputId='binwidth', label='Binwidth', value=.1, min= 0, max= 1, step = .10))),
-             tags$div(title="Plot abundance on log-scale ", conditionalPanel(condition = "input.variable == 'Abundance'", checkboxInput(inputId='logscale', label='Convert abundance to log-scale', value=FALSE))),
-             tags$div(title="Toggle y-scale ", conditionalPanel(condition = "input.variable == 'Abundance'", checkboxInput(inputId='free_y', label='Make y-axis scale the same', value=FALSE))),
+             tags$div(title="Plot abundance on log-scale ", checkboxInput(inputId='logscaleSS', label='Convert abundance to log-scale', value=FALSE)),
+             #tags$div(title="Toggle y-scale ", conditionalPanel(condition = "input.variable == 'Abundance'", checkboxInput(inputId='free_y', label='Make y-axis scale the same', value=FALSE))),
              
              
              br(),
              
              #downloadButton('downloadData', 'Download Data'),
-             #img(src = "BMI_sampling.jpg", height = 140, width = 180),
+            
              br(),
+             img(src = "seastars.jpg", height = 280, width = 360),
              br(),
              p("For further information about the objectives and methods of this sampling protocol, visit the ", 
                a("NETN Rocky Intertidal Community protocol page.", href= "https://science.nature.nps.gov/im/units/netn/monitor/programs/rockyIntertidal/rockyIntertidal.cfm")),
              br()
            ),
+          
            
-           mainPanel(plotOutput("plot2",  width = "100%")
+           mainPanel(h3(textOutput("captionSS",  container = span)),
+                     plotOutput("plot2",  width = "100%")
                      
                      
            )
