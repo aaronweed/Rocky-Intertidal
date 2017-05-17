@@ -143,6 +143,21 @@ y2<-(y2+facet_wrap(~Site_Name + Loc_Name) +
        theme(strip.background= element_rect(size=10, color="gray" )))
 y2
 
+
+#################################################################################
+#### Calc the average of all 3 transects sampled IN EACH YEAR 
+#################################################################################
+PI.site.yr<-cast(PI.site, Loc_Name+  Loc_Code +Year+ QAQC+Spp_Code ~ . , value= "prop_cover", fun = summ, add.missing = TRUE, fill= NA) 
+head(PI.site.yr)
+PI.site.yr$se<-PI.site.yr$sd/sqrt(3) # calc the SE based on 3 transects per year
+# drop rows with blank species info and sort
+PI.site.yr<-PI.site.yr[PI.site.yr$Spp_Code != "",]
+head(PI.site.yr)
+# length should be 3 for each row (species*site combo)
+
+# Bind back park names for indexing/plotting
+PI.site.yr<-join(PI.site.yr,tlu_sites, by= "Loc_Name")
+
 ### What are the 10 most dominat cover types in each park?
 
 top10ACAD<-cast(PI.site, Spp_Code ~ . , value= "prop_cover", fun = summ, subset= PI.site$Site_Code == "ACAD") 
@@ -155,24 +170,13 @@ top10BOHA<-top10BOHA[order(top10BOHA$mean, decreasing = T),]
 top10BOHA<-top10BOHA[1:10,]; top10BOHA<-droplevels(top10BOHA)
 top10BOHA<-unique(levels(top10BOHA$Spp_Code))
 
-#################################################################################
-#### Calc the average of all 3 transects sampled IN EACH YEAR 
-#################################################################################
-PI.site.yr<-cast(PI.site, Site_Name+ Site_Code +Loc_Name+  Loc_Code +Year+ QAQC+Spp_Code ~ . , value= "prop_cover", fun = summ) 
-head(PI.site.yr)
-PI.site.yr$se<-PI.site.yr$sd/sqrt(3) # calc the SE based on 3 transects per year
-# drop rows with blank species info and sort
-PI.site.yr<-PI.site.yr[PI.site.yr$Spp_Code != "",]
-View(PI.site.yr)
-# length should be 3 for each row (species*site combo)
-
 ### Bind species names for final plotting
 PI.site.plot<-join(PI.site.yr,species, by= "Spp_Code")
 PI.site.plot<-PI.site.plot[order(PI.site.plot$Site_Name,PI.site.plot$Loc_Name,PI.site.plot$Year,PI.site.plot$Common_Name),]
 
 PI.site.plot<-PI.site.plot[!is.na(PI.site.plot$Loc_Name),]
 PI.site.plot<-droplevels(PI.site.plot)
-View(PI.site.plot)
+head(PI.site.plot)
 
 #### Extract top 10 cover types for final plotting 
 ACAD.temp<-PI.site.plot[PI.site.plot$Site_Code == "ACAD" & PI.site.plot$Spp_Code %in% top10ACAD,];ACAD.temp<-droplevels(ACAD.temp)

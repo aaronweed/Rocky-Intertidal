@@ -10,6 +10,7 @@ echino <- read.csv("~/R/NETN/Rocky-Intertidal/qryR_FlatFile_Echinoderm_Counts_wi
 echino_size <- read.csv("~/R/NETN/Rocky-Intertidal/NETN_Echinoderm_Measurements.csv")
 tlu_echino_spp <- read.csv("~/R/NETN/Rocky-Intertidal/tlu_echino_Spp.csv")
 
+tlu_echino_sites<-unique(echino[,c("Site_Name","Loc_Name")])
 
 ############################################################################################
 #############        Setup count df's for summary            #########################
@@ -42,10 +43,13 @@ echino.melt$variable<-NULL
 ############ Summarize species counts by site, zone, and Year
 summ<-function (x) c(mean =mean(x,na.rm = TRUE),se= sd(x,na.rm = TRUE)/sqrt(length(!is.na(x))), N= length(!is.na(x)))
 
-# aggregate data by site and year
+# aggregate data by site and year leaving out park to fill in NAs correctly
 
-sum.echino<-cast(echino.melt2, Site_Name+ Loc_Name + Year + Spp_Name + variable ~ . , value = "value", fun = summ, fill=NA, add.missing = TRUE)
+sum.echino<-cast(echino.melt2, Loc_Name + Year + Spp_Name + variable ~ . , value = "value", fun = summ, fill=NA, add.missing = TRUE)
 
+# add back SIte_name
+sum.echino<-join(sum.echino, tlu_echino_sites, by ="Loc_Name")
+# add in species names
 sum.echino<-join(sum.echino, tlu_echino_spp, by ="Spp_Name")
 
 head(sum.echino)

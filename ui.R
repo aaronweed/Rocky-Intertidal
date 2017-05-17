@@ -40,6 +40,10 @@ tabPanel(title="Vertical transect data",
              conditionalPanel(condition = "input.many == 'One site'", uiOutput("SiteResultsA")),
              br(),
              
+             ## comparisons when selecting multiple sites
+             tags$div(title="Compare cover types",conditionalPanel(condition = "input.many == 'All sites'",radioButtons(inputId='compare', label='How do you want compare cover data?', choices= c("Cover types within a site","Cover type among sites"), selected = "Cover types within a site"))),
+             
+             
              # plot combined years or by year
             # tags$div(title="Plot abundance on log-scale ", checkboxInput(inputId='logscale', label='Plot across all years', value=FALSE))),
              
@@ -86,8 +90,18 @@ fluidPage(
     #Park selection
     tags$div(title="Choose the park you want to work with",selectInput(inputId='parkMoll', label='Select Park', choices= ParkList_trans, selectize = TRUE)),
     
+    # Selection to plot single or multple sites
+    tags$div(title="Choose between plotting data from one or multiple sites",radioButtons(inputId='manyMoll', label='Do you want to plot data from one or multiple sites?', choices= c("One site","All sites"), selected = "All sites")),
+    
+    tags$div(title="Compare among sites within same intertidal zone", conditionalPanel(condition = "input.manyMoll == 'All sites'", checkboxInput(inputId='compareMoll', label='Compare data among sites within an intertidal zone', value=FALSE))),
+    
+    
+    # Site selection
+    conditionalPanel(condition = "input.manyMoll == 'One site'", uiOutput("SiteResultsMoll")),
+    br(),
+    
     # Selection to plot single or multple species
-    tags$div(title="Choose the park you want to work with",radioButtons(inputId='SPP', label='Do you want to plot single or multiple species?', choices= c("Single","All species"), selected = "Single")),
+    tags$div(title="HOw many species data do  you want to plot?",radioButtons(inputId='SPP', label='Do you want to plot single or multiple species?', choices= c("Single","All species"), selected = "Single")),
     
     # Species selection
     tags$div(title="Choose the species abundance data you want to plot",conditionalPanel(condition = "input.SPP == 'Single'", selectInput(inputId='species', label='Select species to plot', choices=SppList)),
@@ -101,9 +115,7 @@ fluidPage(
    tags$div(title="Plot abundance on log-scale ", conditionalPanel(condition = "input.variable == 'Abundance'", checkboxInput(inputId='logscale', label='Convert abundance to log-scale', value=FALSE))),
     tags$div(title="Toggle y-scale ", conditionalPanel(condition = "input.SPP == 'Single'", checkboxInput(inputId='free_y', label='Make scale of y-axes the same', value=FALSE))),
     
-    tags$div(title="Compare sites within same zone", checkboxInput(inputId='compare', label='Compare data among sites within an intertidal zone', value=FALSE)),
-    
-    br(),
+  br(),
    
     #downloadButton('downloadData', 'Download Data'),
     #img(src = "BMI_sampling.jpg", height = 140, width = 180),
@@ -135,7 +147,7 @@ tabPanel(title="Tidepool invertebrate surveys",
          fluidPage(
            sidebarPanel(
              h1(""),
-             h3("Plot mean abundance of seastars counted in tidal pools within the rocky intertidal."),
+             h3("Plot average abundance of tidal pools within the rocky intertidal."),
              br(),
              #Park selection
              tags$div(title="Choose the park you want to work with",selectInput(inputId='parkSS', label='Select Park', choices= ParkList, selectize = TRUE)),
@@ -150,7 +162,7 @@ tabPanel(title="Tidepool invertebrate surveys",
              
              ##Add in options
              tags$div(title="Plot abundance on log-scale ", checkboxInput(inputId='logscaleSS', label='Convert abundance to log-scale', value=FALSE)),
-             #tags$div(title="Toggle y-scale ", conditionalPanel(condition = "input.variable == 'Abundance'", checkboxInput(inputId='free_y', label='Make y-axis scale the same', value=FALSE))),
+             tags$div(title="Compare species abundance among sites.", conditionalPanel(condition = "input.manySS == 'All sites'", checkboxInput(inputId='compSS', label='Compare by species among sites', value=FALSE))),
              
              
              br(),
