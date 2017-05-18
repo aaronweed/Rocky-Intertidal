@@ -21,7 +21,12 @@ library(RColorBrewer)
 
 shinyServer(function(input,output){
 
-  ###################### Create set of reactive selection boxes in UI  ####################
+  
+  
+  ####################VERTICAL TRANSECT DATA ####################################
+  
+  ##### plOTTING PANEL ####
+  
   ### select site based on park
   output$SiteResultsA <- renderUI({ 
     
@@ -31,8 +36,7 @@ shinyServer(function(input,output){
     selectInput(inputId='site', label='Select Site',   unique(levels(df_sub$Loc_Name)))
   })
   
-  
-  #################### Transect data plots planel ##############################################
+  #################### Transect data plots ##############################################
   ### 5/12/17: currently only plots per site in each year. 
   
   output$plot1 <- renderPlot({
@@ -46,23 +50,23 @@ shinyServer(function(input,output){
       #plot.df$Year<- ordered(plot.df$Year, levels = c("2016", "2015", "2014", "2013"))
       
     }else{
-    
-    ## SUBSET BY SITE 
-    
-    
+      
+      ## SUBSET BY SITE 
+      
+      
       plot.df<-subset(transect_yr, Loc_Name %in% input$site & QAQC == 0)# select by site and drop the QAQC plots
       plot.df<-droplevels(plot.df)
       plot.df$Year<-as.factor(plot.df$Year)
       plot.df$Year<- ordered(plot.df$Year, levels = c("2016", "2015", "2014", "2013"))
     }
-      ############## PLOT mean over time  ##############################
-      dodge <- position_dodge(width=0.9)
+    ############## PLOT mean over time  ##############################
+    dodge <- position_dodge(width=0.9)
     
-        if(input$compare == "Cover types within a site"){
+    if(input$compare == "Cover types within a site"){
       
       y2<-ggplot(plot.df[plot.df$QAQC == 0,], aes(x=Common_Name, y= as.numeric(mean), fill= Year))+
         geom_bar(stat ="identity", position = dodge,colour="black") + labs(y = "Mean proportion of cover + SE", x= "") +
-
+        
         geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")
       
       y2<-(y2+facet_wrap(~Loc_Name) + coord_flip()+
@@ -77,40 +81,106 @@ shinyServer(function(input,output){
              theme(plot.title=element_text(size=15, vjust=2, face= "bold")) +
              scale_x_discrete(limits=rev(levels(plot.df$Common_Name)))+ # use with coord_flip
              theme(strip.background= element_rect(size=10, color="gray" )))
-        }else{
-          
-          y2<-ggplot(plot.df[plot.df$QAQC == 0,], aes(x=Loc_Name, y= as.numeric(mean), fill= Year))+
-            geom_bar(stat ="identity", position = dodge,colour="black") + labs(y = "Mean proportion of cover + SE", x= "") +
-            
-            geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")
-          
-          y2<-(y2+facet_wrap(~Common_Name) + coord_flip()+
-                 theme(legend.position = "right", legend.text = element_text(size = 16), legend.title = element_text(size =16)) +
-                 theme(axis.text.y = element_text(color="black", vjust= 0.5,size = 13,face="bold"))+
-                 theme(axis.text.x = element_text(angle = 0,  vjust=0,size = 14 , face="bold")) +
-                 theme(strip.text.x= element_text(size=16, face=c("bold.italic"))) +
-                 theme(axis.title.x =element_text(size = 16, face ="bold", vjust= 0, debug=F))+
-                 theme(axis.title.y =element_text(size = 16, face ="bold", vjust= 1, debug=F))+
-                 theme(panel.background =  element_rect(fill="white", colour="black")) +
-                 theme(panel.grid.major = element_line(colour = "grey90"))+
-                 theme(plot.title=element_text(size=15, vjust=2, face= "bold")) +
-                 scale_x_discrete(limits=rev(levels(plot.df$Loc_Name)))+ # use with coord_flip
-                 theme(strip.background= element_rect(size=10, color="gray" )))
-          
-        }
+    }else{
       
+      y2<-ggplot(plot.df[plot.df$QAQC == 0,], aes(x=Loc_Name, y= as.numeric(mean), fill= Year))+
+        geom_bar(stat ="identity", position = dodge,colour="black") + labs(y = "Mean proportion of cover + SE", x= "") +
+        
+        geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")
       
-      print(y2)
+      y2<-(y2+facet_wrap(~Common_Name) + coord_flip()+
+             theme(legend.position = "right", legend.text = element_text(size = 16), legend.title = element_text(size =16)) +
+             theme(axis.text.y = element_text(color="black", vjust= 0.5,size = 13,face="bold"))+
+             theme(axis.text.x = element_text(angle = 0,  vjust=0,size = 14 , face="bold")) +
+             theme(strip.text.x= element_text(size=16, face=c("bold.italic"))) +
+             theme(axis.title.x =element_text(size = 16, face ="bold", vjust= 0, debug=F))+
+             theme(axis.title.y =element_text(size = 16, face ="bold", vjust= 1, debug=F))+
+             theme(panel.background =  element_rect(fill="white", colour="black")) +
+             theme(panel.grid.major = element_line(colour = "grey90"))+
+             theme(plot.title=element_text(size=15, vjust=2, face= "bold")) +
+             scale_x_discrete(limits=rev(levels(plot.df$Loc_Name)))+ # use with coord_flip
+             theme(strip.background= element_rect(size=10, color="gray" )))
+      
+    }
+    
+    
+    print(y2)
   }
   
   , height = 800, width = 1000)
   
-  
-  ###Setup dynamic caption
+  ###Setup dynamic plot caption
   
   output$captionVertTrans <- renderText({
-    " Average annual cover of the 10 most abundant species/cover types estimated by point-intercept sampling along three parallel transects."
+    "Average annual cover of the 10 most abundant species/cover types estimated by point-intercept sampling along three parallel transects."
   })
+  
+  ######## VERTICAL TRANSECT TABULAR VIEW ################
+  ###### Create set of reactive selection boxes in UI for TABLE  #####
+  
+  
+  ### select site based on park
+  output$SiteResultsB <- renderUI({ 
+    
+    df_sub<-subset(transect_yr, Site_Name %in% input$parkb)
+    df_sub<-droplevels(df_sub)
+    
+    selectInput(inputId='siteb', label='Select Site',   unique(levels(df_sub$Loc_Name)))
+  })
+  
+  ### show table
+  output$Transectsumtable <-DT::renderDataTable(DT::datatable({
+    
+    if(input$manyB == "All sites"){
+      
+      plot.df<-subset(transect_yr, Site_Name %in% input$parkb & QAQC == 0) # select by park and drop the QAQC plots
+      plot.df<-plot.df[!is.na(plot.df$mean),]
+      plot.df<-droplevels(plot.df)
+      
+    }else{
+      
+      ## SUBSET BY SITE
+      plot.df<-subset(transect_yr, Loc_Name %in% input$siteb & QAQC == 0)# select by site and drop the QAQC plots
+      plot.df<-plot.df[!is.na(plot.df$mean),]
+      plot.df<-droplevels(plot.df)
+    }
+    
+    plot.df<-as.data.frame(plot.df[,c("Loc_Name","Year","Common_Name",  "mean"   ,"se")])
+   # 
+  }, rownames = FALSE, colnames = c("Site Name","Year","Species or Cover type",  "Average" ,"St. Error"),
+  caption = 'Average annual cover of the 10 most abundant species/cover types estimated by point-intercept sampling along three parallel transects.',
+  filter = 'bottom', class = 'cell-border stripe'
+  ))
+  
+  
+  #### Dowload summary data
+  datasetInput <- reactive({
+    if(input$manyB == "All sites"){
+      
+      plot.df<-subset(transect_yr, Site_Name %in% input$parkb & QAQC == 0) # select by park and drop the QAQC plots
+      plot.df<-plot.df[!is.na(plot.df$mean),]
+      plot.df<-droplevels(plot.df)
+      
+    }else{
+      
+      ## SUBSET BY SITE
+      plot.df<-subset(transect_yr, Loc_Name %in% input$siteb & QAQC == 0)# select by site and drop the QAQC plots
+      plot.df<-plot.df[!is.na(plot.df$mean),]
+      plot.df<-droplevels(plot.df)
+    }
+    
+    plot.df<-as.data.frame(plot.df[,c("Loc_Name","Year","Common_Name",  "mean"   ,"se")])
+  })
+  
+  
+  output$downloadsumData <- downloadHandler(
+    filename = function() { 
+      paste('NETN_Rocky_Intertidal_Summ_Data.csv') 
+    },
+    content = function(file) {
+      write.csv(datasetInput(), file)
+    }
+  )
   
   ####################  Mollusk data  panel ##############################################
 
@@ -479,15 +549,15 @@ shinyServer(function(input,output){
          
       }else{
     
-        y2<-(y2+facet_wrap(~Com_Sp))
+        y2<-(y2+facet_wrap(~Common + Spp_Name))
       
     }
          
          
-    y2<-(y2+ coord_flip()+
+    y2<-(y2+ 
            theme(legend.position = "right", legend.text = element_text(size = 16), legend.title = element_text(size =16)) +
            theme(axis.text.y = element_text(color="black", vjust= 0.5,size = 13,face="bold.italic"))+
-           theme(axis.text.x = element_text(angle = 0,  vjust=0,size = 14 , face="bold")) +
+           theme(axis.text.x = element_text(angle = 90,  vjust=0,size = 14 , face="bold")) +
            theme(strip.text.x= element_text(size=16, face=c("bold.italic"))) +
            theme(axis.title.x =element_text(size = 16, face ="bold", vjust= 0, debug=F))+
            theme(axis.title.y =element_text(size = 16, face ="bold", vjust= 1, debug=F))+

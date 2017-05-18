@@ -91,6 +91,78 @@ head(PI.site)
 PI.site$prop_cover<-round(PI.site$total_hits/PI.site$total_points,3)
 
 #################################################################################
+#### Calc the average of all 3 transects sampled IN EACH YEAR 
+#################################################################################
+
+PI.site.yr<-cast(PI.site, Loc_Name+  Year+ QAQC+Spp_Code ~ . , value= "prop_cover", fun = summ, add.missing = TRUE, fill= NA) 
+View(PI.site.yr)
+PI.site.yr$se<-round(PI.site.yr$sd/sqrt(3)) # calc the SE based on 3 transects per year
+# drop rows with blank species info and sort
+PI.site.yr<-PI.site.yr[PI.site.yr$Spp_Code != "",]
+head(PI.site.yr)
+ 
+# drop QAQC plots
+PI.site.yr<-PI.site.yr[PI.site.yr$QAQC == "0",]
+
+# length should be 3 for each row (species*site combo)
+
+# Bind back park names for indexing/plotting
+PI.site.yr<-join(PI.site.yr,tlu_sites, by= "Loc_Name")
+
+### What are the 10 most dominat cover types in each park?
+
+top10ACAD<-cast(PI.site, Spp_Code ~ . , value= "prop_cover", fun = summ, subset= PI.site$Site_Code == "ACAD") 
+top10ACAD<-top10ACAD[order(top10ACAD$mean, decreasing = T),]
+top10ACAD<-top10ACAD[1:10,]; top10ACAD<-droplevels(top10ACAD)
+top10ACAD<-unique(levels(top10ACAD$Spp_Code))
+
+top10BOHA<-cast(PI.site, Spp_Code ~ . , value= "prop_cover", fun = summ, subset= PI.site$Site_Code == "BOHA") 
+top10BOHA<-top10BOHA[order(top10BOHA$mean, decreasing = T),]
+top10BOHA<-top10BOHA[1:10,]; top10BOHA<-droplevels(top10BOHA)
+top10BOHA<-unique(levels(top10BOHA$Spp_Code))
+
+### Bind species names for final plotting
+PI.site.plot<-join(PI.site.yr,species, by= "Spp_Code")
+PI.site.plot<-PI.site.plot[order(PI.site.plot$Site_Name,PI.site.plot$Loc_Name,PI.site.plot$Year,PI.site.plot$Common_Name),]
+
+PI.site.plot<-PI.site.plot[!is.na(PI.site.plot$Loc_Name),]
+PI.site.plot<-droplevels(PI.site.plot)
+View(PI.site.plot)
+
+#### Extract top 10 cover types for final plotting 
+ACAD.temp<-PI.site.plot[PI.site.plot$Site_Code == "ACAD" & PI.site.plot$Spp_Code %in% top10ACAD,];ACAD.temp<-droplevels(ACAD.temp)
+BOHA.temp<-PI.site.plot[PI.site.plot$Site_Code == "BOHA" & PI.site.plot$Spp_Code %in% top10BOHA,];BOHA.temp<-droplevels(BOHA.temp)
+
+PI.site.plot<-rbind(ACAD.temp,BOHA.temp)
+
+### export annual means from top 10 species/covertypes for  use in R viz
+write.table(PI.site.plot, "./Data/site_transect_cover_per_year.csv", sep=",", row.names= FALSE)
+
+
+# first reorder names labels for correct plotting
+spp_names<-rev(levels(PI.site.plot$Common_Name))
+
+y2<-ggplot(PI.site.plot[PI.site.plot$QAQC == 0,], aes(x=Common_Name, y= as.numeric(mean), fill= Year))+
+  geom_bar(stat ="identity", position = dodge) + labs(y = "Mean cover + SE", x= "") +
+  geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")
+
+# y2
+# summary(y2)
+y2<-(y2+facet_wrap(~Site_Name + Loc_Name) + 
+       theme(legend.position = "top") +coord_flip()+
+       theme(axis.text.y = element_text(color="black", vjust= 0.5,size = 12 * 0.8,face="bold"))+
+       theme(axis.text.x = element_text(angle = 0,  vjust=0,size = 14 * 0.8, face="bold")) +
+       theme(strip.text.x= element_text(size=10, face=c("bold.italic"))) +
+       theme(axis.title.x =element_text(size = 12, face ="bold", vjust= 1, debug=F))+
+       theme(axis.title.y =element_text(size = 12, face ="bold", vjust= 1, debug=F))+
+       theme(panel.background =  element_rect(fill="white", colour="black")) +
+       theme(panel.grid.major = element_line(colour = "grey90"))+
+       theme(plot.title=element_text(size=15, vjust=2, face= "bold")) +
+       scale_x_discrete(limits=spp_names)+
+       theme(strip.background= element_rect(size=10, color="gray" )))
+y2
+
+#################################################################################
 #### Now take the average of all 3 transects sampled OVER THE ENTIRE STUDY PERIOD
 #################################################################################
 
@@ -126,74 +198,6 @@ spp_names<-rev(levels(PI.site.plot$Common_Name))
 y2<-ggplot(PI.site.plot[PI.site.plot$QAQC == 0,], aes(x=Common_Name, y= as.numeric(mean)))+
   geom_bar(stat ="identity", position = dodge) + labs(y = "Mean proportion of cover + SE", x= "") +
   geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)
-
-# y2
-# summary(y2)
-y2<-(y2+facet_wrap(~Site_Name + Loc_Name) + 
-       theme(legend.position = "top") +coord_flip()+
-       theme(axis.text.y = element_text(color="black", vjust= 0.5,size = 12 * 0.8,face="bold"))+
-       theme(axis.text.x = element_text(angle = 0,  vjust=0,size = 14 * 0.8, face="bold")) +
-       theme(strip.text.x= element_text(size=10, face=c("bold.italic"))) +
-       theme(axis.title.x =element_text(size = 12, face ="bold", vjust= 1, debug=F))+
-       theme(axis.title.y =element_text(size = 12, face ="bold", vjust= 1, debug=F))+
-       theme(panel.background =  element_rect(fill="white", colour="black")) +
-       theme(panel.grid.major = element_line(colour = "grey90"))+
-       theme(plot.title=element_text(size=15, vjust=2, face= "bold")) +
-       scale_x_discrete(limits=spp_names)+
-       theme(strip.background= element_rect(size=10, color="gray" )))
-y2
-
-
-#################################################################################
-#### Calc the average of all 3 transects sampled IN EACH YEAR 
-#################################################################################
-PI.site.yr<-cast(PI.site, Loc_Name+  Loc_Code +Year+ QAQC+Spp_Code ~ . , value= "prop_cover", fun = summ, add.missing = TRUE, fill= NA) 
-head(PI.site.yr)
-PI.site.yr$se<-PI.site.yr$sd/sqrt(3) # calc the SE based on 3 transects per year
-# drop rows with blank species info and sort
-PI.site.yr<-PI.site.yr[PI.site.yr$Spp_Code != "",]
-head(PI.site.yr)
-# length should be 3 for each row (species*site combo)
-
-# Bind back park names for indexing/plotting
-PI.site.yr<-join(PI.site.yr,tlu_sites, by= "Loc_Name")
-
-### What are the 10 most dominat cover types in each park?
-
-top10ACAD<-cast(PI.site, Spp_Code ~ . , value= "prop_cover", fun = summ, subset= PI.site$Site_Code == "ACAD") 
-top10ACAD<-top10ACAD[order(top10ACAD$mean, decreasing = T),]
-top10ACAD<-top10ACAD[1:10,]; top10ACAD<-droplevels(top10ACAD)
-top10ACAD<-unique(levels(top10ACAD$Spp_Code))
-
-top10BOHA<-cast(PI.site, Spp_Code ~ . , value= "prop_cover", fun = summ, subset= PI.site$Site_Code == "BOHA") 
-top10BOHA<-top10BOHA[order(top10BOHA$mean, decreasing = T),]
-top10BOHA<-top10BOHA[1:10,]; top10BOHA<-droplevels(top10BOHA)
-top10BOHA<-unique(levels(top10BOHA$Spp_Code))
-
-### Bind species names for final plotting
-PI.site.plot<-join(PI.site.yr,species, by= "Spp_Code")
-PI.site.plot<-PI.site.plot[order(PI.site.plot$Site_Name,PI.site.plot$Loc_Name,PI.site.plot$Year,PI.site.plot$Common_Name),]
-
-PI.site.plot<-PI.site.plot[!is.na(PI.site.plot$Loc_Name),]
-PI.site.plot<-droplevels(PI.site.plot)
-head(PI.site.plot)
-
-#### Extract top 10 cover types for final plotting 
-ACAD.temp<-PI.site.plot[PI.site.plot$Site_Code == "ACAD" & PI.site.plot$Spp_Code %in% top10ACAD,];ACAD.temp<-droplevels(ACAD.temp)
-BOHA.temp<-PI.site.plot[PI.site.plot$Site_Code == "BOHA" & PI.site.plot$Spp_Code %in% top10BOHA,];BOHA.temp<-droplevels(BOHA.temp)
-
-PI.site.plot<-rbind(ACAD.temp,BOHA.temp)
-
-### export annual means from top 10 species/covertypes for  use in R viz
-write.table(PI.site.plot, "./Data/site_transect_cover_per_year.csv", sep=",", row.names= FALSE)
-
-
-# first reorder names labels for correct plotting
-spp_names<-rev(levels(PI.site.plot$Common_Name))
-
-y2<-ggplot(PI.site.plot[PI.site.plot$QAQC == 0,], aes(x=Common_Name, y= as.numeric(mean), fill= Year))+
-  geom_bar(stat ="identity", position = dodge) + labs(y = "Mean cover + SE", x= "") +
-  geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")
 
 # y2
 # summary(y2)

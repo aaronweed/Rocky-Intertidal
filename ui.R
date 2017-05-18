@@ -12,65 +12,106 @@ shinyUI(navbarPage(title=HTML("<div> <a href='https://science.nature.nps.gov/im/
            windowTitle = "NETN Rocky Intertidal Community Visualizer", id="MainNavBar",
      
 ######################################### Vertical transect data Panel ####################################################################
-tabPanel(title="Vertical transect data",
-         #style="padding: 0",
-         useShinyjs(),
-         div(class="outer",
-             #tags$head(includeCSS("./www/mapstyles.css") ), # defines css file
-             tags$head(HTML('<link rel="icon", href="AH_small_flat_4C_12x16.png", type="image/png" />'))
-             #puts up icon on tab
-             #, tags$head(includeScript("https://www.nps.gov/common/commonspot/templates/js/federated-analytics.js"))#,
-         ),
-         
-         fluidPage(
-           sidebarPanel(
-             h1(""),
-             h3("Plot average cover of species or substrate types over time."),
-             br(),
-             #Park selection
-             tags$div(title="Choose a park",selectInput(inputId='park', label='Select Park', choices= ParkList_trans, selectize = TRUE,selected ="Acadia NP")),
-             br(),
-             
-             
-             # Selection to plot single or multple sites
-             tags$div(title="Choose between plotting one or multiple sites",radioButtons(inputId='many', label='Do you want to plot data from one or multiple sites?', choices= c("One site","All sites"), selected = "All sites")),
-             
-             
-             # Site selection
-             conditionalPanel(condition = "input.many == 'One site'", uiOutput("SiteResultsA")),
-             br(),
-             
-             ## comparisons when selecting multiple sites
-             tags$div(title="Compare cover types",conditionalPanel(condition = "input.many == 'All sites'",radioButtons(inputId='compare', label='How do you want compare cover data?', choices= c("Cover types within a site","Cover type among sites"), selected = "Cover types within a site"))),
-             
-             
-             # plot combined years or by year
-            # tags$div(title="Plot abundance on log-scale ", checkboxInput(inputId='logscale', label='Plot across all years', value=FALSE))),
-             
-             # tags$div(title="Toggle y-scale ", conditionalPanel(condition = "input.SPP == 'Single'", checkboxInput(inputId='free_y', label='Make scale of y-axes the same', value=FALSE))),
-             # 
-             # tags$div(title="Compare sites within same zone", checkboxInput(inputId='compare', label='Compare data among sites within an intertidal zone', value=FALSE)),
-             # 
-             br(),
-             
-             #downloadButton('downloadData', 'Download Data'),
-             img(src = "transects.jpg", height = 280, width = 360),
-            h6("Photo: Ed Sharron, NPS"),
-             br(),
-             br(),
-             p("For further information about the objectives and methods of this sampling protocol, visit the ", 
-               a("NETN Rocky Intertidal Community protocol page.", href= "https://science.nature.nps.gov/im/units/netn/monitor/programs/rockyIntertidal/rockyIntertidal.cfm")),
-             br()
+tabPanel(title = " Vertical Transect Data",
+         tabsetPanel(
+           tabPanel(title="Plot data",
+                    #style="padding: 0",
+                    useShinyjs(),
+                    
+                    fluidPage(
+                      sidebarPanel(
+                        h1(""),
+                        h3("Examine average cover of species or substrate types over time."),
+                        br(),
+                        #Park selection
+                        tags$div(title="Choose a park",selectInput(inputId='park', label='Select Park', choices= ParkList_trans, selectize = TRUE,selected ="Acadia NP")),
+                        br(),
+                        
+                        
+                        # Selection to plot single or multple sites
+                        tags$div(title="Choose between one or multiple sites",radioButtons(inputId='many', label='Do you want to examine data from one or multiple sites?', choices= c("One site","All sites"), selected = "All sites")),
+                        
+                        
+                        # Site selection
+                        conditionalPanel(condition = "input.many == 'One site'", uiOutput("SiteResultsA")),
+                        br(),
+                        
+                        ## comparisons when selecting multiple sites
+                        tags$div(title="Compare cover types",conditionalPanel(condition = "input.many == 'All sites'",radioButtons(inputId='compare', label='How do you want compare cover data?', choices= c("Cover types within a site","Cover type among sites"), selected = "Cover types within a site"))),
+                        
+                        
+                        # plot combined years or by year
+                        # tags$div(title="Plot abundance on log-scale ", checkboxInput(inputId='logscale', label='Plot across all years', value=FALSE))),
+                        
+                        # tags$div(title="Toggle y-scale ", conditionalPanel(condition = "input.SPP == 'Single'", checkboxInput(inputId='free_y', label='Make scale of y-axes the same', value=FALSE))),
+                        # 
+                        # tags$div(title="Compare sites within same zone", checkboxInput(inputId='compare', label='Compare data among sites within an intertidal zone', value=FALSE)),
+                        # 
+                        br(),
+                        
+                        #downloadButton('downloadData', 'Download Data'),
+                        img(src = "transects.jpg", height = 280, width = 360),
+                        h6("Photo: Ed Sharron, NPS"),
+                        br(),
+                        br(),
+                        p("For further information about the objectives and methods of this sampling protocol, visit the ", 
+                          a("NETN Rocky Intertidal Community protocol page.", href= "https://science.nature.nps.gov/im/units/netn/monitor/programs/rockyIntertidal/rockyIntertidal.cfm")),
+                        br()
+                      ),
+                      
+                      mainPanel(h3(textOutput("captionVertTrans",  container = span)),
+                                plotOutput("plot1",  width = "100%") #tableOutput("Transectsumtable")
+                                
+                      )
+                      
+                    )
            ),
+           tabPanel(title="View and Download Tabular data",
+                    #style="padding: 0",
+                    useShinyjs(),
+                    
+                    fluidPage(
+                      sidebarPanel(
+                        h1(""),
+                        h3("Examine average cover of species or substrate types over time."),
+                        br(),
+                        #Park selection
+                        tags$div(title="Choose a park",selectInput(inputId='parkb', label='Select Park', choices= ParkList_trans, selectize = TRUE,selected ="Acadia NP")),
+                        br(),
+                        #   
+                        #   
+                        # Selection to view single or multple sites
+                        tags$div(title="Choose between one or multiple sites",radioButtons(inputId='manyB', label='Do you want to examine data from one or multiple sites?', choices= c("One site","All sites"), selected = "All sites")),
+                        
+                        #   
+                        # Site selection
+                        conditionalPanel(condition = "input.manyB == 'One site'", uiOutput("SiteResultsB")),
+                        
+                        br(),
+                        downloadButton('downloadsumData', 'Download summary data'),
+                        br(),
+                        br(),
+                       
+                        img(src = "transects.jpg", height = 280, width = 360),
+                        h6("Photo: Ed Sharron, NPS"),
+                        br(),
+                        br(),
+                        p("For further information about the objectives and methods of this sampling protocol, visit the ",
+                          a("NETN Rocky Intertidal Community protocol page.", href= "https://science.nature.nps.gov/im/units/netn/monitor/programs/rockyIntertidal/rockyIntertidal.cfm")),
+                        br()
+                        
+                      ),
+                      
+                      mainPanel(DT::dataTableOutput("Transectsumtable"))
+                      
+                    )
+           ) #end tabpanel
            
-           mainPanel(h3(textOutput("captionVertTrans",  container = span)),
-                     plotOutput("plot1",  width = "100%")
-                     
-                     
-           )
            
-         )
-), #end navbarPage
+         ) # tabsetpanel
+), #end tab panel Vertcial data
+
+####################################### MOTILE INVERT PAGE #################################################
 
 tabPanel(title="Mollusks",
          #style="padding: 0",
