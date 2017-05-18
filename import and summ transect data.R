@@ -62,6 +62,14 @@ head(PI_data)
 PI.m<-melt(PI_data, id.vars=c("Site_Name", "Site_Code",  "Loc_Name","Loc_Code" ,"QAQC", "Plot_Name","Start_Date", "Year", "Spp_Code"), measure.vars=c("PI_Distance"))
 head(PI.m)
 
+### export raw data for  use in R viz
+### Bind species names and site names for final output
+PI.raw.R<-join(PI.m,species, by= "Spp_Code")
+head(PI.raw.R)
+colnames(PI.raw.R)[11]<-"distance_m"
+PI.raw.R$variable<-NULL
+write.table(PI.raw.R, "./Data/site_transect_cover_raw.csv", sep=",", row.names= FALSE)
+
 #################################################################################
 ############ SITE-LEVEL ESTIMATES ###############
 #################################################################################
@@ -89,6 +97,13 @@ PI.site<-join(PI_spp.hits,PI_obs,by =c("Loc_Code", "Year", "Plot_Name", "QAQC"))
 head(PI.site)
 
 PI.site$prop_cover<-round(PI.site$total_hits/PI.site$total_points,3)
+head(PI.site)
+
+PI.site<-PI.site[PI.site$Spp_Code != "",]
+### rearrange cols
+
+PI.site<-PI.site[,c("Site_Name","Loc_Name","Year","Plot_Name","QAQC", "total_hits","total_points", "prop_cover")]
+
 
 #################################################################################
 #### Calc the average of all 3 transects sampled IN EACH YEAR 

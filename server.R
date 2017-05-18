@@ -147,8 +147,8 @@ shinyServer(function(input,output){
     
     plot.df<-as.data.frame(plot.df[,c("Loc_Name","Year","Common_Name",  "mean"   ,"se")])
    # 
-  }, rownames = FALSE, colnames = c("Site Name","Year","Species or Cover type",  "Average" ,"St. Error"),
-  caption = 'Average annual cover of the 10 most abundant species/cover types estimated by point-intercept sampling along three parallel transects.',
+  }, rownames = FALSE, colnames = c("Site Name","Year","Species or Cover type",  "Average proportion of cover" ,"St. Error"),
+  caption = 'Average annual cover per site of the 10 most abundant species/cover types within the park estimated by point-intercept sampling along three parallel transects.',
   filter = 'bottom', class = 'cell-border stripe'
   ))
   
@@ -178,9 +178,38 @@ shinyServer(function(input,output){
       paste('NETN_Rocky_Intertidal_Summ_Data.csv') 
     },
     content = function(file) {
-      write.csv(datasetInput(), file)
+      write.csv(datasetInput(), file, row.names = F)
     }
   )
+  
+  ####   #### Dowload raw data   ####   #### 
+  datasetInputRaw <- reactive({
+    if(input$manyB == "All sites"){
+      
+      out.df<-subset(transect_raw, Site_Name %in% input$parkb & QAQC == 0) # select by park and drop the QAQC plots
+      out.df<-droplevels(plot.df)
+      
+    }else{
+      
+      ## SUBSET BY SITE
+      out.df<-subset(transect_raw, Loc_Name %in% input$siteb & QAQC == 0)# select by site and drop the QAQC plots
+      out.df<-droplevels(plot.df)
+    }
+    
+    out.df
+  })
+  
+  
+  output$downloadDataRaw <- downloadHandler(
+    filename = function() { 
+      paste('NETN_Rocky_Intertidal_Raw_Data.csv') 
+    },
+    content = function(file) {
+      write.csv(datasetInputRaw(), file, row.names = F)
+    }
+  )
+  
+  
   
   ####################  Mollusk data  panel ##############################################
 
