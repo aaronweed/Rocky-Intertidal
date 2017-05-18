@@ -91,6 +91,8 @@ tabPanel(title = " Vertical Transect Data",
                         downloadButton('downloadsumData', 'Download summary data'),
                         br(),
                         br(),
+                        downloadButton('downloadDataRaw', 'Download raw data'),
+                        br(),br(),
                        
                         img(src = "transects.jpg", height = 280, width = 360),
                         h6("Photo: Ed Sharron, NPS"),
