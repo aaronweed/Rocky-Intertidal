@@ -32,6 +32,9 @@ VarList<-unique(levels(motile$variable))
 
 echino<-read.csv("./Data/echino_count.csv")
 
+echino_raw<-read.csv("./Data/echino_count_raw.csv")
+
+
 SeaStarList<-unique(levels(echino$variable))
 
 # ACAD_var<- unique(levels(df$Local.Characteristic.Name[df$ParkCode == "ACAD"]))

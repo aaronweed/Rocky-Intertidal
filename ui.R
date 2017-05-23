@@ -8,8 +8,8 @@ library(DT)
 
 
 shinyUI(navbarPage(title=HTML("<div> <a href='https://science.nature.nps.gov/im/units/netn/'> <img src='ah_small_black.gif',
-          alt='WQ Visualizer'> </a> NETN Rocky Intertidal Community Visualizer</div>"),position = "static-top", inverse=TRUE, collapsible = FALSE, fluid=TRUE, 
-                   windowTitle = "NETN Rocky Intertidal Community Visualizer", id="MainNavBar",
+          alt='WQ Visualizer'> </a> NETN Rocky Intertidal Monitoring Data Visualizer</div>"),position = "static-top", inverse=TRUE, collapsible = FALSE, fluid=TRUE, 
+                   windowTitle = "NETN Rocky Intertidal Monitoring Data Visualizer", id="MainNavBar",
                    
                    ######################################### Vertical transect data Panel ####################################################################
                    tabPanel(title = " Vertical Transect Data",
@@ -236,12 +236,11 @@ shinyUI(navbarPage(title=HTML("<div> <a href='https://science.nature.nps.gov/im/
                    ######################################### Tidepool Plot Panel ####################################################################
                    
                    tabPanel(title="Tidepool invertebrate surveys",
-                            #style="padding: 0",
-                            useShinyjs(),
-                            div(class="outer",
-                                tags$head(HTML('<link rel="icon", href="AH_small_flat_4C_12x16.png", type="image/png" />'))
-                            ),
+                            tabsetPanel(
+                              tabPanel(title="Plot Data",
+                           
                             
+                            useShinyjs(),
                             fluidPage(
                               sidebarPanel(
                                 h1(""),
@@ -260,7 +259,7 @@ shinyUI(navbarPage(title=HTML("<div> <a href='https://science.nature.nps.gov/im/
                                 
                                 ##Add in options
                                 tags$div(title="Plot abundance on log-scale ", checkboxInput(inputId='logscaleSS', label='Convert abundance to log-scale', value=TRUE)),
-                                tags$div(title="Compare species abundance among sites.", conditionalPanel(condition = "input.manySS == 'All sites'", checkboxInput(inputId='compSS', label='Compare by species among sites', value=TRUE))),
+                                tags$div(title="Compare species abundance among sites.", conditionalPanel(condition = "input.manySS == 'All sites'", checkboxInput(inputId='compSS', label='Compare by species among sites', value=FALSE))),
                                 
                                 
                                 br(),
@@ -283,8 +282,71 @@ shinyUI(navbarPage(title=HTML("<div> <a href='https://science.nature.nps.gov/im/
                               )
                               
                               
-                            )
-                   )#end navbarPage
+                            ) # end fluid page
+                              ), # end plot tab panel
+                            
+                            tabPanel(title="View and Download Tabular data",
+                                     
+                                     
+                                     useShinyjs(),
+                                
+                                     
+                                     fluidPage(
+                                       sidebarPanel(
+                                         h1(""),
+                                         h3("View average abundance of tidal pools within the rocky intertidal."),
+                                         br(),
+                                         #Park selection
+                                         tags$div(title="Choose the park you want to work with",selectInput(inputId='parkSS', label='Select Park', choices= ParkList, selectize = TRUE)),
+                                         
+                                         
+                                         # # Selection to plot single or multple sites
+                                         tags$div(title="Choose between viewing data from one or multiple sites",radioButtons(inputId='manySSTab', label='Do you want to plot data from one or multiple sites?', choices= c("One site","All sites"), selected = "All sites")),
+                                         # # 
+                                         # # 
+                                         # # # Site selection
+                                         conditionalPanel(condition = "input.manySSTab == 'One site'", uiOutput("SiteResultsSSTab")),
+                                         # 
+                                         # ##Add in options
+                                         tags$div(title="View abundance on log-scale ", checkboxInput(inputId='logscaleSSTab', label='Convert abundance to log-scale', value=FALSE)),
+                                         #tags$div(title="Compare species abundance among sites.", conditionalPanel(condition = "input.manySSTab == 'All sites'", checkboxInput(inputId='compSS', label='Compare by species among sites', value=TRUE))),
+                                         # 
+                                         # 
+                                         br(),
+                                         # 
+                                         p("Download the data averaged at the site scale based on your query above."),
+                                         downloadButton('downloadsumDataTP', 'Download summary data'),
+                                         br(),
+                                         br(),
+                                         p("Download the raw plot-level data based on your query above."),
+                                         downloadButton('downloadDataRawTP', 'Download raw data'),
+                                         br(),
+                                         br(),
+                                         img(src = "seastars.jpg", height = 280, width = 360),
+                                         br(),
+                                         p("Photo credit : NPS"),
+                                         br(),
+                                         p("For further information about the objectives and methods of this sampling protocol, visit the ", 
+                                         a("NETN Rocky Intertidal Community protocol page.", href= "https://science.nature.nps.gov/im/units/netn/monitor/programs/rockyIntertidal/rockyIntertidal.cfm")),
+                                         br()
+                                       ),
+                                       
+                                       
+                                       mainPanel(DT::dataTableOutput("TransectsumtableTidePool")
+                                                 
+                                                 
+                                       )
+                                       
+                                       
+                                     ) # end fluid page
+                            ) #
+                            
+                            
+                            
+                            
+                            
+                            ) # end tabsetpanel
+                   )#end tide pool page
                    
-)
+) # end navbar page
 )

@@ -37,11 +37,22 @@ echino.melt$Spp_Name<-mapvalues(echino.melt$Spp_Name, from=c("Count_STRDRO", "Co
                                 to=c("Strongylocentrotus droebachiensis", "Hemigrapsus sanguineus", "Asterias rubens", "Asterias forbesii"))
 echino.melt$variable<-NULL
               
+head(echino.melt)
+
+#### First export to raw data for R viz
+
+
+# add in species names
+echino.raw<-join(echino.melt, tlu_echino_spp, by ="Spp_Name")
+echino.raw<-echino.raw[,c("Site_Name", "Loc_Name" ,"Start_Date", "Year", "Plot_Name","Com_Sp", "value", "logAbundance")]
+### export to use in R viz
+write.table(echino.raw, "./Data/echino_count_raw.csv", sep= ",", row.names= FALSE)
+
 ## recreate molten data frame to include logAbundance (all values are represented for each site*time combination)
  echino.melt2<-melt(echino.melt, id.vars=c("Site_Name", "Loc_Name" ,"Start_Date", "Year", "Plot_Name", "Spp_Name"), measure.vars=c("value","logAbundance"))
  head(echino.melt2)                                                              
 ############ Summarize species counts by site, zone, and Year
-summ<-function (x) c(mean =mean(x,na.rm = TRUE),se= sd(x,na.rm = TRUE)/sqrt(length(!is.na(x))), N= length(!is.na(x)))
+summ<-function (x) c(mean = round(mean(x,na.rm = TRUE),2),se= round(sd(x,na.rm = TRUE)/sqrt(length(!is.na(x))),2), N= length(!is.na(x)))
 
 # aggregate data by site and year leaving out park to fill in NAs correctly
 
