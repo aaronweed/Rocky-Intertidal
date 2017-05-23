@@ -17,6 +17,8 @@ motile<-read.csv("./Data/motile_count.csv")
 
 motile_spp <- read.csv("./Data/motile_spp.csv")
 
+motile_raw<-read.csv("./Data/motile_count_raw.csv")
+
 ParkList<-unique(levels(motile$Site_Name))
 
 SiteList<-unique(levels(motile$Loc_Name))
@@ -26,10 +28,8 @@ SppList<-unique(levels(motile$Com_Sp))
 VarList<-unique(levels(motile$variable))
 
 
+### Tidepools
 
-
-
-### Echinoderms
 echino<-read.csv("./Data/echino_count.csv")
 
 SeaStarList<-unique(levels(echino$variable))

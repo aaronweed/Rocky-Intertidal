@@ -55,8 +55,16 @@ motile.melt$value<-as.numeric(as.character(motile.melt$value))# force value vect
 
 
 head(motile.melt)
+##### output raw table for R viz
+
+motile.raw.R<-join(motile.melt, motile_spp , by= "Species")
+motile.raw.R<-motile.raw.R[,c("Site_Name", "Loc_Name" ,"Start_Date", "Year", "Species" ,"Com_Sp", "Plot_Name", "Zone", "variable", "value")]
+
+### export to use in R viz
+write.table(motile.raw.R, "./Data/motile_count_raw.csv", sep=",", row.names= FALSE)
+
 ############ Summarize species counts by site, zone, and Year
-summ<-function (x) c(mean =mean(x,na.rm = TRUE),se= sd(x,na.rm = TRUE)/sqrt(length(x)), N= length(x))
+summ<-function (x) c(mean =round(mean(x,na.rm = TRUE),2),se= round(sd(x,na.rm = TRUE)/sqrt(length(x)),2), N= length(x))
 
 ######################## motile inverts#####################
 # look up table for labelling etc

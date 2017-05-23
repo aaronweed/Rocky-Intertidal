@@ -47,7 +47,7 @@ shinyServer(function(input,output){
       plot.df<-subset(transect_yr, Site_Name %in% input$park & QAQC == 0) # select by park and drop the QAQC plots
       plot.df<-droplevels(plot.df)
       plot.df$Year<-as.factor(plot.df$Year)
-      #plot.df$Year<- ordered(plot.df$Year, levels = c("2016", "2015", "2014", "2013"))
+      plot.df$Year<- ordered(plot.df$Year, levels = c("2016", "2015", "2014", "2013"))
       
     }else{
       
@@ -62,10 +62,11 @@ shinyServer(function(input,output){
     ############## PLOT mean over time  ##############################
     dodge <- position_dodge(width=0.9)
     
-    if(input$compare == "Cover types within a site"){
+    if(input$many == "All sites"){
+    if(input$compare == "Cover types within a site" ){
       
       y2<-ggplot(plot.df[plot.df$QAQC == 0,], aes(x=Common_Name, y= as.numeric(mean), fill= Year))+
-        geom_bar(stat ="identity", position = dodge,colour="black") + labs(y = "Mean proportion of cover + SE", x= "") +
+        geom_bar(stat ="identity", position = dodge,colour="black") + labs(y = "Average proportion of cover + SE", x= "") +
         
         geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")
       
@@ -84,7 +85,7 @@ shinyServer(function(input,output){
     }else{
       
       y2<-ggplot(plot.df[plot.df$QAQC == 0,], aes(x=Loc_Name, y= as.numeric(mean), fill= Year))+
-        geom_bar(stat ="identity", position = dodge,colour="black") + labs(y = "Mean proportion of cover + SE", x= "") +
+        geom_bar(stat ="identity", position = dodge,colour="black") + labs(y = "Average proportion of cover + SE", x= "") +
         
         geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")
       
@@ -99,6 +100,26 @@ shinyServer(function(input,output){
              theme(panel.grid.major = element_line(colour = "grey90"))+
              theme(plot.title=element_text(size=15, vjust=2, face= "bold")) +
              scale_x_discrete(limits=rev(levels(plot.df$Loc_Name)))+ # use with coord_flip
+             theme(strip.background= element_rect(size=10, color="gray" )))
+
+    }
+    }else{
+      y2<-ggplot(plot.df[plot.df$QAQC == 0,], aes(x=Common_Name, y= as.numeric(mean), fill= Year))+
+        geom_bar(stat ="identity", position = dodge,colour="black") + labs(y = "Average proportion of cover + SE", x= "") +
+        
+        geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")
+      
+      y2<-(y2+facet_wrap(~Loc_Name) + coord_flip()+
+             theme(legend.position = "right", legend.text = element_text(size = 16), legend.title = element_text(size =16)) +
+             theme(axis.text.y = element_text(color="black", vjust= 0.5,size = 13,face="bold"))+
+             theme(axis.text.x = element_text(angle = 0,  vjust=0,size = 14 , face="bold")) +
+             theme(strip.text.x= element_text(size=16, face=c("bold.italic"))) +
+             theme(axis.title.x =element_text(size = 16, face ="bold", vjust= 0, debug=F))+
+             theme(axis.title.y =element_text(size = 16, face ="bold", vjust= 1, debug=F))+
+             theme(panel.background =  element_rect(fill="white", colour="black")) +
+             theme(panel.grid.major = element_line(colour = "grey90"))+
+             theme(plot.title=element_text(size=15, vjust=2, face= "bold")) +
+             scale_x_discrete(limits=rev(levels(plot.df$Common_Name)))+ # use with coord_flip
              theme(strip.background= element_rect(size=10, color="gray" )))
       
     }
@@ -116,66 +137,53 @@ shinyServer(function(input,output){
   })
   
   ######## VERTICAL TRANSECT TABULAR VIEW ################
+  
   ###### Create set of reactive selection boxes in UI for TABLE  #####
   
   
   ### select site based on park
   output$SiteResultsB <- renderUI({ 
     
-    df_sub<-subset(transect_yr, Site_Name %in% input$parkb)
+    df_sub<-subset(transect_yr, Site_Name %in% input$park)
     df_sub<-droplevels(df_sub)
     
     selectInput(inputId='siteb', label='Select Site',   unique(levels(df_sub$Loc_Name)))
   })
   
-  ### show table
-  output$Transectsumtable <-DT::renderDataTable(DT::datatable({
-    
+  
+  #### Create summary data for tabular presentation and downloading
+  datasetInput <- reactive({
     if(input$manyB == "All sites"){
       
-      plot.df<-subset(transect_yr, Site_Name %in% input$parkb & QAQC == 0) # select by park and drop the QAQC plots
-      plot.df<-plot.df[!is.na(plot.df$mean),]
-      plot.df<-droplevels(plot.df)
+      table.df<-subset(transect_yr, Site_Name %in% input$park & QAQC == 0) # select by park and drop the QAQC plots
+      table.df<-table.df[!is.na(table.df$mean),]
+      table.df<-droplevels(table.df)
       
     }else{
       
       ## SUBSET BY SITE
-      plot.df<-subset(transect_yr, Loc_Name %in% input$siteb & QAQC == 0)# select by site and drop the QAQC plots
-      plot.df<-plot.df[!is.na(plot.df$mean),]
-      plot.df<-droplevels(plot.df)
+      table.df<-subset(transect_yr, Loc_Name %in% input$siteb & QAQC == 0)# select by site and drop the QAQC plots
+      table.df<-table.df[!is.na(table.df$mean),]
+      table.df<-droplevels(table.df)
     }
     
-    plot.df<-as.data.frame(plot.df[,c("Loc_Name","Year","Common_Name",  "mean"   ,"se")])
-   # 
+    table.df<-as.data.frame(table.df[,c("Loc_Name","Year","Common_Name",  "mean"   ,"se")])
+  })
+  
+  ### show Data table
+  output$Transectsumtable <-DT::renderDataTable(DT::datatable({
+    
+    datasetInput()
+  
+    
   }, rownames = FALSE, colnames = c("Site Name","Year","Species or Cover type",  "Average proportion of cover" ,"St. Error"),
   caption = 'Average annual cover per site of the 10 most abundant species/cover types within the park estimated by point-intercept sampling along three parallel transects.',
   filter = 'bottom', class = 'cell-border stripe'
   ))
   
-  
-  #### Dowload summary data
-  datasetInput <- reactive({
-    if(input$manyB == "All sites"){
-      
-      plot.df<-subset(transect_yr, Site_Name %in% input$parkb & QAQC == 0) # select by park and drop the QAQC plots
-      plot.df<-plot.df[!is.na(plot.df$mean),]
-      plot.df<-droplevels(plot.df)
-      
-    }else{
-      
-      ## SUBSET BY SITE
-      plot.df<-subset(transect_yr, Loc_Name %in% input$siteb & QAQC == 0)# select by site and drop the QAQC plots
-      plot.df<-plot.df[!is.na(plot.df$mean),]
-      plot.df<-droplevels(plot.df)
-    }
-    
-    plot.df<-as.data.frame(plot.df[,c("Loc_Name","Year","Common_Name",  "mean"   ,"se")])
-  })
-  
-  
-  output$downloadsumData <- downloadHandler(
+ output$downloadsumData <- downloadHandler(
     filename = function() { 
-      paste('NETN_Rocky_Intertidal_Summ_Data.csv') 
+      paste('NETN_Rocky_Intertidal_Summ_Transect_Data.csv') 
     },
     content = function(file) {
       write.csv(datasetInput(), file, row.names = F)
@@ -186,7 +194,7 @@ shinyServer(function(input,output){
   datasetInputRaw <- reactive({
     if(input$manyB == "All sites"){
       
-      out.df<-subset(transect_raw, Site_Name %in% input$parkb & QAQC == 0) # select by park and drop the QAQC plots
+      out.df<-subset(transect_raw, Site_Name %in% input$park & QAQC == 0) # select by park and drop the QAQC plots
       out.df<-droplevels(out.df)
       
     }else{
@@ -202,92 +210,95 @@ shinyServer(function(input,output){
   
   output$downloadDataRaw <- downloadHandler(
     filename = function() { 
-      paste('NETN_Rocky_Intertidal_Raw_Data.csv') 
+      paste('NETN_Rocky_Intertidal_Raw_Transect_Data.csv') 
     },
     content = function(file) {
       write.csv(datasetInputRaw(), file, row.names = F)
     }
   )
-  
-  
-  
-  ####################  Mollusk data  panel ##############################################
 
+  ####################  Mollusk Plot  panel ##############################################
+  ####### Reactive list of sites ####################      
+   output$SiteResultsMoll <- renderUI({ 
+    
+    df_sub<-subset(motile, Site_Name %in% input$parkMoll)
+    df_sub<-droplevels(df_sub)
+    
+    selectInput(inputId='siteMoll', label='Select Site',   unique(levels(df_sub$Loc_Name)))
+  })
 ### Summary plot by site and intertidal zone
    
       output$plot <- renderPlot({
         
-  ####### Reactive list of sites ####################      
-        output$SiteResultsMoll <- renderUI({ 
-          
-          df_sub<-subset(motile, Site_Name %in% input$parkMoll)
-          df_sub<-droplevels(df_sub)
-          
-          selectInput(inputId='siteMoll', label='Select Site',   unique(levels(df_sub$Loc_Name)))
-        })
-        
-        
+ 
   ############## DATA MANIPULATION ##############################        
 ## SUBSET MOTILE DF BY PARK, SPECIES, VARIABLE
     
-    if(input$manyMoll == "All sites"){
-        if(input$logscale == FALSE){    
-        
-        if(input$SPP =="All species"){
-          
-          plot.df<-subset(motile, Site_Name %in% input$parkMoll  & variable %in% input$variable )
-
-        }else{
-        
-        plot.df<-subset(motile, Site_Name %in% input$parkMoll  & variable %in% input$variable  & Com_Sp %in% input$species)
-         
+        if(input$variable == "Abundance"){
+          if(input$manyMoll == "All sites"){
+            if(input$SPP =="All species"){
+              if(input$logscale == FALSE){ 
+                
+                plot.df<-subset(motile, Site_Name %in% input$parkMoll  & variable %in% "Abundance" )
+                
+              }else{
+                plot.df<-subset(motile, Site_Name %in% input$parkMoll  & variable %in% "logAbundance" )
+              }
+            }else{
+              if(input$logscale == FALSE){ 
+                
+                plot.df<-subset(motile, Site_Name %in% input$parkMoll  & variable %in% "Abundance" & Com_Sp %in% input$species)
+              }else{
+                
+                plot.df<-subset(motile, Site_Name %in% input$parkMoll  & variable %in% "logAbundance" & Com_Sp %in% input$species)
+              }
+              
+            }
+            
+          }else{
+            
+            if(input$SPP =="All species"){
+              if(input$logscale == FALSE){ 
+                
+                plot.df<-subset(motile, Loc_Name %in% input$siteMoll  & variable %in% "Abundance" )
+                
+              }else{
+                plot.df<-subset(motile, Loc_Name %in% input$siteMoll  & variable %in% "logAbundance" )
+              }
+            }else{
+              if(input$logscale == FALSE){ 
+                
+                plot.df<-subset(motile, Loc_Name %in% input$siteMoll  & variable %in% "Abundance" & Com_Sp %in% input$species)
+              }else{
+                
+                plot.df<-subset(motile, Loc_Name %in% input$siteMoll  & variable %in% "logAbundance" & Com_Sp %in% input$species)
+              }
+              
+            }
+          }
+        }
+           
+        if(input$variable == "Proportion.Damaged"){
+          if(input$manyMoll == "All sites"){
+            if(input$SPP =="All species"){
+               plot.df<-subset(motile, Site_Name %in% input$parkMoll  & variable %in% "Proportion.Damaged" )
+                
+              }else{
+                plot.df<-subset(motile, Site_Name %in% input$parkMoll  & variable %in% "Proportion.Damaged" & Com_Sp %in% input$species)
+              }
+            
+          }else{
+            
+            if(input$SPP =="All species"){
+              plot.df<-subset(motile, Loc_Name %in% input$siteMoll  & variable %in% "Proportion.Damaged" )
+                
+              }else{
+                  plot.df<-subset(motile, Loc_Name %in% input$siteMoll  & variable %in% "Proportion.Damaged" & Com_Sp %in% input$species)
+               }
+          }
         }
         
-    }else{
-      
-      if(input$SPP =="All species"){
-        
-        plot.df<-subset(motile, Site_Name %in% input$parkMoll  & variable %in% "logAbundance" )
-
-      }else{
-        
-        plot.df<-subset(motile, Site_Name %in% input$parkMoll  & variable %in% "logAbundance"  & Com_Sp %in% input$species)
-
-      }
-    
-    }
-        
-    }else{
-      
-      if(input$logscale == FALSE){    
-        
-        if(input$SPP =="All species"){
-          
-          plot.df<-subset(motile, Loc_Name %in% input$siteMoll  & variable %in% input$variable )
-          
-        }else{
-          
-          plot.df<-subset(motile, Loc_Name %in% input$siteMoll  & variable %in% input$variable  & Com_Sp %in% input$species)
-          
-        }
-        
-      }else{
-        
-        if(input$SPP =="All species"){
-          
-          plot.df<-subset(motile, Loc_Name %in% input$siteMoll  & variable %in% "logAbundance" )
-          
-        }else{
-          
-          plot.df<-subset(motile, Loc_Name %in% input$siteMoll & variable %in% "logAbundance"  & Com_Sp %in% input$species)
-          
-        }
-        
-      }
-  
-      
-    }
-        #Define ordering of Zones for plotting
+          #Define ordering of Zones for plotting
         
         plot.df$Zone<- ordered(plot.df$Zone, levels = c("Red Algae", "Mussels", "Ascophyllum", "Fucus", "Barnacle"))
         
@@ -300,12 +311,6 @@ shinyServer(function(input,output){
           stop("Sorry, this species has not been collected at this site.")
         }
         
-        
-       
-        
-      
-      
-              
 ################ BEGIN PLOTTING FUNCTIONS ####################             
   ###Setup dynamic caption
   
@@ -313,14 +318,14 @@ shinyServer(function(input,output){
     if(input$SPP == "Single"){
     if(input$variable =="Abundance" | input$variable =="logAbundance"){
       
-      if(input$compareMoll == TRUE){
-        paste0("Average annual abundance of ",input$species, " among sites in each intertidal zone (panels) .",sep =" ")
+      if(input$compareMoll == "Compare among sites"){
+        paste0("Average annual abundance of ",input$species, " among sites in each intertidal zone (panels).",sep =" ")
       }else{
         paste0("Average annual abundance of ",input$species, " among intertidal zones.", sep =" ")
       
       }
       }else{
-        if(input$compareMoll == TRUE){
+        if(input$compareMoll == "Compare among sites"){
           paste0("Average annual proportion ",input$species, " damaged by predators among sites in each intertidal zone (panels).", sep=" ")
         }else{
         paste0("Average annual proportion of ",input$species, " damaged by predators among intertidal zones with each site (panels).", sep =" ")
@@ -337,39 +342,40 @@ shinyServer(function(input,output){
     
   })    
   
-  
-        if(input$variable == "Abundance"){
-     
-          # setup some graphic arguments
+        #### SETUP PLOTS #####
+        
+        # setup some graphic arguments
         dodge <- position_dodge(width=0.9)
-       
         
         
+if(input$compareMoll == "Compare within a site"){
+   ####### Compare data among intertidal zones within a site ############
+        if(input$variable == "Abundance"){
+          if(input$logscale == TRUE){
+            
+            y2<-ggplot(plot.df, aes(x=Zone, y= as.numeric(mean), fill= Year))+
+              geom_bar(stat ="identity",colour="black", position = dodge) + labs(y = expression(paste("log Average number m"^"2", "+ SE")), x= "Intertidal Zone") +
+              geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+ scale_fill_brewer(palette="Blues")
+            
+          }else{
+     
       y2<-ggplot(plot.df, aes(x=Zone, y= as.numeric(mean), fill= Year))+
         geom_bar(stat ="identity",colour="black", position = dodge) + 
-        labs(y = expression(paste("Mean number m"^"2", "+ SE")), x= "Intertidal Zone") +
+        labs(y = expression(paste("Average number m"^"2", "+ SE")), x= "Intertidal Zone") +
         geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+ scale_fill_brewer(palette="Blues")
       
-      }else{
+      }
+          }else{
         
       ## plot mean prop damaged
-        dodge <- position_dodge(width=0.9)
         
       y2<-ggplot(plot.df, aes(x=Zone, y= as.numeric(mean), fill= Year))+
         geom_bar(stat ="identity", colour="black",position = dodge) + 
-        labs(y = expression(paste("Mean proportion damaged m"^"2", "+ SE")), x= "Intertidal Zone") +
+        labs(y = expression(paste("Average proportion damaged m"^"2", "+ SE")), x= "Intertidal Zone") +
         geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+ scale_fill_brewer(palette="Blues")
       }
         
-      if(input$logscale == TRUE){
       
-        dodge <- position_dodge(width=0.9)
-        
-        y2<-ggplot(plot.df, aes(x=Zone, y= as.numeric(mean), fill= Year))+
-          geom_bar(stat ="identity",colour="black", position = dodge) + labs(y = expression(paste("log Mean number m"^"2", "+ SE")), x= "Intertidal Zone") +
-          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+ scale_fill_brewer(palette="Blues")
-        
-      }
         if(input$free_y == FALSE){
      
         y2<-(y2+facet_wrap(~Loc_Name, ncol =1, scales="free_y") +
@@ -424,40 +430,40 @@ shinyServer(function(input,output){
         theme(plot.title=element_text(size=15, vjust=2, face= "bold")) +
       theme(strip.background= element_rect(size=10, color="gray" )))
   }
+      }else{ 
   ####### Compare data among sites within an intertidal zone ############
-        ### Still in progress
-        
- if(input$compareMoll == TRUE){      
-        
+
    if(input$variable == "Abundance"){
-     
+     if(input$logscale == TRUE){
+       
+       dodge <- position_dodge(width=0.9)
+       
+       y2<-ggplot(plot.df, aes(x=Loc_Name, y= as.numeric(mean), fill= Year))+
+         geom_bar(stat ="identity",colour="black", position = dodge) + labs(y = expression(paste("log Average number m"^"2", "+ SE")), x= "Site Name") +
+         geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+ scale_fill_brewer(palette="Blues")
+       
+     } else{
      dodge <- position_dodge(width=0.9)
      
      y2<-ggplot(plot.df, aes(x=Loc_Name, y= as.numeric(mean), fill= Year))+
        geom_bar(stat ="identity",colour="black", position = dodge) + 
-       labs(y = expression(paste("Mean number m"^"2", "+ SE")), x= "Site Name") +
+       labs(y = expression(paste("Average number m"^"2", "+ SE")), x= "Site Name") +
        geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+ scale_fill_brewer(palette="Blues")
      
-   }else{
+   }
+     }else{
      
      ## plot mean prop damaged
      dodge <- position_dodge(width=0.9)
      
      y2<-ggplot(plot.df, aes(x=Loc_Name, y= as.numeric(mean), fill= Year))+
        geom_bar(stat ="identity", colour="black",position = dodge) + 
-       labs(y = expression(paste("Mean proportion damaged m"^"2", "+ SE")), x= "Site Name") +
+       labs(y = expression(paste("Average proportion damaged m"^"2", "+ SE")), x= "Site Name") +
        geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+ scale_fill_brewer(palette="Blues")
-   }
+     }
+
         
-        if(input$logscale == TRUE){
-          
-          dodge <- position_dodge(width=0.9)
-          
-          y2<-ggplot(plot.df, aes(x=Loc_Name, y= as.numeric(mean), fill= Year))+
-            geom_bar(stat ="identity",colour="black", position = dodge) + labs(y = expression(paste("log Mean number m"^"2", "+ SE")), x= "Site Name") +
-            geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+ scale_fill_brewer(palette="Blues")
-          
-        }
+        
         if(input$free_y == FALSE){
           
           y2<-(y2+facet_wrap(~Zone, ncol =1, scales="free_y") +
@@ -468,7 +474,7 @@ shinyServer(function(input,output){
                  theme(axis.title.x =element_text(size = 16, face ="bold", vjust= 1, debug=F))+
                  theme(axis.title.y =element_text(size = 16, face ="bold", vjust= 1, debug=F))+
                  theme(panel.background =  element_rect(fill="white", colour="black")) +
-                 scale_x_discrete(limits=rev(levels(plot.df$Zone)))+
+                 #scale_x_discrete(limits=rev(levels(plot.df$Loc_Name)))+
                  theme(panel.grid.major = element_line(colour = "grey90"))+
                  theme(plot.title=element_text(size=15, vjust=2, face= "bold")) +
                  theme(strip.background= element_rect(size=10, color="gray" )))
@@ -481,7 +487,7 @@ shinyServer(function(input,output){
                  theme(strip.text.x= element_text(size=14, face=c("bold.italic"))) +
                  theme(axis.title.x =element_text(size = 16, face ="bold", vjust= 1, debug=F))+
                  theme(axis.title.y =element_text(size = 16, face ="bold", vjust= 1, debug=F))+
-                 scale_x_discrete(limits=rev(levels(plot.df$Zone)))+
+                 #scale_x_discrete(limits=rev(levels(plot.df$Loc_Name)))+
                  theme(panel.background =  element_rect(fill="white", colour="black")) +
                  theme(panel.grid.major = element_line(colour = "grey90"))+
                  theme(plot.title=element_text(size=15, vjust=2, face= "bold")) +
@@ -489,13 +495,13 @@ shinyServer(function(input,output){
         }
          
    if(input$SPP =="All species"){
-     y2<-(y2+facet_grid(Zone ~ Spp_Name+common) +
+     y2<-(y2+facet_grid(Zone ~ Spp_Name+Common) +
             theme(legend.position = "top", legend.text = element_text(size = 16), legend.title = element_text(size =16)) +
             theme(axis.text.y = element_text(color="black", vjust= 0.5,size = 13,face="bold"))+
             theme(axis.text.x = element_text(angle = 90,  vjust=0,size = 12, face="bold")) +
-            theme(strip.text.x= element_text(size=11, face=c("bold.italic"), panel.margin = unit(0.25, "cm"))) +
+            #theme(strip.text.x= element_text(size=11, face=c("bold.italic"), panel.margin = unit(0.25, "cm"))) +
             theme(strip.text.y= element_text(size=12, face=c("bold")))+
-            scale_x_discrete(limits=rev(levels(plot.df$Zone)))+
+           # scale_x_discrete(limits=rev(levels(plot.df$Loc_Name)))+
             theme(axis.title.x =element_text(size = 16, face ="bold", vjust= 1, debug=F))+
             theme(axis.title.y =element_text(size = 16, face ="bold", vjust= 1, debug=F))+
             theme(panel.background =  element_rect(fill="white", colour="black")) +
@@ -506,13 +512,208 @@ shinyServer(function(input,output){
    
    
  }
-      
-          print(y2)
-      }
+        print(y2)     
+          
+      } # end Mollusks RenderPlot
         
      , height = 800, width = 1000)
 
-  
+      ######## MOLLUSK TABULAR VIEW ################
+      ###### Create set of reactive selection boxes in UI for TABLE  #####
+      ### select site based on park
+      
+      output$SiteResultsMollTab <- renderUI({ 
+        
+        df_sub<-subset(motile, Site_Name %in% input$parkMollTable)
+        df_sub<-droplevels(df_sub)
+        
+        selectInput(inputId='siteMollTab', label='Select Site',   unique(levels(df_sub$Loc_Name)))
+      })
+      
+      #### Create reactive summary data for presentation and downloading
+      datasetInputMoll <- reactive({
+        ## SUBSET MOTILE DF BY PARK, SPECIES, VARIABLE
+        
+        if(input$variableTab == "Abundance"){
+          if(input$manyMoll_Tab == "All sites"){
+            if(input$SPP_MOLL_TAB =="All species"){
+              if(input$logscaleTab == FALSE){ 
+                
+                table.df<-subset(motile, Site_Name %in% input$parkMollTable  & variable %in% "Abundance" )
+                
+              }else{
+                table.df<-subset(motile, Site_Name %in% input$parkMollTable  & variable %in% "logAbundance" )
+              }
+            }else{
+              if(input$logscaleTab == FALSE){ 
+                
+                table.df<-subset(motile, Site_Name %in% input$parkMollTable  & variable %in% "Abundance" & Com_Sp %in% input$species)
+              }else{
+                
+                table.df<-subset(motile, Site_Name %in% input$parkMollTable  & variable %in% "logAbundance" & Com_Sp %in% input$species)
+              }
+              
+            }
+            
+          }else{
+            
+            if(input$SPP_MOLL_TAB =="All species"){
+              if(input$logscaleTab == FALSE){ 
+                
+                table.df<-subset(motile, Loc_Name %in% input$siteMollTab  & variable %in% "Abundance" )
+                
+              }else{
+                table.df<-subset(motile, Loc_Name %in% input$siteMollTab  & variable %in% "logAbundance" )
+              }
+            }else{
+              if(input$logscaleTab == FALSE){ 
+                
+                table.df<-subset(motile, Loc_Name %in% input$siteMollTab  & variable %in% "Abundance" & Com_Sp %in% input$species)
+              }else{
+                
+                table.df<-subset(motile, Loc_Name %in% input$siteMollTab  & variable %in% "logAbundance" & Com_Sp %in% input$species)
+              }
+              
+            }
+          }
+        }
+        
+        if(input$variableTab == "Proportion.Damaged"){
+          if(input$manyMoll_Tab == "All sites"){
+            if(input$SPP_MOLL_TAB =="All species"){
+              table.df<-subset(motile, Site_Name %in% input$parkMollTable  & variable %in% "Proportion.Damaged" )
+              
+            }else{
+              table.df<-subset(motile, Site_Name %in% input$parkMollTable  & variable %in% "Proportion.Damaged" & Com_Sp %in% input$species)
+            }
+            
+          }else{
+            
+            if(input$SPP =="All species"){
+              table.df<-subset(motile, Loc_Name %in% input$siteMollTab  & variable %in% "Proportion.Damaged" )
+              
+            }else{
+              table.df<-subset(motile, Loc_Name %in% input$siteMollTab  & variable %in% "Proportion.Damaged" & Com_Sp %in% input$species)
+            }
+          }
+        }
+        
+        #Define ordering of Zones for plotting
+        
+        table.df$Zone<- ordered(table.df$Zone, levels = c("Red Algae", "Mussels", "Ascophyllum", "Fucus", "Barnacle"))
+        
+        ## clean up dataframe 
+        
+        table.df<-droplevels(table.df)
+        table.df$Year<-as.factor(table.df$Year)
+        
+        table.df<-table.df[,c("Loc_Name","Year","Com_Sp", "Zone", "mean"   ,"se")]
+        
+      })
+        
+        
+      ### show table
+      output$TransectsumtableMoll <-DT::renderDataTable(DT::datatable({
+        
+        datasetInputMoll()}
+        , 
+        rownames = FALSE, 
+      colnames = c("Site Name","Year","Species", "Intertidal Zone",paste0("Average ",input$variableTab,sep= " ") ,"St. Error"),
+      caption = 'Average annual cover per site of the 10 most abundant species/cover types within the park estimated by point-intercept sampling along three parallel transects.',
+      filter = 'bottom', class = 'cell-border stripe'
+      ))
+      
+      
+      
+      output$downloadsumDataMoll <- downloadHandler(
+        filename = function() { 
+          paste('NETN_Rocky_Intertidal_Mollusk_Summ_Data.csv') 
+        },
+        content = function(file) {
+          write.csv(datasetInputMoll(), file, row.names = F)
+        }
+      )
+      
+      ####   #### Dowload raw data   ####   #### 
+      datasetInputRawMoll <- reactive({
+        
+        if(input$variableTab == "Abundance"){
+          if(input$manyMoll_Tab == "All sites"){
+            if(input$SPP_MOLL_TAB =="All species"){
+              if(input$logscaleTab == FALSE){ 
+                
+                table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "Abundance" )
+                
+              }else{
+                table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "logAbundance" )
+              }
+            }else{
+              if(input$logscaleTab == FALSE){ 
+                
+                table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "Abundance" & Com_Sp %in% input$species)
+              }else{
+                
+                table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "logAbundance" & Com_Sp %in% input$species)
+              }
+              
+            }
+            
+          }else{
+            
+            if(input$SPP_MOLL_TAB =="All species"){
+              if(input$logscaleTab == FALSE){ 
+                
+                table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "Abundance" )
+                
+              }else{
+                table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "logAbundance" )
+              }
+            }else{
+              if(input$logscaleTab == FALSE){ 
+                
+                table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "Abundance" & Com_Sp %in% input$species)
+              }else{
+                
+                table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "logAbundance" & Com_Sp %in% input$species)
+              }
+              
+            }
+          }
+        }
+        
+        if(input$variableTab == "Proportion.Damaged"){
+          if(input$manyMoll_Tab == "All sites"){
+            if(input$SPP_MOLL_TAB =="All species"){
+              table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "Proportion.Damaged" )
+              
+            }else{
+              table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "Proportion.Damaged" & Com_Sp %in% input$species)
+            }
+            
+          }else{
+            
+            if(input$SPP =="All species"){
+              table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "Proportion.Damaged" )
+              
+            }else{
+              table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "Proportion.Damaged" & Com_Sp %in% input$species)
+            }
+          }
+        }
+        
+        motile_raw<-droplevels(motile_raw)
+      })
+      
+      
+      output$downloadDataRawMOll <- downloadHandler(
+        filename = function() { 
+          paste('NETN_Rocky_Intertidal_Raw_Mollusks_Data.csv') 
+        },
+        content = function(file) {
+          write.csv(datasetInputRawMoll(), file, row.names = F)
+        }
+      )
+      
       
       #####################################################  tidepools plots  panel  #####################################################        
   ###################### Create set of reactive selection boxes in UI  ####################
@@ -556,19 +757,19 @@ shinyServer(function(input,output){
       if(input$logscaleSS ==FALSE){
         
         y2<-ggplot(plot.df, aes(x=Common, y= as.numeric(mean), fill= Year))+ geom_bar(stat ="identity", position = dodge,colour="black") +
-          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = "Mean number  + SE", x= "")
+          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = "Average number  + SE", x= "")
       }else {
         y2<-ggplot(plot.df, aes(x=Common, y= as.numeric(mean), fill= Year))+ geom_bar(stat ="identity", position = dodge,colour="black") +
-          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = "log Mean number + SE", x= "")
+          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = "log Average number + SE", x= "")
       }
     }else{
       if(input$logscaleSS ==FALSE){
         
         y2<-ggplot(plot.df, aes(x=Loc_Name, y= as.numeric(mean), fill= Year))+ geom_bar(stat ="identity", position = dodge,colour="black") +
-          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = "Mean number  + SE", x= "")
+          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = "Average number  + SE", x= "")
       }else {
         y2<-ggplot(plot.df, aes(x=Loc_Name, y= as.numeric(mean), fill= Year))+ geom_bar(stat ="identity", position = dodge,colour="black") +
-          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = "log Mean number + SE", x= "")
+          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = "log Average number + SE", x= "")
       }
       
     }
