@@ -12,6 +12,11 @@ library(reshape)
 motile<- read.csv("~/R/NETN/Rocky-Intertidal/qryR_FlatFile_MotileInvert_Counts.csv")
 motile_size <- read.csv("~/R/NETN/Rocky-Intertidal/NETN_MotileInvert_Measurements.csv")
 
+# look up table for labelling etc
+motile_spp <- read.csv("~/R/NETN/Rocky-Intertidal/tlu_motile_spp.csv")
+tlu_sites<-read.csv("~/R/NETN/Rocky-Intertidal/tlu_sites.csv")
+
+
 head(motile)
 #### set up some design related duymmy var()
 asco<-c("A1","A2","A3","A4","A5")
@@ -32,9 +37,9 @@ motile$Zone[motile$Plot_Name %in% red] ="Red Algae"
 ############################################################################################
 motile$Start_Date<-as.Date(motile$Start_Date, format= "%m/%d/%Y") #convert to StartDate
 motile$Year<-as.factor(format(motile$Start_Date,"%Y")) #convert to year
-motile$total<-motile$Damage+motile$No.Damage
+motile$total<-motile$Damage+motile$No.Damage # calculate the total number of snails per plot
 
-### adjust count for subsampling (20 cm 2 of 50X75 cm plot)- 9.375 mult factor if sub sampled (concern about whether we can do this but OK for now )
+### adjust count for subsampling (20 cm sqaure frame or 400cm2 of 50X75 cm plot)- 9.375 mult factor if sub sampled (concern about whether we can do this but OK for now )
 motile$final_total<- ifelse(motile$Subsampled == "Yes", (motile$total*9.375), motile$total)
 ## scale to express in m2 (X )mult by 2.667)
 motile$Abundance<-motile$final_total*2.6666666666666667
@@ -43,12 +48,12 @@ motile$logAbundance[is.infinite(motile$logAbundance)]=0
 head(motile)
 
 #calc prop of total damaged
-motile$Proportion.Damaged<-round(motile$No.Damage/motile$Abundance,2) ### proportion damaged will be based on raw data when subsampled 9should be the same anyway)
+motile$Proportion.Damaged<-round(motile$No.Damage/motile$Abundance,2) ### proportion damaged will be based on raw data when subsampled, should be the same anyway)
 motile$Proportion.Damaged[is.na(motile$Proportion.Damaged)] = "0" # repalce NaN with 0s
 
 head(motile)
 ## create molten data frame (all values are represented for each site*time combination)
-motile.melt<-melt(motile, id.vars=c("Site_Name", "Loc_Name" ,"Start_Date", "Year", "Species" ,"Plot_Name", "Zone"), measure.vars=c("Abundance","logAbundance", "Proportion.Damaged"))
+motile.melt<-melt(motile, id.vars=c( "Loc_Name" ,"Start_Date", "Year", "Species" ,"Plot_Name", "QAQC" ,"Zone"), measure.vars=c("Abundance","logAbundance", "Proportion.Damaged"))
 head(motile.melt)
 
 motile.melt$value<-as.numeric(as.character(motile.melt$value))# force value vector to be numeric
@@ -58,8 +63,9 @@ head(motile.melt)
 ##### output raw table for R viz
 
 motile.raw.R<-join(motile.melt, motile_spp , by= "Species")
-motile.raw.R<-motile.raw.R[,c("Site_Name", "Loc_Name" ,"Start_Date", "Year", "Species" ,"Com_Sp", "Plot_Name", "Zone", "variable", "value")]
-
+motile.raw.R<-join(motile.raw.R, tlu_sites , by= "Loc_Name")
+motile.raw.R<-motile.raw.R[,c("Site_Name", "Loc_Name" ,"Start_Date", "Year", "Species" ,"Com_Sp", "Plot_Name","QAQC" , "Zone", "variable", "value")]
+head(motile.raw.R)
 ### export to use in R viz
 write.table(motile.raw.R, "./Data/motile_count_raw.csv", sep=",", row.names= FALSE)
 
@@ -67,18 +73,15 @@ write.table(motile.raw.R, "./Data/motile_count_raw.csv", sep=",", row.names= FAL
 summ<-function (x) c(mean =round(mean(x,na.rm = TRUE),2),se= round(sd(x,na.rm = TRUE)/sqrt(length(x)),2), N= length(x))
 
 ######################## motile inverts#####################
-# look up table for labelling etc
-motile_spp <- read.csv("~/R/NETN/Rocky-Intertidal/tlu_motile_spp.csv")
-mot_sites<-unique(motile[,c("Site_Name", "Loc_Name")])
-
 
 #### Aggregate data by per zone per site per year
 # raw data
-# calculate plot-level mean per zone per site per year and add in missing vals combinations
+# calculate plot-level mean per zone per site per year and add in missing vals combinations as 0s
 # Site_Name will be appended back to df after. Adding in all vals per cate combination caused issues within plotting
 # Need to add in all combos to have similar bar widths when plotting in ggplot.
+# drop QAQC plots
 
-sum.motile<-cast(motile.melt, Loc_Name + Year+ Species +Zone + variable~ . , value = "value", fun = summ, fill=NA, add.missing = TRUE)
+sum.motile<-cast(motile.melt, Loc_Name + Year+ Species +Zone + QAQC + variable~ . , value = "value", fun = summ, fill=0, add.missing = TRUE, subset= motile.melt$QAQC == "0")### exclude QAQC plots
 head(sum.motile)
 
 ### append park and species names
@@ -88,8 +91,6 @@ sum.motile<-join(sum.motile,motile_spp, by = "Species")
 
 ### export to use in R viz
 write.table(sum.motile, "./Data/motile_count.csv", sep=",", row.names= FALSE)
-
-
 
 #######################################
 ##### Plotting mean count data by species among sites in a park
@@ -109,13 +110,13 @@ dodge <- position_dodge(width=0.9)
 ### mean count
 
 y2<-ggplot(plot.df, aes(x=Zone, y= as.numeric(mean), fill= Year))+
-            geom_bar(stat ="identity", position = dodge,) + labs(y = expression(paste("Mean number m"^"-2", "+ SE")), x= "Intertidal Zone") +
+            geom_bar(stat ="identity", position = dodge) + labs(y = expression(paste("Mean number m"^"-2", "+ SE")), x= "Intertidal Zone") +
          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)
 
 ## mean prop damaged
 
 y2<-ggplot(plot.df, aes(x=Zone, y= as.numeric(mean), fill= Year))+
-  geom_bar(stat ="identity", position = dodge,) + labs(y = expression(paste("Mean proportion damaged m"^"-2", "+ SE")), x= "Intertidal Zone") +
+  geom_bar(stat ="identity", position = dodge) + labs(y = expression(paste("Mean proportion damaged m"^"-2", "+ SE")), x= "Intertidal Zone") +
   geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)
 
 # y2

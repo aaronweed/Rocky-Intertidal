@@ -8,7 +8,8 @@ library(DT)
 
 
 shinyUI(navbarPage(title=HTML("<div> <a href='https://science.nature.nps.gov/im/units/netn/'> <img src='ah_small_black.gif',
-          alt='WQ Visualizer'> </a> NETN Rocky Intertidal Monitoring Data Visualizer</div>"),position = "static-top", inverse=TRUE, collapsible = FALSE, fluid=TRUE, 
+          alt='WQ Visualizer'> </a> NETN Rocky Intertidal Monitoring Data Visualizer
+                               </div>"),position = "static-top", inverse=TRUE, collapsible = FALSE, fluid=TRUE, 
                    windowTitle = "NETN Rocky Intertidal Monitoring Data Visualizer", id="MainNavBar",
                    
                    ######################################### Vertical transect data Panel ####################################################################
@@ -88,9 +89,12 @@ shinyUI(navbarPage(title=HTML("<div> <a href='https://science.nature.nps.gov/im/
                                            conditionalPanel(condition = "input.manyB == 'One site'", uiOutput("SiteResultsB")),
                                            
                                            br(),
+                                           p("Download the displayed data averaged at the site scale based on your query above."),
                                            downloadButton('downloadsumData', 'Download summary data'),
                                            br(),
                                            br(),
+                                           
+                                           p("Download the raw transect-level data based on your query above."),
                                            downloadButton('downloadDataRaw', 'Download raw data'),
                                            br(),br(),
                                            
@@ -130,7 +134,7 @@ shinyUI(navbarPage(title=HTML("<div> <a href='https://science.nature.nps.gov/im/
                                            tags$div(title="Choose the park you want to work with",selectInput(inputId='parkMoll', label='Select Park', choices= ParkList_trans, selectize = TRUE)),
                                            
                                            # Selection to plot single or multple sites
-                                           tags$div(title="Choose between plotting data from one or multiple sites",radioButtons(inputId='manyMoll', label='Do you want to plot data from one or multiple sites?', choices= c("One site","All sites"), selected = "One site")),
+                                           tags$div(title="Choose between plotting data from one or multiple sites",radioButtons(inputId='manyMoll', label='Do you want to plot data from one or multiple sites?', choices= c("One site","All sites"), selected = "All sites")),
                                            
                                            tags$div(title="Compare among sites within same intertidal zone", conditionalPanel(condition = "input.manyMoll == 'All sites'", radioButtons(inputId='compareMoll', label='How do you want to compare data across intertidal zones?', choices= c("Compare within a site","Compare among sites"), selected = "Compare within a site"))),
                                            
@@ -210,7 +214,7 @@ shinyUI(navbarPage(title=HTML("<div> <a href='https://science.nature.nps.gov/im/
                                            tags$div(title="View abundance on log-scale ", conditionalPanel(condition = "input.variableTab == 'Abundance'", checkboxInput(inputId='logscaleTab', label='Convert abundance to log-scale', value=FALSE))),
                                            
                                            br(),
-                                           p("Download the data averaged at the site scale based on your query above."),
+                                           p("Download the displayed data averaged at the site scale based on your query above."),
                                            downloadButton('downloadsumDataMOll', 'Download summary data'),
                                            br(),
                                            br(),
@@ -259,7 +263,7 @@ shinyUI(navbarPage(title=HTML("<div> <a href='https://science.nature.nps.gov/im/
                                 
                                 ##Add in options
                                 tags$div(title="Plot abundance on log-scale ", checkboxInput(inputId='logscaleSS', label='Convert abundance to log-scale', value=TRUE)),
-                                tags$div(title="Compare species abundance among sites.", conditionalPanel(condition = "input.manySS == 'All sites'", checkboxInput(inputId='compSS', label='Compare by species among sites', value=FALSE))),
+                                tags$div(title="Compare species abundance among sites.", conditionalPanel(condition = "input.manySS == 'All sites'", checkboxInput(inputId='compSS', label='Compare by each species among sites', value=FALSE))),
                                 
                                 
                                 br(),
@@ -268,6 +272,8 @@ shinyUI(navbarPage(title=HTML("<div> <a href='https://science.nature.nps.gov/im/
                                 
                                 br(),
                                 img(src = "seastars.jpg", height = 280, width = 360),
+                                br(),
+                                p("Photo Credit: NPS"),
                                 br(),
                                 p("For further information about the objectives and methods of this sampling protocol, visit the ", 
                                   a("NETN Rocky Intertidal Community protocol page.", href= "https://science.nature.nps.gov/im/units/netn/monitor/programs/rockyIntertidal/rockyIntertidal.cfm")),
@@ -314,11 +320,11 @@ shinyUI(navbarPage(title=HTML("<div> <a href='https://science.nature.nps.gov/im/
                                          # 
                                          br(),
                                          # 
-                                         p("Download the data averaged at the site scale based on your query above."),
-                                         downloadButton('downloadsumDataTP', 'Download summary data'),
+                                         p("Download the displayed data averaged at the site scale based on your query above."),
+                                         downloadButton('downloadsumDataTidePool', 'Download summary data'),
                                          br(),
                                          br(),
-                                         p("Download the raw plot-level data based on your query above."),
+                                         p("Download the raw transect-level data based on your query above."),
                                          downloadButton('downloadDataRawTP', 'Download raw data'),
                                          br(),
                                          br(),

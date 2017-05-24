@@ -133,7 +133,7 @@ shinyServer(function(input,output){
   ###Setup dynamic plot caption
   
   output$captionVertTrans <- renderText({
-    "Average annual cover of the 10 most abundant species/cover types estimated by point-intercept sampling along three parallel transects."
+    "Average site-level annual cover of the 10 most abundant species/cover types in the park estimated by point-intercept sampling."
   })
   
   ######## VERTICAL TRANSECT TABULAR VIEW ################
@@ -233,6 +233,8 @@ shinyServer(function(input,output){
     
     ############## DATA MANIPULATION ##############################        
     ## SUBSET MOTILE DF BY PARK, SPECIES, VARIABLE
+    ## data only have non-QAQC plots
+    #  data file 'motile' from 'import and summ motile invert data.R'
     
     if(input$variable == "Abundance"){
       if(input$manyMoll == "All sites"){
@@ -354,14 +356,14 @@ shinyServer(function(input,output){
         if(input$logscale == TRUE){
           
           y2<-ggplot(plot.df, aes(x=Zone, y= as.numeric(mean), fill= Year))+
-            geom_bar(stat ="identity",colour="black", position = dodge) + labs(y = expression(paste("log Average number m"^"2", "+ SE")), x= "Intertidal Zone") +
+            geom_bar(stat ="identity",colour="black", position = dodge) + labs(y = expression(paste("log Average number m"^"-2", "+ SE")), x= "Intertidal Zone") +
             geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+ scale_fill_brewer(palette="Blues")
           
         }else{
           
           y2<-ggplot(plot.df, aes(x=Zone, y= as.numeric(mean), fill= Year))+
             geom_bar(stat ="identity",colour="black", position = dodge) + 
-            labs(y = expression(paste("Average number m"^"2", "+ SE")), x= "Intertidal Zone") +
+            labs(y = expression(paste("Average number m"^"-2", "+ SE")), x= "Intertidal Zone") +
             geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+ scale_fill_brewer(palette="Blues")
           
         }
@@ -371,7 +373,7 @@ shinyServer(function(input,output){
         
         y2<-ggplot(plot.df, aes(x=Zone, y= as.numeric(mean), fill= Year))+
           geom_bar(stat ="identity", colour="black",position = dodge) + 
-          labs(y = expression(paste("Average proportion damaged m"^"2", "+ SE")), x= "Intertidal Zone") +
+          labs(y = expression(paste("Average proportion damaged m"^"-2", "+ SE")), x= "Intertidal Zone") +
           geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+ scale_fill_brewer(palette="Blues")
       }
       
@@ -439,7 +441,7 @@ shinyServer(function(input,output){
           dodge <- position_dodge(width=0.9)
           
           y2<-ggplot(plot.df, aes(x=Loc_Name, y= as.numeric(mean), fill= Year))+
-            geom_bar(stat ="identity",colour="black", position = dodge) + labs(y = expression(paste("log Average number m"^"2", "+ SE")), x= "Site Name") +
+            geom_bar(stat ="identity",colour="black", position = dodge) + labs(y = expression(paste("log Average number m"^"-2", "+ SE")), x= "Site Name") +
             geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+ scale_fill_brewer(palette="Blues")
           
         } else{
@@ -447,7 +449,7 @@ shinyServer(function(input,output){
           
           y2<-ggplot(plot.df, aes(x=Loc_Name, y= as.numeric(mean), fill= Year))+
             geom_bar(stat ="identity",colour="black", position = dodge) + 
-            labs(y = expression(paste("Average number m"^"2", "+ SE")), x= "Site Name") +
+            labs(y = expression(paste("Average number m"^"-2", "+ SE")), x= "Site Name") +
             geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+ scale_fill_brewer(palette="Blues")
           
         }
@@ -458,7 +460,7 @@ shinyServer(function(input,output){
         
         y2<-ggplot(plot.df, aes(x=Loc_Name, y= as.numeric(mean), fill= Year))+
           geom_bar(stat ="identity", colour="black",position = dodge) + 
-          labs(y = expression(paste("Average proportion damaged m"^"2", "+ SE")), x= "Site Name") +
+          labs(y = expression(paste("Average proportion damaged m"^"-2", "+ SE")), x= "Site Name") +
           geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+ scale_fill_brewer(palette="Blues")
       }
       
@@ -533,6 +535,8 @@ shinyServer(function(input,output){
   #### Create reactive summary data for presentation and downloading
   datasetInputMoll <- reactive({
     ## SUBSET MOTILE DF BY PARK, SPECIES, VARIABLE
+    ## data only have non-QAQC plots
+    #  data file from 'import and summ motile invert data.R'
     
     if(input$variableTab == "Abundance"){
       if(input$manyMoll_Tab == "All sites"){
@@ -619,7 +623,13 @@ shinyServer(function(input,output){
     , 
     rownames = FALSE, 
     colnames = c("Site Name","Year","Species", "Intertidal Zone",paste0("Average ",input$variableTab,sep= " ") ,"St. Error"),
-    caption = 'Average annual site abundance of motile invertebrates in each intertidal zone.',
+    caption = 
+      if(input$variableTab == "Abundance"){
+        "Average annual abundance (per m2) of motile invertbrates in each intertidal zone."
+      }else{
+        'Average annual proportion of motile invertebrates depredated on in each intertidal zone.'
+      }
+    ,
     filter = 'bottom', class = 'cell-border stripe'
   ))
   
@@ -636,24 +646,26 @@ shinyServer(function(input,output){
   
   ####   #### Dowload raw data   ####   #### 
   datasetInputRawMoll <- reactive({
+    # raw data file from 'import and summ motile invert data.R'; has QAQC plots so below codes removes those
+    
     
     if(input$variableTab == "Abundance"){
       if(input$manyMoll_Tab == "All sites"){
         if(input$SPP_MOLL_TAB =="All species"){
           if(input$logscaleTab == FALSE){ 
             
-            table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "Abundance" )
+            table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "Abundance" & QAQC == 0 )
             
           }else{
-            table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "logAbundance" )
+            table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "logAbundance" & QAQC == 0 )
           }
         }else{
           if(input$logscaleTab == FALSE){ 
             
-            table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "Abundance" & Com_Sp %in% input$species)
+            table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "Abundance" & Com_Sp %in% input$species & QAQC == 0 )
           }else{
             
-            table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "logAbundance" & Com_Sp %in% input$species)
+            table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "logAbundance" & Com_Sp %in% input$species & QAQC == 0 )
           }
           
         }
@@ -663,18 +675,18 @@ shinyServer(function(input,output){
         if(input$SPP_MOLL_TAB =="All species"){
           if(input$logscaleTab == FALSE){ 
             
-            table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "Abundance" )
+            table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "Abundance" & QAQC == 0 )
             
           }else{
-            table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "logAbundance" )
+            table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "logAbundance" & QAQC == 0 )
           }
         }else{
           if(input$logscaleTab == FALSE){ 
             
-            table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "Abundance" & Com_Sp %in% input$species)
+            table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "Abundance" & Com_Sp %in% input$species & QAQC == 0 )
           }else{
             
-            table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "logAbundance" & Com_Sp %in% input$species)
+            table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "logAbundance" & Com_Sp %in% input$species & QAQC == 0 )
           }
           
         }
@@ -684,19 +696,19 @@ shinyServer(function(input,output){
     if(input$variableTab == "Proportion.Damaged"){
       if(input$manyMoll_Tab == "All sites"){
         if(input$SPP_MOLL_TAB =="All species"){
-          table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "Proportion.Damaged" )
+          table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "Proportion.Damaged"& QAQC == 0  )
           
         }else{
-          table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "Proportion.Damaged" & Com_Sp %in% input$species)
+          table.df<-subset(motile_raw, Site_Name %in% input$parkMollTable  & variable %in% "Proportion.Damaged" & Com_Sp %in% input$species & QAQC == 0 )
         }
         
       }else{
         
         if(input$SPP =="All species"){
-          table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "Proportion.Damaged" )
+          table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "Proportion.Damaged" & QAQC == 0 )
           
         }else{
-          table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "Proportion.Damaged" & Com_Sp %in% input$species)
+          table.df<-subset(motile_raw, Loc_Name %in% input$siteMollTab  & variable %in% "Proportion.Damaged" & Com_Sp %in% input$species & QAQC == 0 )
         }
       }
     }
@@ -733,9 +745,9 @@ shinyServer(function(input,output){
     ############## DATA MANIPULATION ##############################        
     if(input$logscaleSS == FALSE){
       if(input$manySS == "All sites"){
-        plot.df<-subset(echino, Site_Name %in% input$parkSS & variable == "value") # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
+        plot.df<-subset(echino, Site_Name %in% input$parkSS & variable == "Abundance") # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
       }else{
-        plot.df<-subset(echino, Loc_Name %in% input$siteSS & variable == "value") # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
+        plot.df<-subset(echino, Loc_Name %in% input$siteSS & variable == "Abundance") # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
       }
       
     }else{
@@ -748,7 +760,7 @@ shinyServer(function(input,output){
     
     plot.df<-droplevels(plot.df)
     plot.df$Year<-as.factor(plot.df$Year)
-    plot.df$Year<- ordered(plot.df$Year, levels = c("2016", "2015", "2014", "2013"))
+    #plot.df$Year<- ordered(plot.df$Year, levels = c("2016", "2015", "2014", "2013"))
     
     
     ############## PLOT mean over time  ##############################
@@ -758,11 +770,11 @@ shinyServer(function(input,output){
       if(input$logscaleSS ==FALSE){
         
         y2<-ggplot(plot.df, aes(x=Common, y= as.numeric(mean), fill= Year))+ geom_bar(stat ="identity", position = dodge,colour="black") +
-          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = "Average number  + SE", x= "")+
+          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = expression(paste("Average number m"^"-2", "+ SE")), x= "")+
           theme(axis.text.x = element_text(angle = 0,  vjust=0,size = 14 , face="bold"))
       }else {
         y2<-ggplot(plot.df, aes(x=Common, y= as.numeric(mean), fill= Year))+ geom_bar(stat ="identity", position = dodge,colour="black") +
-          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = "log Average number + SE", x= "") +
+          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = expression(paste(" log Average number m"^"-2", "+ SE")), x= "") +
           theme(axis.text.x = element_text(angle = 0,  vjust=0,size = 14 , face="bold"))
         
       }
@@ -774,22 +786,22 @@ shinyServer(function(input,output){
       if(input$logscaleSS ==FALSE){
         
         y2<-ggplot(plot.df, aes(x=Common, y= as.numeric(mean), fill= Year))+ geom_bar(stat ="identity", position = dodge,colour="black") +facet_wrap(~Loc_Name) +
-          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = "Average number  + SE", x= "") +
+          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = expression(paste("Average number m"^"-2", "+ SE")), x= "") +
           theme(axis.text.x = element_text(angle = 90,  vjust=0,size = 14 , face="bold")) 
       }else {
         y2<-ggplot(plot.df, aes(x=Common, y= as.numeric(mean), fill= Year))+ geom_bar(stat ="identity", position = dodge,colour="black") + facet_wrap(~Loc_Name) +
-          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = "log Average number + SE", x= "") +
+          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = expression(paste("log Average number m"^"-2", "+ SE")), x= "") +
           theme(axis.text.x = element_text(angle = 90,  vjust=0,size = 14 , face="bold"))
       }
     }else{
       if(input$logscaleSS ==FALSE){
         
         y2<-ggplot(plot.df, aes(x=Loc_Name, y= as.numeric(mean), fill= Year))+ geom_bar(stat ="identity", position = dodge,colour="black") +facet_wrap(~Common + Spp_Name) +
-          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = "Average number  + SE", x= "Site Name") +
+          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = expression(paste("Average number m"^"-2", "+ SE")), x= "Site Name") +
           theme(axis.text.x = element_text(angle = 90,  vjust=0,size = 14 , face="bold"))
       }else {
         y2<-ggplot(plot.df, aes(x=Loc_Name, y= as.numeric(mean), fill= Year))+ geom_bar(stat ="identity", position = dodge,colour="black") + facet_wrap(~Common + Spp_Name)+
-          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = "log Average number + SE", x= "Site Name")+
+          geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")+ labs(y = expression(paste("log Average number m"^"-2", "+ SE")), x= "Site Name")+
           theme(axis.text.x = element_text(angle = 90,  vjust=0,size = 14 , face="bold"))
       }
       
@@ -837,9 +849,9 @@ shinyServer(function(input,output){
 
     if(input$logscaleSSTab == FALSE){
       if(input$manySSTab == "All sites"){
-        table.df<-subset(echino, Site_Name %in% input$park & variable == "value") # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
+        table.df<-subset(echino, Site_Name %in% input$park & variable == "Abundance") # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
       }else{
-        table.df<-subset(echino, Loc_Name %in% input$siteSSTab & variable == "value") # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
+        table.df<-subset(echino, Loc_Name %in% input$siteSSTab & variable == "Abundance") # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
       }
       
     }else{
@@ -863,12 +875,12 @@ shinyServer(function(input,output){
     datasetInputTidepool()}
     , 
     rownames = FALSE, 
-    colnames = c("Site Name","Year","Species","Average" ,"St. Error"),
-    caption = 'Average annual site abundance of tidepool invertebrates.',
+    colnames = c("Site Name","Year","Species","Average number per m2" ,"St. Error"),
+    caption = 'Average annual site abundance per 1m2 of tidepool invertebrates. Counts are made within in 3, 2 X 10m transects per site.',
     filter = 'bottom', class = 'cell-border stripe'
   )) 
   
-  output$downloadsumDataMoll <- downloadHandler(
+  output$downloadsumDataTidePool <- downloadHandler(
     filename = function() { 
       paste('NETN_Rocky_Intertidal_TidePool_Summ_Data.csv') 
     },
@@ -882,16 +894,16 @@ shinyServer(function(input,output){
     
     if(input$logscaleSSTab == FALSE){
       if(input$manySSTab == "All sites"){
-        table.df<-subset(echino_raw, Site_Name %in% input$park & variable == "value") # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
+        table.df<-subset(echino_raw, Site_Name %in% input$park & variable == "Abundance" & QAQC ==0) # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
       }else{
-        table.df<-subset(echino_raw, Loc_Name %in% input$siteSSTab & variable == "value") # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
+        table.df<-subset(echino_raw, Loc_Name %in% input$siteSSTab & variable == "Abundance"  & QAQC ==0) # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
       }
       
     }else{
       if(input$manySSTab == "All sites"){
-        table.df<-subset(echino_raw, Site_Name %in% input$park & variable == "logAbundance") # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
+        table.df<-subset(echino_raw, Site_Name %in% input$park & variable == "logAbundance"  & QAQC ==0) # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
       }else{
-        table.df<-subset(echino_raw, Loc_Name %in% input$siteSSTab & variable == "logAbundance") # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
+        table.df<-subset(echino_raw, Loc_Name %in% input$siteSSTab & variable == "logAbundance"  & QAQC ==0) # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
       }
     }
     
@@ -902,7 +914,7 @@ shinyServer(function(input,output){
   })
   
   
-  output$downloadDataRawTidePool <- downloadHandler(
+  output$downloadDataRawTP <- downloadHandler(
     filename = function() { 
       paste('NETN_Rocky_Intertidal_Raw_TidePool_Data.csv') 
     },

@@ -28,7 +28,7 @@ head(species)
 
 #### lookup tables for site names
 tlu_sites<-unique(PI_data[,c("Site_Name","Site_Code","Loc_Name","Loc_Code")])
-
+write.table(tlu_sites, "tlu_sites.csv", sep=",", row.names=F)
 ## Bolt elevation and placement along annualy placed transects (Access qry)
 
 bolt_data <- read.delim("~/R/NETN/Rocky-Intertidal/qryR_FlatFile_PointIntercept_BoltDist_partc.txt")

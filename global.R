@@ -2,22 +2,27 @@
 
 ### Import data tables and setup lookup tables for selection and plotting
 
-## transect data
+######## Vertical transect data ###########
 
-transect<-read.csv("./Data/site_transect_cover.csv")
-transect_yr<-read.csv("./Data/site_transect_cover_per_year.csv")
+transect<-read.csv("./Data/site_transect_cover.csv") ## summarized point intercept data by site from 'import and summ transect data.R'
 
-transect_raw<-read.csv("./Data/site_transect_cover_raw.csv")
+transect_yr<-read.csv("./Data/site_transect_cover_per_year.csv") ## summarized point intercept data by site AND YEAR from 'import and summ transect data.R'
+## data only includes non-QAQC plots
 
-ParkList_trans<-unique(levels(transect$Site_Name))
+transect_raw<-read.csv("./Data/site_transect_cover_raw.csv") ## raw point intercept data by transect from 'import and summ transect data.R' for downloading
+# data includes QAQC plots
 
-## Mollusks
+ParkList_trans<-unique(levels(transect$Site_Name)) ## Pak lookup table for UI
 
-motile<-read.csv("./Data/motile_count.csv")
+######## Mollusks #########
 
-motile_spp <- read.csv("./Data/motile_spp.csv")
+motile<-read.csv("./Data/motile_count.csv") # summarized count data by site and year from 'import and summ motile invert data.R'
+## data only includes non-QAQC plots
+ 
+motile_spp <- read.csv("./Data/motile_spp.csv") # lookup table for species names
 
-motile_raw<-read.csv("./Data/motile_count_raw.csv")
+motile_raw<-read.csv("./Data/motile_count_raw.csv") # raw plot-level data with labels from from 'import and summ motile invert data.R' for downloading
+
 
 ParkList<-unique(levels(motile$Site_Name))
 
@@ -28,14 +33,16 @@ SppList<-unique(levels(motile$Com_Sp))
 VarList<-unique(levels(motile$variable))
 
 
-### Tidepools
+###### Tidepools #########
 
-echino<-read.csv("./Data/echino_count.csv")
+echino<-read.csv("./Data/echino_count.csv") ## summarized count data by site and year from 'import and summ echino data.R' 
+## data only includes non-QAQC plots
 
-echino_raw<-read.csv("./Data/echino_count_raw.csv")
+echino_raw<-read.csv("./Data/echino_count_raw.csv")# raw plot-level data with labels from from 'import and summ echino data.R' for downloading
+## data  includes QAQC plots
 
 
-SeaStarList<-unique(levels(echino$variable))
+SeaStarList<-unique(levels(echino$variable)) # lookup table for species names
 
 # ACAD_var<- unique(levels(df$Local.Characteristic.Name[df$ParkCode == "ACAD"]))
 # MABI_var<- unique(levels(df$Local.Characteristic.Name[df$ParkCode == "MABI"]))

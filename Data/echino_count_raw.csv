@@ -1,413 +1,825 @@
-"Site_Name","Loc_Name","Start_Date","Year","Plot_Name","Com_Sp","value","logAbundance"
-"Acadia NP","Bass Harbor",2013-06-21,"2013","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Bass Harbor",2013-06-21,"2013","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Bass Harbor",2013-06-21,"2013","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Bass Harbor",2013-06-24,"2013","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Bass Harbor",2013-06-24,"2013","X2","Green sea urchin (Strongylocentrotus droebachiensis)",1,0
-"Acadia NP","Bass Harbor",2013-06-24,"2013","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Bass Harbor",2014-06-21,"2014","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Bass Harbor",2014-06-21,"2014","X2","Green sea urchin (Strongylocentrotus droebachiensis)",12,2.484906649788
-"Acadia NP","Bass Harbor",2014-06-21,"2014","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Bass Harbor",2015-06-12,"2015","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Bass Harbor",2015-06-12,"2015","X2","Green sea urchin (Strongylocentrotus droebachiensis)",5,1.6094379124341
-"Acadia NP","Bass Harbor",2015-06-12,"2015","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Bass Harbor",2016-06-28,"2016","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Bass Harbor",2016-06-28,"2016","X2","Green sea urchin (Strongylocentrotus droebachiensis)",2,0.693147180559945
-"Acadia NP","Bass Harbor",2016-06-28,"2016","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Little Hunter",2016-06-27,"2016","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Little Hunter",2016-06-27,"2016","X2","Green sea urchin (Strongylocentrotus droebachiensis)",1,0
-"Acadia NP","Little Hunter",2016-06-27,"2016","X3","Green sea urchin (Strongylocentrotus droebachiensis)",194,5.26785815906333
-"Acadia NP","Little Moose",2016-06-25,"2016","X1","Green sea urchin (Strongylocentrotus droebachiensis)",175,5.16478597392351
-"Acadia NP","Little Moose",2016-06-25,"2016","X2","Green sea urchin (Strongylocentrotus droebachiensis)",4,1.38629436111989
-"Acadia NP","Little Moose",2016-06-25,"2016","X3","Green sea urchin (Strongylocentrotus droebachiensis)",326,5.78689738136671
-"Acadia NP","Otter Point",2013-06-23,"2013","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Otter Point",2013-06-23,"2013","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Otter Point",2013-06-23,"2013","X3","Green sea urchin (Strongylocentrotus droebachiensis)",5,1.6094379124341
-"Acadia NP","Otter Point",2014-06-19,"2014","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Otter Point",2014-06-19,"2014","X2","Green sea urchin (Strongylocentrotus droebachiensis)",9,2.19722457733622
-"Acadia NP","Otter Point",2014-06-19,"2014","X3","Green sea urchin (Strongylocentrotus droebachiensis)",33,3.49650756146648
-"Acadia NP","Otter Point",2015-06-10,"2015","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Otter Point",2015-06-10,"2015","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Otter Point",2015-06-10,"2015","X3","Green sea urchin (Strongylocentrotus droebachiensis)",7,1.94591014905531
-"Acadia NP","Otter Point",2016-06-26,"2016","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Otter Point",2016-06-26,"2016","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Otter Point",2016-06-26,"2016","X3","Green sea urchin (Strongylocentrotus droebachiensis)",13,2.56494935746154
-"Acadia NP","Otter Point",2016-06-30,"2016","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Otter Point",2016-06-30,"2016","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Otter Point",2016-06-30,"2016","X3","Green sea urchin (Strongylocentrotus droebachiensis)",2,0.693147180559945
-"Acadia NP","Schoodic Point",2013-06-19,"2013","X1","Green sea urchin (Strongylocentrotus droebachiensis)",30,3.40119738166216
-"Acadia NP","Schoodic Point",2013-06-19,"2013","X2","Green sea urchin (Strongylocentrotus droebachiensis)",18,2.89037175789616
-"Acadia NP","Schoodic Point",2013-06-19,"2013","X3","Green sea urchin (Strongylocentrotus droebachiensis)",1,0
-"Acadia NP","Schoodic Point",2014-06-17,"2014","X1","Green sea urchin (Strongylocentrotus droebachiensis)",4,1.38629436111989
-"Acadia NP","Schoodic Point",2014-06-17,"2014","X2","Green sea urchin (Strongylocentrotus droebachiensis)",10,2.30258509299405
-"Acadia NP","Schoodic Point",2014-06-17,"2014","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Schoodic Point",2014-06-22,"2014","X1","Green sea urchin (Strongylocentrotus droebachiensis)",24,3.17805383034795
-"Acadia NP","Schoodic Point",2014-06-22,"2014","X2","Green sea urchin (Strongylocentrotus droebachiensis)",1,0
-"Acadia NP","Schoodic Point",2014-06-22,"2014","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Schoodic Point",2015-06-08,"2015","X1","Green sea urchin (Strongylocentrotus droebachiensis)",1,0
-"Acadia NP","Schoodic Point",2015-06-08,"2015","X2","Green sea urchin (Strongylocentrotus droebachiensis)",1,0
-"Acadia NP","Schoodic Point",2015-06-08,"2015","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Schoodic Point",2016-06-24,"2016","X1","Green sea urchin (Strongylocentrotus droebachiensis)",26,3.25809653802148
-"Acadia NP","Schoodic Point",2016-06-24,"2016","X2","Green sea urchin (Strongylocentrotus droebachiensis)",6,1.79175946922805
-"Acadia NP","Schoodic Point",2016-06-24,"2016","X3","Green sea urchin (Strongylocentrotus droebachiensis)",1,0
-"Acadia NP","Ship Harbor",2013-06-22,"2013","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Ship Harbor",2013-06-22,"2013","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Ship Harbor",2013-06-22,"2013","X3","Green sea urchin (Strongylocentrotus droebachiensis)",13,2.56494935746154
-"Acadia NP","Ship Harbor",2014-06-20,"2014","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Ship Harbor",2014-06-20,"2014","X2","Green sea urchin (Strongylocentrotus droebachiensis)",6,1.79175946922805
-"Acadia NP","Ship Harbor",2014-06-20,"2014","X3","Green sea urchin (Strongylocentrotus droebachiensis)",37,3.61091791264422
-"Acadia NP","Ship Harbor",2015-06-11,"2015","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Ship Harbor",2015-06-11,"2015","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Ship Harbor",2015-06-11,"2015","X3","Green sea urchin (Strongylocentrotus droebachiensis)",11,2.39789527279837
-"Acadia NP","Ship Harbor",2016-06-29,"2016","X1","Green sea urchin (Strongylocentrotus droebachiensis)",1,0
-"Acadia NP","Ship Harbor",2016-06-29,"2016","X2","Green sea urchin (Strongylocentrotus droebachiensis)",2,0.693147180559945
-"Acadia NP","Ship Harbor",2016-06-29,"2016","X3","Green sea urchin (Strongylocentrotus droebachiensis)",10,2.30258509299405
-"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X1","Green sea urchin (Strongylocentrotus droebachiensis)",4,1.38629436111989
-"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X3","Green sea urchin (Strongylocentrotus droebachiensis)",1,0
-"Boston Harbor NRA","Green Island",2013-06-27,"2013","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Green Island",2013-06-27,"2013","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Green Island",2013-06-27,"2013","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Green Island",2014-07-17,"2014","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Green Island",2014-07-17,"2014","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Green Island",2015-07-09,"2015","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Green Island",2015-07-09,"2015","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Green Island",2015-07-09,"2015","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Green Island",2015-07-10,"2015","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Green Island",2015-07-10,"2015","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Green Island",2015-07-10,"2015","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Green Island",2016-07-26,"2016","X1","Green sea urchin (Strongylocentrotus droebachiensis)",5,1.6094379124341
-"Boston Harbor NRA","Green Island",2016-07-26,"2016","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Green Island",2016-07-26,"2016","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X2","Green sea urchin (Strongylocentrotus droebachiensis)",2,0.693147180559945
-"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X2","Green sea urchin (Strongylocentrotus droebachiensis)",4,1.38629436111989
-"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X2","Green sea urchin (Strongylocentrotus droebachiensis)",3,1.09861228866811
-"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X3","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X1","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X2","Green sea urchin (Strongylocentrotus droebachiensis)",0,0
-"Acadia NP","Bass Harbor",2013-06-21,"2013","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Bass Harbor",2013-06-21,"2013","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Bass Harbor",2013-06-21,"2013","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Bass Harbor",2013-06-24,"2013","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Bass Harbor",2013-06-24,"2013","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Bass Harbor",2013-06-24,"2013","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Bass Harbor",2014-06-21,"2014","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Bass Harbor",2014-06-21,"2014","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Bass Harbor",2014-06-21,"2014","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Bass Harbor",2015-06-12,"2015","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Bass Harbor",2015-06-12,"2015","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Bass Harbor",2015-06-12,"2015","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Bass Harbor",2016-06-28,"2016","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Bass Harbor",2016-06-28,"2016","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Bass Harbor",2016-06-28,"2016","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Little Hunter",2016-06-27,"2016","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Little Hunter",2016-06-27,"2016","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Little Hunter",2016-06-27,"2016","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Little Moose",2016-06-25,"2016","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Little Moose",2016-06-25,"2016","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Little Moose",2016-06-25,"2016","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Otter Point",2013-06-23,"2013","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Otter Point",2013-06-23,"2013","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Otter Point",2013-06-23,"2013","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Otter Point",2014-06-19,"2014","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Otter Point",2014-06-19,"2014","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Otter Point",2014-06-19,"2014","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Otter Point",2015-06-10,"2015","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Otter Point",2015-06-10,"2015","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Otter Point",2015-06-10,"2015","X3","Asian shore crab (Hemigrapsus sanguineus)",1,0
-"Acadia NP","Otter Point",2016-06-26,"2016","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Otter Point",2016-06-26,"2016","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Otter Point",2016-06-26,"2016","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Otter Point",2016-06-30,"2016","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Otter Point",2016-06-30,"2016","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Otter Point",2016-06-30,"2016","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Schoodic Point",2013-06-19,"2013","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Schoodic Point",2013-06-19,"2013","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Schoodic Point",2013-06-19,"2013","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Schoodic Point",2014-06-17,"2014","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Schoodic Point",2014-06-17,"2014","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Schoodic Point",2014-06-17,"2014","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Schoodic Point",2014-06-22,"2014","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Schoodic Point",2014-06-22,"2014","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Schoodic Point",2014-06-22,"2014","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Schoodic Point",2015-06-08,"2015","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Schoodic Point",2015-06-08,"2015","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Schoodic Point",2015-06-08,"2015","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Schoodic Point",2016-06-24,"2016","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Schoodic Point",2016-06-24,"2016","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Schoodic Point",2016-06-24,"2016","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Ship Harbor",2013-06-22,"2013","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Ship Harbor",2013-06-22,"2013","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Ship Harbor",2013-06-22,"2013","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Ship Harbor",2014-06-20,"2014","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Ship Harbor",2014-06-20,"2014","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Ship Harbor",2014-06-20,"2014","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Ship Harbor",2015-06-11,"2015","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Ship Harbor",2015-06-11,"2015","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Ship Harbor",2015-06-11,"2015","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Ship Harbor",2016-06-29,"2016","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Ship Harbor",2016-06-29,"2016","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Ship Harbor",2016-06-29,"2016","X3","Asian shore crab (Hemigrapsus sanguineus)",1,0
-"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Green Island",2013-06-27,"2013","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Green Island",2013-06-27,"2013","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Green Island",2013-06-27,"2013","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Green Island",2014-07-17,"2014","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Green Island",2014-07-17,"2014","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Green Island",2015-07-09,"2015","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Green Island",2015-07-09,"2015","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Green Island",2015-07-09,"2015","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Green Island",2015-07-10,"2015","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Green Island",2015-07-10,"2015","X2","Asian shore crab (Hemigrapsus sanguineus)",1,0
-"Boston Harbor NRA","Green Island",2015-07-10,"2015","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Green Island",2016-07-26,"2016","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Green Island",2016-07-26,"2016","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Green Island",2016-07-26,"2016","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X3","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X1","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X2","Asian shore crab (Hemigrapsus sanguineus)",0,0
-"Acadia NP","Bass Harbor",2013-06-21,"2013","X1","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Bass Harbor",2013-06-21,"2013","X2","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Bass Harbor",2013-06-21,"2013","X3","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Bass Harbor",2013-06-24,"2013","X1","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Bass Harbor",2013-06-24,"2013","X2","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Bass Harbor",2013-06-24,"2013","X3","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Bass Harbor",2014-06-21,"2014","X1","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Bass Harbor",2014-06-21,"2014","X2","Common sea star (Asterias rubens)",1,0
-"Acadia NP","Bass Harbor",2014-06-21,"2014","X3","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Bass Harbor",2015-06-12,"2015","X1","Common sea star (Asterias rubens)",3,1.09861228866811
-"Acadia NP","Bass Harbor",2015-06-12,"2015","X2","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Bass Harbor",2015-06-12,"2015","X3","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Bass Harbor",2016-06-28,"2016","X1","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Bass Harbor",2016-06-28,"2016","X2","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Bass Harbor",2016-06-28,"2016","X3","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Little Hunter",2016-06-27,"2016","X1","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Little Hunter",2016-06-27,"2016","X2","Common sea star (Asterias rubens)",3,1.09861228866811
-"Acadia NP","Little Hunter",2016-06-27,"2016","X3","Common sea star (Asterias rubens)",7,1.94591014905531
-"Acadia NP","Little Moose",2016-06-25,"2016","X1","Common sea star (Asterias rubens)",14,2.63905732961526
-"Acadia NP","Little Moose",2016-06-25,"2016","X2","Common sea star (Asterias rubens)",3,1.09861228866811
-"Acadia NP","Little Moose",2016-06-25,"2016","X3","Common sea star (Asterias rubens)",7,1.94591014905531
-"Acadia NP","Otter Point",2013-06-23,"2013","X1","Common sea star (Asterias rubens)",2,0.693147180559945
-"Acadia NP","Otter Point",2013-06-23,"2013","X2","Common sea star (Asterias rubens)",2,0.693147180559945
-"Acadia NP","Otter Point",2013-06-23,"2013","X3","Common sea star (Asterias rubens)",1,0
-"Acadia NP","Otter Point",2014-06-19,"2014","X1","Common sea star (Asterias rubens)",2,0.693147180559945
-"Acadia NP","Otter Point",2014-06-19,"2014","X2","Common sea star (Asterias rubens)",13,2.56494935746154
-"Acadia NP","Otter Point",2014-06-19,"2014","X3","Common sea star (Asterias rubens)",15,2.70805020110221
-"Acadia NP","Otter Point",2015-06-10,"2015","X1","Common sea star (Asterias rubens)",1,0
-"Acadia NP","Otter Point",2015-06-10,"2015","X2","Common sea star (Asterias rubens)",4,1.38629436111989
-"Acadia NP","Otter Point",2015-06-10,"2015","X3","Common sea star (Asterias rubens)",4,1.38629436111989
-"Acadia NP","Otter Point",2016-06-26,"2016","X1","Common sea star (Asterias rubens)",5,1.6094379124341
-"Acadia NP","Otter Point",2016-06-26,"2016","X2","Common sea star (Asterias rubens)",6,1.79175946922805
-"Acadia NP","Otter Point",2016-06-26,"2016","X3","Common sea star (Asterias rubens)",17,2.83321334405622
-"Acadia NP","Otter Point",2016-06-30,"2016","X1","Common sea star (Asterias rubens)",2,0.693147180559945
-"Acadia NP","Otter Point",2016-06-30,"2016","X2","Common sea star (Asterias rubens)",4,1.38629436111989
-"Acadia NP","Otter Point",2016-06-30,"2016","X3","Common sea star (Asterias rubens)",19,2.94443897916644
-"Acadia NP","Schoodic Point",2013-06-19,"2013","X1","Common sea star (Asterias rubens)",2,0.693147180559945
-"Acadia NP","Schoodic Point",2013-06-19,"2013","X2","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Schoodic Point",2013-06-19,"2013","X3","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Schoodic Point",2014-06-17,"2014","X1","Common sea star (Asterias rubens)",7,1.94591014905531
-"Acadia NP","Schoodic Point",2014-06-17,"2014","X2","Common sea star (Asterias rubens)",1,0
-"Acadia NP","Schoodic Point",2014-06-17,"2014","X3","Common sea star (Asterias rubens)",1,0
-"Acadia NP","Schoodic Point",2014-06-22,"2014","X1","Common sea star (Asterias rubens)",2,0.693147180559945
-"Acadia NP","Schoodic Point",2014-06-22,"2014","X2","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Schoodic Point",2014-06-22,"2014","X3","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Schoodic Point",2015-06-08,"2015","X1","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Schoodic Point",2015-06-08,"2015","X2","Common sea star (Asterias rubens)",1,0
-"Acadia NP","Schoodic Point",2015-06-08,"2015","X3","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Schoodic Point",2016-06-24,"2016","X1","Common sea star (Asterias rubens)",1,0
-"Acadia NP","Schoodic Point",2016-06-24,"2016","X2","Common sea star (Asterias rubens)",1,0
-"Acadia NP","Schoodic Point",2016-06-24,"2016","X3","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Ship Harbor",2013-06-22,"2013","X1","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Ship Harbor",2013-06-22,"2013","X2","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Ship Harbor",2013-06-22,"2013","X3","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Ship Harbor",2014-06-20,"2014","X1","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Ship Harbor",2014-06-20,"2014","X2","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Ship Harbor",2014-06-20,"2014","X3","Common sea star (Asterias rubens)",5,1.6094379124341
-"Acadia NP","Ship Harbor",2015-06-11,"2015","X1","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Ship Harbor",2015-06-11,"2015","X2","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Ship Harbor",2015-06-11,"2015","X3","Common sea star (Asterias rubens)",8,2.07944154167984
-"Acadia NP","Ship Harbor",2016-06-29,"2016","X1","Common sea star (Asterias rubens)",10,2.30258509299405
-"Acadia NP","Ship Harbor",2016-06-29,"2016","X2","Common sea star (Asterias rubens)",2,0.693147180559945
-"Acadia NP","Ship Harbor",2016-06-29,"2016","X3","Common sea star (Asterias rubens)",14,2.63905732961526
-"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X1","Common sea star (Asterias rubens)",2,0.693147180559945
-"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X2","Common sea star (Asterias rubens)",1,0
-"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X3","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X1","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X2","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X3","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X1","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X2","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X3","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X1","Common sea star (Asterias rubens)",1,0
-"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X2","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X3","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Green Island",2013-06-27,"2013","X1","Common sea star (Asterias rubens)",48,3.87120101090789
-"Boston Harbor NRA","Green Island",2013-06-27,"2013","X2","Common sea star (Asterias rubens)",14,2.63905732961526
-"Boston Harbor NRA","Green Island",2013-06-27,"2013","X3","Common sea star (Asterias rubens)",1,0
-"Boston Harbor NRA","Green Island",2014-07-17,"2014","X1","Common sea star (Asterias rubens)",93,4.53259949315326
-"Boston Harbor NRA","Green Island",2014-07-17,"2014","X2","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Green Island",2015-07-09,"2015","X1","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Green Island",2015-07-09,"2015","X2","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Green Island",2015-07-09,"2015","X3","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Green Island",2015-07-10,"2015","X1","Common sea star (Asterias rubens)",NA,NA
-"Boston Harbor NRA","Green Island",2015-07-10,"2015","X2","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Green Island",2015-07-10,"2015","X3","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Green Island",2016-07-26,"2016","X1","Common sea star (Asterias rubens)",7,1.94591014905531
-"Boston Harbor NRA","Green Island",2016-07-26,"2016","X2","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Green Island",2016-07-26,"2016","X3","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X1","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X2","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X3","Common sea star (Asterias rubens)",1,0
-"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X1","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X2","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X3","Common sea star (Asterias rubens)",1,0
-"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X1","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X2","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X3","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X1","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X2","Common sea star (Asterias rubens)",0,0
-"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X3","Common sea star (Asterias rubens)",0,0
-"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X1","Common sea star (Asterias rubens)",0,0
-"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X2","Common sea star (Asterias rubens)",0,0
-"Acadia NP","Bass Harbor",2013-06-21,"2013","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Bass Harbor",2013-06-21,"2013","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Bass Harbor",2013-06-21,"2013","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Bass Harbor",2013-06-24,"2013","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Bass Harbor",2013-06-24,"2013","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Bass Harbor",2013-06-24,"2013","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Bass Harbor",2014-06-21,"2014","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Bass Harbor",2014-06-21,"2014","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Bass Harbor",2014-06-21,"2014","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Bass Harbor",2015-06-12,"2015","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Bass Harbor",2015-06-12,"2015","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Bass Harbor",2015-06-12,"2015","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Bass Harbor",2016-06-28,"2016","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Bass Harbor",2016-06-28,"2016","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Bass Harbor",2016-06-28,"2016","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Little Hunter",2016-06-27,"2016","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Little Hunter",2016-06-27,"2016","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Little Hunter",2016-06-27,"2016","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Little Moose",2016-06-25,"2016","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Little Moose",2016-06-25,"2016","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Little Moose",2016-06-25,"2016","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Otter Point",2013-06-23,"2013","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Otter Point",2013-06-23,"2013","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Otter Point",2013-06-23,"2013","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Otter Point",2014-06-19,"2014","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Otter Point",2014-06-19,"2014","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Otter Point",2014-06-19,"2014","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Otter Point",2015-06-10,"2015","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Otter Point",2015-06-10,"2015","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Otter Point",2015-06-10,"2015","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Otter Point",2016-06-26,"2016","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Otter Point",2016-06-26,"2016","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Otter Point",2016-06-26,"2016","X3","Forbes sea star (Asterias forbesii)",1,0
-"Acadia NP","Otter Point",2016-06-30,"2016","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Otter Point",2016-06-30,"2016","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Otter Point",2016-06-30,"2016","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Schoodic Point",2013-06-19,"2013","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Schoodic Point",2013-06-19,"2013","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Schoodic Point",2013-06-19,"2013","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Schoodic Point",2014-06-17,"2014","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Schoodic Point",2014-06-17,"2014","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Schoodic Point",2014-06-17,"2014","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Schoodic Point",2014-06-22,"2014","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Schoodic Point",2014-06-22,"2014","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Schoodic Point",2014-06-22,"2014","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Schoodic Point",2015-06-08,"2015","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Schoodic Point",2015-06-08,"2015","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Schoodic Point",2015-06-08,"2015","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Schoodic Point",2016-06-24,"2016","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Schoodic Point",2016-06-24,"2016","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Schoodic Point",2016-06-24,"2016","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Ship Harbor",2013-06-22,"2013","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Ship Harbor",2013-06-22,"2013","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Ship Harbor",2013-06-22,"2013","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Ship Harbor",2014-06-20,"2014","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Ship Harbor",2014-06-20,"2014","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Ship Harbor",2014-06-20,"2014","X3","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Ship Harbor",2015-06-11,"2015","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Ship Harbor",2015-06-11,"2015","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Ship Harbor",2015-06-11,"2015","X3","Forbes sea star (Asterias forbesii)",2,0.693147180559945
-"Acadia NP","Ship Harbor",2016-06-29,"2016","X1","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Ship Harbor",2016-06-29,"2016","X2","Forbes sea star (Asterias forbesii)",0,0
-"Acadia NP","Ship Harbor",2016-06-29,"2016","X3","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X1","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X2","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X3","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X1","Forbes sea star (Asterias forbesii)",1,0
-"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X2","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X3","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X1","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X2","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X3","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X1","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X2","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X3","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Green Island",2013-06-27,"2013","X1","Forbes sea star (Asterias forbesii)",1,0
-"Boston Harbor NRA","Green Island",2013-06-27,"2013","X2","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Green Island",2013-06-27,"2013","X3","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Green Island",2014-07-17,"2014","X1","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Green Island",2014-07-17,"2014","X2","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Green Island",2015-07-09,"2015","X1","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Green Island",2015-07-09,"2015","X2","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Green Island",2015-07-09,"2015","X3","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Green Island",2015-07-10,"2015","X1","Forbes sea star (Asterias forbesii)",NA,NA
-"Boston Harbor NRA","Green Island",2015-07-10,"2015","X2","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Green Island",2015-07-10,"2015","X3","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Green Island",2016-07-26,"2016","X1","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Green Island",2016-07-26,"2016","X2","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Green Island",2016-07-26,"2016","X3","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X1","Forbes sea star (Asterias forbesii)",6,1.79175946922805
-"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X2","Forbes sea star (Asterias forbesii)",1,0
-"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X3","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X1","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X2","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X3","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X1","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X2","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X3","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X1","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X2","Forbes sea star (Asterias forbesii)",0,0
-"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X3","Forbes sea star (Asterias forbesii)",0,0
-"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X1","Forbes sea star (Asterias forbesii)",0,0
-"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X2","Forbes sea star (Asterias forbesii)",0,0
+"Site_Name","Loc_Name","Start_Date","Year","Plot_Name","QAQC","Com_Sp","variable","value"
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X1",1,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X2",1,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.05
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X3",1,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.6
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.25
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.1
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.05
+"Acadia NP","Little Hunter",2016-06-27,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",9.7
+"Acadia NP","Little Moose",2016-06-25,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",8.75
+"Acadia NP","Little Moose",2016-06-25,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.2
+"Acadia NP","Little Moose",2016-06-25,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",16.3
+"Acadia NP","Otter Point",2013-06-23,"2013","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Otter Point",2013-06-23,"2013","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Otter Point",2013-06-23,"2013","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.25
+"Acadia NP","Otter Point",2014-06-19,"2014","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Otter Point",2014-06-19,"2014","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.45
+"Acadia NP","Otter Point",2014-06-19,"2014","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",1.65
+"Acadia NP","Otter Point",2015-06-10,"2015","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Otter Point",2015-06-10,"2015","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Otter Point",2015-06-10,"2015","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.35
+"Acadia NP","Otter Point",2016-06-26,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Otter Point",2016-06-26,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Otter Point",2016-06-26,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.65
+"Acadia NP","Otter Point",2016-06-30,"2016","X1",1,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Otter Point",2016-06-30,"2016","X2",1,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Otter Point",2016-06-30,"2016","X3",1,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.1
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",1.5
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.9
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.05
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.2
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.5
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X1",1,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",1.2
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X2",1,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.05
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X3",1,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.05
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.05
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",1.3
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.3
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.05
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.65
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.3
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",1.85
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.55
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.05
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.1
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.5
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.2
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.05
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Green Island",2014-07-17,"2014","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Green Island",2014-07-17,"2014","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X1",1,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X2",1,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X3",1,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.25
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.1
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.2
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0.15
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X1",1,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X2",1,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X3",1,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Little Moose",2016-06-25,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Little Moose",2016-06-25,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Little Moose",2016-06-25,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Otter Point",2013-06-23,"2013","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Otter Point",2013-06-23,"2013","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Otter Point",2013-06-23,"2013","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Otter Point",2014-06-19,"2014","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Otter Point",2014-06-19,"2014","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Otter Point",2014-06-19,"2014","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Otter Point",2015-06-10,"2015","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Otter Point",2015-06-10,"2015","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Otter Point",2015-06-10,"2015","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0.05
+"Acadia NP","Otter Point",2016-06-26,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Otter Point",2016-06-26,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Otter Point",2016-06-26,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Otter Point",2016-06-30,"2016","X1",1,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Otter Point",2016-06-30,"2016","X2",1,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Otter Point",2016-06-30,"2016","X3",1,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X1",1,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X2",1,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X3",1,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0.05
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Green Island",2014-07-17,"2014","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Green Island",2014-07-17,"2014","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X1",1,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X2",1,"Blood sea star (Henricia sanguinolenta)","Abundance",0.05
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X3",1,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X1",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X2",0,"Blood sea star (Henricia sanguinolenta)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X1",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X3",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X1",1,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X2",1,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X3",1,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X1",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X2",0,"Common sea star (Asterias rubens)","Abundance",0.05
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X3",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X1",0,"Common sea star (Asterias rubens)","Abundance",0.15
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X3",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X1",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X3",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X1",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X2",0,"Common sea star (Asterias rubens)","Abundance",0.15
+"Acadia NP","Little Hunter",2016-06-27,"2016","X3",0,"Common sea star (Asterias rubens)","Abundance",0.35
+"Acadia NP","Little Moose",2016-06-25,"2016","X1",0,"Common sea star (Asterias rubens)","Abundance",0.7
+"Acadia NP","Little Moose",2016-06-25,"2016","X2",0,"Common sea star (Asterias rubens)","Abundance",0.15
+"Acadia NP","Little Moose",2016-06-25,"2016","X3",0,"Common sea star (Asterias rubens)","Abundance",0.35
+"Acadia NP","Otter Point",2013-06-23,"2013","X1",0,"Common sea star (Asterias rubens)","Abundance",0.1
+"Acadia NP","Otter Point",2013-06-23,"2013","X2",0,"Common sea star (Asterias rubens)","Abundance",0.1
+"Acadia NP","Otter Point",2013-06-23,"2013","X3",0,"Common sea star (Asterias rubens)","Abundance",0.05
+"Acadia NP","Otter Point",2014-06-19,"2014","X1",0,"Common sea star (Asterias rubens)","Abundance",0.1
+"Acadia NP","Otter Point",2014-06-19,"2014","X2",0,"Common sea star (Asterias rubens)","Abundance",0.65
+"Acadia NP","Otter Point",2014-06-19,"2014","X3",0,"Common sea star (Asterias rubens)","Abundance",0.75
+"Acadia NP","Otter Point",2015-06-10,"2015","X1",0,"Common sea star (Asterias rubens)","Abundance",0.05
+"Acadia NP","Otter Point",2015-06-10,"2015","X2",0,"Common sea star (Asterias rubens)","Abundance",0.2
+"Acadia NP","Otter Point",2015-06-10,"2015","X3",0,"Common sea star (Asterias rubens)","Abundance",0.2
+"Acadia NP","Otter Point",2016-06-26,"2016","X1",0,"Common sea star (Asterias rubens)","Abundance",0.25
+"Acadia NP","Otter Point",2016-06-26,"2016","X2",0,"Common sea star (Asterias rubens)","Abundance",0.3
+"Acadia NP","Otter Point",2016-06-26,"2016","X3",0,"Common sea star (Asterias rubens)","Abundance",0.85
+"Acadia NP","Otter Point",2016-06-30,"2016","X1",1,"Common sea star (Asterias rubens)","Abundance",0.1
+"Acadia NP","Otter Point",2016-06-30,"2016","X2",1,"Common sea star (Asterias rubens)","Abundance",0.2
+"Acadia NP","Otter Point",2016-06-30,"2016","X3",1,"Common sea star (Asterias rubens)","Abundance",0.95
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X1",0,"Common sea star (Asterias rubens)","Abundance",0.1
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X3",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X1",0,"Common sea star (Asterias rubens)","Abundance",0.35
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X2",0,"Common sea star (Asterias rubens)","Abundance",0.05
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X3",0,"Common sea star (Asterias rubens)","Abundance",0.05
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X1",1,"Common sea star (Asterias rubens)","Abundance",0.1
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X2",1,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X3",1,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X1",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X2",0,"Common sea star (Asterias rubens)","Abundance",0.05
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X3",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X1",0,"Common sea star (Asterias rubens)","Abundance",0.05
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X2",0,"Common sea star (Asterias rubens)","Abundance",0.05
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X3",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X1",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X3",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X1",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X3",0,"Common sea star (Asterias rubens)","Abundance",0.25
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X1",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X3",0,"Common sea star (Asterias rubens)","Abundance",0.4
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X1",0,"Common sea star (Asterias rubens)","Abundance",0.5
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X2",0,"Common sea star (Asterias rubens)","Abundance",0.1
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X3",0,"Common sea star (Asterias rubens)","Abundance",0.7
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X1",0,"Common sea star (Asterias rubens)","Abundance",0.1
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X2",0,"Common sea star (Asterias rubens)","Abundance",0.05
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X3",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X1",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X3",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X1",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X3",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X1",0,"Common sea star (Asterias rubens)","Abundance",0.05
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X3",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X1",0,"Common sea star (Asterias rubens)","Abundance",2.4
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X2",0,"Common sea star (Asterias rubens)","Abundance",0.7
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X3",0,"Common sea star (Asterias rubens)","Abundance",0.05
+"Boston Harbor NRA","Green Island",2014-07-17,"2014","X1",0,"Common sea star (Asterias rubens)","Abundance",4.65
+"Boston Harbor NRA","Green Island",2014-07-17,"2014","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X1",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X3",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X1",1,"Common sea star (Asterias rubens)","Abundance",NA
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X2",1,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X3",1,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X1",0,"Common sea star (Asterias rubens)","Abundance",0.35
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X3",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X1",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X3",0,"Common sea star (Asterias rubens)","Abundance",0.05
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X1",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X3",0,"Common sea star (Asterias rubens)","Abundance",0.05
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X1",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X3",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X1",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X3",0,"Common sea star (Asterias rubens)","Abundance",0
+"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X1",0,"Common sea star (Asterias rubens)","Abundance",0
+"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X2",0,"Common sea star (Asterias rubens)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X1",1,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X2",1,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X3",1,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Little Moose",2016-06-25,"2016","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Little Moose",2016-06-25,"2016","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Little Moose",2016-06-25,"2016","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Otter Point",2013-06-23,"2013","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Otter Point",2013-06-23,"2013","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Otter Point",2013-06-23,"2013","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Otter Point",2014-06-19,"2014","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Otter Point",2014-06-19,"2014","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Otter Point",2014-06-19,"2014","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Otter Point",2015-06-10,"2015","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Otter Point",2015-06-10,"2015","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Otter Point",2015-06-10,"2015","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Otter Point",2016-06-26,"2016","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Otter Point",2016-06-26,"2016","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Otter Point",2016-06-26,"2016","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0.05
+"Acadia NP","Otter Point",2016-06-30,"2016","X1",1,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Otter Point",2016-06-30,"2016","X2",1,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Otter Point",2016-06-30,"2016","X3",1,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X1",1,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X2",1,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X3",1,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0.1
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0.05
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0.05
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Green Island",2014-07-17,"2014","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Green Island",2014-07-17,"2014","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X1",1,"Northern sea star (Asterias forbesii)","Abundance",NA
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X2",1,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X3",1,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0.3
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0.05
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X3",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X1",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X2",0,"Northern sea star (Asterias forbesii)","Abundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X1",1,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X2",1,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.048790164169432
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X3",1,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.470003629245736
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.22314355131421
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.0953101798043249
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.048790164169432
+"Acadia NP","Little Hunter",2016-06-27,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",2.37024374146786
+"Acadia NP","Little Moose",2016-06-25,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",2.27726728500976
+"Acadia NP","Little Moose",2016-06-25,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.182321556793955
+"Acadia NP","Little Moose",2016-06-25,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",2.85070650150373
+"Acadia NP","Otter Point",2013-06-23,"2013","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Otter Point",2013-06-23,"2013","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Otter Point",2013-06-23,"2013","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.22314355131421
+"Acadia NP","Otter Point",2014-06-19,"2014","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Otter Point",2014-06-19,"2014","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.371563556432483
+"Acadia NP","Otter Point",2014-06-19,"2014","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.974559639998131
+"Acadia NP","Otter Point",2015-06-10,"2015","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Otter Point",2015-06-10,"2015","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Otter Point",2015-06-10,"2015","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.300104592450338
+"Acadia NP","Otter Point",2016-06-26,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Otter Point",2016-06-26,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Otter Point",2016-06-26,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.500775287912489
+"Acadia NP","Otter Point",2016-06-30,"2016","X1",1,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Otter Point",2016-06-30,"2016","X2",1,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Otter Point",2016-06-30,"2016","X3",1,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.0953101798043249
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.916290731874155
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.641853886172395
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.048790164169432
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.182321556793955
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.405465108108164
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X1",1,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.78845736036427
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X2",1,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.048790164169432
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X3",1,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.048790164169432
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.048790164169432
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.832909122935104
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.262364264467491
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.048790164169432
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.500775287912489
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.262364264467491
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",1.04731899428056
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.438254930931155
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.048790164169432
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.0953101798043249
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.405465108108164
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.182321556793955
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.048790164169432
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Green Island",2014-07-17,"2014","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Green Island",2014-07-17,"2014","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X1",1,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X2",1,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X3",1,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.22314355131421
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.0953101798043249
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.182321556793955
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0.139761942375159
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X3",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X1",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X2",0,"Green sea urchin (Strongylocentrotus droebachiensis)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X1",1,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X2",1,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X3",1,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Little Moose",2016-06-25,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Little Moose",2016-06-25,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Little Moose",2016-06-25,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Otter Point",2013-06-23,"2013","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Otter Point",2013-06-23,"2013","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Otter Point",2013-06-23,"2013","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Otter Point",2014-06-19,"2014","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Otter Point",2014-06-19,"2014","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Otter Point",2014-06-19,"2014","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Otter Point",2015-06-10,"2015","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Otter Point",2015-06-10,"2015","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Otter Point",2015-06-10,"2015","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0.048790164169432
+"Acadia NP","Otter Point",2016-06-26,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Otter Point",2016-06-26,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Otter Point",2016-06-26,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Otter Point",2016-06-30,"2016","X1",1,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Otter Point",2016-06-30,"2016","X2",1,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Otter Point",2016-06-30,"2016","X3",1,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X1",1,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X2",1,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X3",1,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0.048790164169432
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Green Island",2014-07-17,"2014","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Green Island",2014-07-17,"2014","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X1",1,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X2",1,"Blood sea star (Henricia sanguinolenta)","logAbundance",0.048790164169432
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X3",1,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X3",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X1",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X2",0,"Blood sea star (Henricia sanguinolenta)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X1",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X3",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X1",1,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X2",1,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X3",1,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X1",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X2",0,"Common sea star (Asterias rubens)","logAbundance",0.048790164169432
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X3",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X1",0,"Common sea star (Asterias rubens)","logAbundance",0.139761942375159
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X3",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X1",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X3",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X1",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X2",0,"Common sea star (Asterias rubens)","logAbundance",0.139761942375159
+"Acadia NP","Little Hunter",2016-06-27,"2016","X3",0,"Common sea star (Asterias rubens)","logAbundance",0.300104592450338
+"Acadia NP","Little Moose",2016-06-25,"2016","X1",0,"Common sea star (Asterias rubens)","logAbundance",0.53062825106217
+"Acadia NP","Little Moose",2016-06-25,"2016","X2",0,"Common sea star (Asterias rubens)","logAbundance",0.139761942375159
+"Acadia NP","Little Moose",2016-06-25,"2016","X3",0,"Common sea star (Asterias rubens)","logAbundance",0.300104592450338
+"Acadia NP","Otter Point",2013-06-23,"2013","X1",0,"Common sea star (Asterias rubens)","logAbundance",0.0953101798043249
+"Acadia NP","Otter Point",2013-06-23,"2013","X2",0,"Common sea star (Asterias rubens)","logAbundance",0.0953101798043249
+"Acadia NP","Otter Point",2013-06-23,"2013","X3",0,"Common sea star (Asterias rubens)","logAbundance",0.048790164169432
+"Acadia NP","Otter Point",2014-06-19,"2014","X1",0,"Common sea star (Asterias rubens)","logAbundance",0.0953101798043249
+"Acadia NP","Otter Point",2014-06-19,"2014","X2",0,"Common sea star (Asterias rubens)","logAbundance",0.500775287912489
+"Acadia NP","Otter Point",2014-06-19,"2014","X3",0,"Common sea star (Asterias rubens)","logAbundance",0.559615787935423
+"Acadia NP","Otter Point",2015-06-10,"2015","X1",0,"Common sea star (Asterias rubens)","logAbundance",0.048790164169432
+"Acadia NP","Otter Point",2015-06-10,"2015","X2",0,"Common sea star (Asterias rubens)","logAbundance",0.182321556793955
+"Acadia NP","Otter Point",2015-06-10,"2015","X3",0,"Common sea star (Asterias rubens)","logAbundance",0.182321556793955
+"Acadia NP","Otter Point",2016-06-26,"2016","X1",0,"Common sea star (Asterias rubens)","logAbundance",0.22314355131421
+"Acadia NP","Otter Point",2016-06-26,"2016","X2",0,"Common sea star (Asterias rubens)","logAbundance",0.262364264467491
+"Acadia NP","Otter Point",2016-06-26,"2016","X3",0,"Common sea star (Asterias rubens)","logAbundance",0.615185639090233
+"Acadia NP","Otter Point",2016-06-30,"2016","X1",1,"Common sea star (Asterias rubens)","logAbundance",0.0953101798043249
+"Acadia NP","Otter Point",2016-06-30,"2016","X2",1,"Common sea star (Asterias rubens)","logAbundance",0.182321556793955
+"Acadia NP","Otter Point",2016-06-30,"2016","X3",1,"Common sea star (Asterias rubens)","logAbundance",0.667829372575655
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X1",0,"Common sea star (Asterias rubens)","logAbundance",0.0953101798043249
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X3",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X1",0,"Common sea star (Asterias rubens)","logAbundance",0.300104592450338
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X2",0,"Common sea star (Asterias rubens)","logAbundance",0.048790164169432
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X3",0,"Common sea star (Asterias rubens)","logAbundance",0.048790164169432
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X1",1,"Common sea star (Asterias rubens)","logAbundance",0.0953101798043249
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X2",1,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X3",1,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X1",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X2",0,"Common sea star (Asterias rubens)","logAbundance",0.048790164169432
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X3",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X1",0,"Common sea star (Asterias rubens)","logAbundance",0.048790164169432
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X2",0,"Common sea star (Asterias rubens)","logAbundance",0.048790164169432
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X3",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X1",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X3",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X1",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X3",0,"Common sea star (Asterias rubens)","logAbundance",0.22314355131421
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X1",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X3",0,"Common sea star (Asterias rubens)","logAbundance",0.336472236621213
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X1",0,"Common sea star (Asterias rubens)","logAbundance",0.405465108108164
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X2",0,"Common sea star (Asterias rubens)","logAbundance",0.0953101798043249
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X3",0,"Common sea star (Asterias rubens)","logAbundance",0.53062825106217
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X1",0,"Common sea star (Asterias rubens)","logAbundance",0.0953101798043249
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X2",0,"Common sea star (Asterias rubens)","logAbundance",0.048790164169432
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X3",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X1",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X3",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X1",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X3",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X1",0,"Common sea star (Asterias rubens)","logAbundance",0.048790164169432
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X3",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X1",0,"Common sea star (Asterias rubens)","logAbundance",1.22377543162212
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X2",0,"Common sea star (Asterias rubens)","logAbundance",0.53062825106217
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X3",0,"Common sea star (Asterias rubens)","logAbundance",0.048790164169432
+"Boston Harbor NRA","Green Island",2014-07-17,"2014","X1",0,"Common sea star (Asterias rubens)","logAbundance",1.73165554515835
+"Boston Harbor NRA","Green Island",2014-07-17,"2014","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X1",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X3",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X1",1,"Common sea star (Asterias rubens)","logAbundance",NA
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X2",1,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X3",1,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X1",0,"Common sea star (Asterias rubens)","logAbundance",0.300104592450338
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X3",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X1",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X3",0,"Common sea star (Asterias rubens)","logAbundance",0.048790164169432
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X1",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X3",0,"Common sea star (Asterias rubens)","logAbundance",0.048790164169432
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X1",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X3",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X1",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X3",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X1",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X2",0,"Common sea star (Asterias rubens)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-21,"2013","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X1",1,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X2",1,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Bass Harbor",2013-06-24,"2013","X3",1,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Bass Harbor",2014-06-21,"2014","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Bass Harbor",2015-06-12,"2015","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Bass Harbor",2016-06-28,"2016","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Little Hunter",2016-06-27,"2016","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Little Moose",2016-06-25,"2016","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Little Moose",2016-06-25,"2016","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Little Moose",2016-06-25,"2016","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Otter Point",2013-06-23,"2013","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Otter Point",2013-06-23,"2013","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Otter Point",2013-06-23,"2013","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Otter Point",2014-06-19,"2014","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Otter Point",2014-06-19,"2014","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Otter Point",2014-06-19,"2014","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Otter Point",2015-06-10,"2015","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Otter Point",2015-06-10,"2015","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Otter Point",2015-06-10,"2015","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Otter Point",2016-06-26,"2016","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Otter Point",2016-06-26,"2016","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Otter Point",2016-06-26,"2016","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0.048790164169432
+"Acadia NP","Otter Point",2016-06-30,"2016","X1",1,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Otter Point",2016-06-30,"2016","X2",1,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Otter Point",2016-06-30,"2016","X3",1,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Schoodic Point",2013-06-19,"2013","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Schoodic Point",2014-06-17,"2014","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X1",1,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X2",1,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Schoodic Point",2014-06-22,"2014","X3",1,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Schoodic Point",2015-06-08,"2015","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Schoodic Point",2016-06-24,"2016","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Ship Harbor",2013-06-22,"2013","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Ship Harbor",2014-06-20,"2014","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Ship Harbor",2015-06-11,"2015","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0.0953101798043249
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Acadia NP","Ship Harbor",2016-06-29,"2016","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2013-06-26,"2013","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0.048790164169432
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2014-07-16,"2014","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2015-07-07,"2015","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Calf Island",2016-07-28,"2016","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0.048790164169432
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Green Island",2013-06-27,"2013","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Green Island",2014-07-17,"2014","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Green Island",2014-07-17,"2014","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-09,"2015","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X1",1,"Northern sea star (Asterias forbesii)","logAbundance",NA
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X2",1,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Green Island",2015-07-10,"2015","X3",1,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Green Island",2016-07-26,"2016","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0.262364264467491
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0.048790164169432
+"Boston Harbor NRA","Outer Brewster",2013-08-13,"2013","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2014-07-18,"2014","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2015-07-08,"2015","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Boston Harbor NRA","Outer Brewster",2016-07-27,"2016","X3",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X1",0,"Northern sea star (Asterias forbesii)","logAbundance",0
+"Maine Coast Islands NWR","Petit Manan Island",2014-06-27,"2014","X2",0,"Northern sea star (Asterias forbesii)","logAbundance",0
