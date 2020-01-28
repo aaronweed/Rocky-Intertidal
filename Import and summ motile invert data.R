@@ -11,8 +11,8 @@ motile<-read_excel("Data/Data from DB/2019/qryR_FlatFile_MotileInvert_Counts.xls
 motile_size <-read_excel("Data/Data from DB/2019/qryR_FlatFile_MotileInvert_Measurements_wNulls_partb.xlsx")
 
 # look up table for labelling etc
-motile_spp <- read.csv("~/R/NETN/Rocky-Intertidal/Data/Look ups/tlu_motile_spp.csv")
-tlu_sites<-read.csv("~/R/NETN/Rocky-Intertidal/Data/Look ups/tlu_sites.csv")
+motile_spp <- read.csv("./Data/Look ups/tlu_motile_spp.csv")
+tlu_sites<-read.csv("./Data/Look ups/tlu_sites.csv")
 
 
 head(motile)
