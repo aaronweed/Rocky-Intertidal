@@ -1,0 +1,339 @@
+"Loc_Code","QAQC","Spp_Code","mean","sd","N","se","Common_Name","Spp_Name","Category","TSN","Comments","Site_Name","Site_Code","Loc_Name"
+"BASHAR","0","ALGGRE",0.024,0.02,12,0.00577350269189626,"Other Algae - Green","Other Algae - Green","Species Group",-897,"green algae species other than those listed","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","ALGRED",0.002,0.004,12,0.00115470053837925,"Other Algae - Red","Other Algae - Red","Species Group",-898,"red algae species other than those listed","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","ARTCOR",0.003,0.006,12,0.00173205080756888,"Articulated Corallines","Articulated Corallines","Species Group",-886,"branched, calcified red algae","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","ASCNOD",0.002,0.004,12,0.00115470053837925,"Knotted Wrack","Ascophyllum nodosum","Species",11331,"brown algae species","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","BARSPP",0.131,0.091,12,0.026269437248128,"Barnacles","pimarily Semibalanus balanoides","Species Group",-882,"barnacle species group (dominated by Semibalanus balanoides)","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","BOLT",0.001,0.002,12,0.000577350269189626,"Bolt","Bolt","Substrate",-881,"Washer or bolt","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","CHOMAS",0.076,0.037,12,0.0106809799800081,"Irish Moss","Chondrus / Mastocarpus","Species Group",-887,"red algae genera","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","CRUCOR",0.001,0.002,12,0.000577350269189626,"Crustose coraline","Crustose coraline","Species Group",-885,"crust forming red algae group","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","ENTSPP",0.001,0.002,12,0.000577350269189626,"Grass kelp","Enteromorpha spp.","Species Group",6515,"grass kelp genus","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","FUCEPI",0.025,0.012,12,0.00346410161513775,"Fucus epibiont","Fucus epibiont","Species Group",-11334,"organism that lives on the surface of Fucus Spp.","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","FUCSPP",0.442,0.11,12,0.0317542648054294,"Rockweed","Fucus spp.","Genus",11334,"brown algae genus","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","NONCOR",0.09,0.026,12,0.00750555349946513,"Crustose non-coraline","Crustose non-coraline","Species Group",-884,"crust forming algae other than Coraline","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","OTHSUB",0.001,0.002,12,0.000577350269189626,"Other Substrate","Other Substrate","Substrate",-894,"substrate other than Rock, Sand, or Tar","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","PALPAL",0.001,0.002,12,0.000577350269189626,"Dulse","Palmaria palmata","Species",12842,"red algae species","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","PORSPP",0.003,0.004,12,0.00115470053837925,"Laver","Porphyra spp.","Genus",11540,"seaweed genus","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","ROCK",0.142,0.033,12,0.00952627944162883,"Rock","Rock","Substrate",-893,"rock","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","ULVSPP",0.029,0.037,12,0.0106809799800081,"Sea Lettuce","Ulva spp.","Genus",6559,"green algae genus; used to be named Enteromorpha","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","UNIDEN",0.003,0.008,12,0.0023094010767585,"Unidentified","Unidentified","",-891,"species, species group, or substrate that cannot be identified.","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","0","WATER",0.027,0.011,12,0.00317542648054294,"Water","Water","Substrate",-899,"","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","1","ALGGRE",0.006,0.011,12,0.00317542648054294,"Other Algae - Green","Other Algae - Green","Species Group",-897,"green algae species other than those listed","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","1","ALGRED",0.006,0,12,0,"Other Algae - Red","Other Algae - Red","Species Group",-898,"red algae species other than those listed","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","1","ARTCOR",0.002,0.003,12,0.000866025403784439,"Articulated Corallines","Articulated Corallines","Species Group",-886,"branched, calcified red algae","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","1","ASCNOD",0.002,0.003,12,0.000866025403784439,"Knotted Wrack","Ascophyllum nodosum","Species",11331,"brown algae species","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","1","BARSPP",0.164,0.125,12,0.0360843918243516,"Barnacles","pimarily Semibalanus balanoides","Species Group",-882,"barnacle species group (dominated by Semibalanus balanoides)","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","1","CHOMAS",0.099,0.034,12,0.00981495457622364,"Irish Moss","Chondrus / Mastocarpus","Species Group",-887,"red algae genera","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","1","FUCEPI",0.038,0.011,12,0.00317542648054294,"Fucus epibiont","Fucus epibiont","Species Group",-11334,"organism that lives on the surface of Fucus Spp.","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","1","FUCSPP",0.331,0.085,12,0.0245373864405591,"Rockweed","Fucus spp.","Genus",11334,"brown algae genus","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","1","NONCOR",0.107,0.027,12,0.00779422863405995,"Crustose non-coraline","Crustose non-coraline","Species Group",-884,"crust forming algae other than Coraline","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","1","PORSPP",0.017,0.013,12,0.00375277674973257,"Laver","Porphyra spp.","Genus",11540,"seaweed genus","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","1","ROCK",0.142,0.035,12,0.0101036297108185,"Rock","Rock","Substrate",-893,"rock","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","1","ULVSPP",0.052,0.023,12,0.0066395280956807,"Sea Lettuce","Ulva spp.","Genus",6559,"green algae genus; used to be named Enteromorpha","Acadia NP","ACAD","Bass Harbor"
+"BASHAR","1","WATER",0.032,0.013,12,0.00375277674973257,"Water","Water","Substrate",-899,"","Acadia NP","ACAD","Bass Harbor"
+"CALISL","0","ALGBRO",0.001,0.003,12,0.000866025403784439,"Other Algae - Brown","Other Algae - Brown","Species Group",-890,"brown algae species other than those listed","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","ALGGRE",0.003,0.006,12,0.00173205080756888,"Other Algae - Green","Other Algae - Green","Species Group",-897,"green algae species other than those listed","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","ALGRED",0.005,0.008,12,0.0023094010767585,"Other Algae - Red","Other Algae - Red","Species Group",-898,"red algae species other than those listed","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","ASCEPI",0.011,0.012,12,0.00346410161513775,"Ascophyllum epibont","Ascophyllum epibont","Species Group",-11331,"organism that lives on the surface of Ascophyllum Spp.","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","ASCNOD",0.084,0.051,12,0.0147224318643355,"Knotted Wrack","Ascophyllum nodosum","Species",11331,"brown algae species","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","BARSPP",0.121,0.069,12,0.0199185842870421,"Barnacles","pimarily Semibalanus balanoides","Species Group",-882,"barnacle species group (dominated by Semibalanus balanoides)","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","CHOMAS",0.114,0.035,12,0.0101036297108185,"Irish Moss","Chondrus / Mastocarpus","Species Group",-887,"red algae genera","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","CRUCOR",0.001,0.003,12,0.000866025403784439,"Crustose coraline","Crustose coraline","Species Group",-885,"crust forming red algae group","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","ENTSPP",0.001,0.003,12,0.000866025403784439,"Grass kelp","Enteromorpha spp.","Species Group",6515,"grass kelp genus","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","FUCEPI",0.015,0.017,12,0.00490747728811182,"Fucus epibiont","Fucus epibiont","Species Group",-11334,"organism that lives on the surface of Fucus Spp.","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","FUCSPP",0.28,0.064,12,0.018475208614068,"Rockweed","Fucus spp.","Genus",11334,"brown algae genus","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","MUSSPP",0.002,0.006,12,0.00173205080756888,"Mussel","primarily Mytilus edulis","Species Group",-883,"mussel species group (dominated by Mytilus edulis)","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","NONCOR",0.187,0.081,12,0.0233826859021798,"Crustose non-coraline","Crustose non-coraline","Species Group",-884,"crust forming algae other than Coraline","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","OTHSUB",0.001,0.003,12,0.000866025403784439,"Other Substrate","Other Substrate","Substrate",-894,"substrate other than Rock, Sand, or Tar","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","PORSPP",0.006,0.009,12,0.00259807621135332,"Laver","Porphyra spp.","Genus",11540,"seaweed genus","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","ROCK",0.113,0.058,12,0.0167431578064992,"Rock","Rock","Substrate",-893,"rock","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","ULVENT",0.004,0.008,12,0.0023094010767585,"Ulva/Enteromorpha","Ulva/Enteromorpha","Genus Group",-900,"used  in 2013 and earlier when these two species were lumped during ID","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","ULVSPP",0.021,0.02,12,0.00577350269189626,"Sea Lettuce","Ulva spp.","Genus",6559,"green algae genus; used to be named Enteromorpha","Boston Harbor NRA","BOHA","Calf Island"
+"CALISL","0","WATER",0.029,0.019,12,0.00548482755730144,"Water","Water","Substrate",-899,"","Boston Harbor NRA","BOHA","Calf Island"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"GREISL","0","ALGGRE",0.008,0.017,12,0.00490747728811182,"Other Algae - Green","Other Algae - Green","Species Group",-897,"green algae species other than those listed","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","0","ASCEPI",0.002,0.005,12,0.00144337567297406,"Ascophyllum epibont","Ascophyllum epibont","Species Group",-11331,"organism that lives on the surface of Ascophyllum Spp.","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","0","ASCNOD",0.018,0.029,12,0.00837157890324958,"Knotted Wrack","Ascophyllum nodosum","Species",11331,"brown algae species","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","0","BARSPP",0.123,0.053,12,0.0152997821335251,"Barnacles","pimarily Semibalanus balanoides","Species Group",-882,"barnacle species group (dominated by Semibalanus balanoides)","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","0","BOLT",0.002,0.004,12,0.00115470053837925,"Bolt","Bolt","Substrate",-881,"Washer or bolt","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","0","CHOMAS",0.067,0.044,12,0.0127017059221718,"Irish Moss","Chondrus / Mastocarpus","Species Group",-887,"red algae genera","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","0","ENTSPP",0.002,0.004,12,0.00115470053837925,"Grass kelp","Enteromorpha spp.","Species Group",6515,"grass kelp genus","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","0","FUCEPI",0.015,0.011,12,0.00317542648054294,"Fucus epibiont","Fucus epibiont","Species Group",-11334,"organism that lives on the surface of Fucus Spp.","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","0","FUCSPP",0.22,0.086,12,0.0248260615751539,"Rockweed","Fucus spp.","Genus",11334,"brown algae genus","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","0","MUSSPP",0.008,0.012,12,0.00346410161513775,"Mussel","primarily Mytilus edulis","Species Group",-883,"mussel species group (dominated by Mytilus edulis)","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","0","NONCOR",0.335,0.07,12,0.0202072594216369,"Crustose non-coraline","Crustose non-coraline","Species Group",-884,"crust forming algae other than Coraline","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","0","OTHSUB",0.002,0.004,12,0.00115470053837925,"Other Substrate","Other Substrate","Substrate",-894,"substrate other than Rock, Sand, or Tar","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","0","PORSPP",0.004,0.007,12,0.00202072594216369,"Laver","Porphyra spp.","Genus",11540,"seaweed genus","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","0","ROCK",0.14,0.041,12,0.0118356805183873,"Rock","Rock","Substrate",-893,"rock","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","0","ULVENT",0.002,0.005,12,0.00144337567297406,"Ulva/Enteromorpha","Ulva/Enteromorpha","Genus Group",-900,"used  in 2013 and earlier when these two species were lumped during ID","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","0","ULVSPP",0.02,0.021,12,0.00606217782649107,"Sea Lettuce","Ulva spp.","Genus",6559,"green algae genus; used to be named Enteromorpha","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","0","WATER",0.033,0.018,12,0.00519615242270663,"Water","Water","Substrate",-899,"","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","1","ALGBRO",0.003,0.006,12,0.00173205080756888,"Other Algae - Brown","Other Algae - Brown","Species Group",-890,"brown algae species other than those listed","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","1","ALGGRE",0.003,0.006,12,0.00173205080756888,"Other Algae - Green","Other Algae - Green","Species Group",-897,"green algae species other than those listed","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","1","ASCEPI",0.007,0.006,12,0.00173205080756888,"Ascophyllum epibont","Ascophyllum epibont","Species Group",-11331,"organism that lives on the surface of Ascophyllum Spp.","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","1","ASCNOD",0.013,0.023,12,0.0066395280956807,"Knotted Wrack","Ascophyllum nodosum","Species",11331,"brown algae species","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","1","BARSPP",0.093,0.034,12,0.00981495457622364,"Barnacles","pimarily Semibalanus balanoides","Species Group",-882,"barnacle species group (dominated by Semibalanus balanoides)","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","1","CHOMAS",0.086,0.031,12,0.0089489291724392,"Irish Moss","Chondrus / Mastocarpus","Species Group",-887,"red algae genera","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","1","CRUCOR",0.01,0.01,12,0.00288675134594813,"Crustose coraline","Crustose coraline","Species Group",-885,"crust forming red algae group","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","1","FUCEPI",0.026,0.016,12,0.00461880215351701,"Fucus epibiont","Fucus epibiont","Species Group",-11334,"organism that lives on the surface of Fucus Spp.","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","1","FUCSPP",0.179,0.062,12,0.0178978583448784,"Rockweed","Fucus spp.","Genus",11334,"brown algae genus","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","1","MUSSPP",0.006,0.006,12,0.00173205080756888,"Mussel","primarily Mytilus edulis","Species Group",-883,"mussel species group (dominated by Mytilus edulis)","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","1","NONCOR",0.329,0.041,12,0.0118356805183873,"Crustose non-coraline","Crustose non-coraline","Species Group",-884,"crust forming algae other than Coraline","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","1","ROCK",0.177,0.029,12,0.00837157890324958,"Rock","Rock","Substrate",-893,"rock","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","1","ULVSPP",0.021,0.022,12,0.00635085296108588,"Sea Lettuce","Ulva spp.","Genus",6559,"green algae genus; used to be named Enteromorpha","Boston Harbor NRA","BOHA","Green Island"
+"GREISL","1","WATER",0.047,0.017,12,0.00490747728811182,"Water","Water","Substrate",-899,"","Boston Harbor NRA","BOHA","Green Island"
+"LITHUN","0","ALGRED",0.06,0.028,12,0.00808290376865476,"Other Algae - Red","Other Algae - Red","Species Group",-898,"red algae species other than those listed","Acadia NP","ACAD","Little Hunter"
+"LITHUN","0","ASCEPI",0.019,0.022,12,0.00635085296108588,"Ascophyllum epibont","Ascophyllum epibont","Species Group",-11331,"organism that lives on the surface of Ascophyllum Spp.","Acadia NP","ACAD","Little Hunter"
+"LITHUN","0","ASCNOD",0.04,0.033,12,0.00952627944162883,"Knotted Wrack","Ascophyllum nodosum","Species",11331,"brown algae species","Acadia NP","ACAD","Little Hunter"
+"LITHUN","0","BARSPP",0.124,0.069,12,0.0199185842870421,"Barnacles","pimarily Semibalanus balanoides","Species Group",-882,"barnacle species group (dominated by Semibalanus balanoides)","Acadia NP","ACAD","Little Hunter"
+"LITHUN","0","BOLT",0.01,0.017,12,0.00490747728811182,"Bolt","Bolt","Substrate",-881,"Washer or bolt","Acadia NP","ACAD","Little Hunter"
+"LITHUN","0","CHOMAS",0.01,0.008,12,0.0023094010767585,"Irish Moss","Chondrus / Mastocarpus","Species Group",-887,"red algae genera","Acadia NP","ACAD","Little Hunter"
+"LITHUN","0","FUCSPP",0.262,0.078,12,0.0225166604983954,"Rockweed","Fucus spp.","Genus",11334,"brown algae genus","Acadia NP","ACAD","Little Hunter"
+"LITHUN","0","KELP",0.01,0.009,12,0.00259807621135332,"Kelp","Laminaria/Alaria","Species Group",-888,"brown algae - kelp","Acadia NP","ACAD","Little Hunter"
+"LITHUN","0","MUSSPP",0.02,0.01,12,0.00288675134594813,"Mussel","primarily Mytilus edulis","Species Group",-883,"mussel species group (dominated by Mytilus edulis)","Acadia NP","ACAD","Little Hunter"
+"LITHUN","0","NONCOR",0.12,0.03,12,0.00866025403784439,"Crustose non-coraline","Crustose non-coraline","Species Group",-884,"crust forming algae other than Coraline","Acadia NP","ACAD","Little Hunter"
+"LITHUN","0","PALPAL",0.025,0.018,12,0.00519615242270663,"Dulse","Palmaria palmata","Species",12842,"red algae species","Acadia NP","ACAD","Little Hunter"
+"LITHUN","0","ROCK",0.205,0.047,12,0.0135677313259562,"Rock","Rock","Substrate",-893,"rock","Acadia NP","ACAD","Little Hunter"
+"LITHUN","0","ULVSPP",0.005,0.008,12,0.0023094010767585,"Sea Lettuce","Ulva spp.","Genus",6559,"green algae genus; used to be named Enteromorpha","Acadia NP","ACAD","Little Hunter"
+"LITHUN","0","WATER",0.09,0.039,12,0.0112583302491977,"Water","Water","Substrate",-899,"","Acadia NP","ACAD","Little Hunter"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"LITMOO","0","ALGRED",0.003,0.005,12,0.00144337567297406,"Other Algae - Red","Other Algae - Red","Species Group",-898,"red algae species other than those listed","Acadia NP","ACAD","Little Moose"
+"LITMOO","0","BARSPP",0.324,0.048,12,0.013856406460551,"Barnacles","pimarily Semibalanus balanoides","Species Group",-882,"barnacle species group (dominated by Semibalanus balanoides)","Acadia NP","ACAD","Little Moose"
+"LITMOO","0","CHOMAS",0.03,0.018,12,0.00519615242270663,"Irish Moss","Chondrus / Mastocarpus","Species Group",-887,"red algae genera","Acadia NP","ACAD","Little Moose"
+"LITMOO","0","CRUCOR",0.003,0.005,12,0.00144337567297406,"Crustose coraline","Crustose coraline","Species Group",-885,"crust forming red algae group","Acadia NP","ACAD","Little Moose"
+"LITMOO","0","FUCEPI",0.033,0.017,12,0.00490747728811182,"Fucus epibiont","Fucus epibiont","Species Group",-11334,"organism that lives on the surface of Fucus Spp.","Acadia NP","ACAD","Little Moose"
+"LITMOO","0","FUCSPP",0.205,0.023,12,0.0066395280956807,"Rockweed","Fucus spp.","Genus",11334,"brown algae genus","Acadia NP","ACAD","Little Moose"
+"LITMOO","0","KELP",0.014,0.017,12,0.00490747728811182,"Kelp","Laminaria/Alaria","Species Group",-888,"brown algae - kelp","Acadia NP","ACAD","Little Moose"
+"LITMOO","0","MUSSPP",0.011,0.012,12,0.00346410161513775,"Mussel","primarily Mytilus edulis","Species Group",-883,"mussel species group (dominated by Mytilus edulis)","Acadia NP","ACAD","Little Moose"
+"LITMOO","0","NONCOR",0.153,0.07,12,0.0202072594216369,"Crustose non-coraline","Crustose non-coraline","Species Group",-884,"crust forming algae other than Coraline","Acadia NP","ACAD","Little Moose"
+"LITMOO","0","PALPAL",0.046,0.008,12,0.0023094010767585,"Dulse","Palmaria palmata","Species",12842,"red algae species","Acadia NP","ACAD","Little Moose"
+"LITMOO","0","ROCK",0.095,0.055,12,0.0158771324027147,"Rock","Rock","Substrate",-893,"rock","Acadia NP","ACAD","Little Moose"
+"LITMOO","0","ULVSPP",0.005,0.009,12,0.00259807621135332,"Sea Lettuce","Ulva spp.","Genus",6559,"green algae genus; used to be named Enteromorpha","Acadia NP","ACAD","Little Moose"
+"LITMOO","0","WATER",0.079,0.035,12,0.0101036297108185,"Water","Water","Substrate",-899,"","Acadia NP","ACAD","Little Moose"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"OTTPOI","0","ALGBRO",0.001,0.003,12,0.000866025403784439,"Other Algae - Brown","Other Algae - Brown","Species Group",-890,"brown algae species other than those listed","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","ALGGRE",0.008,0.013,12,0.00375277674973257,"Other Algae - Green","Other Algae - Green","Species Group",-897,"green algae species other than those listed","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","ALGRED",0.006,0.012,12,0.00346410161513775,"Other Algae - Red","Other Algae - Red","Species Group",-898,"red algae species other than those listed","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","ARTCOR",0.008,0.012,12,0.00346410161513775,"Articulated Corallines","Articulated Corallines","Species Group",-886,"branched, calcified red algae","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","ASCEPI",0.128,0.053,12,0.0152997821335251,"Ascophyllum epibont","Ascophyllum epibont","Species Group",-11331,"organism that lives on the surface of Ascophyllum Spp.","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","ASCNOD",0.181,0.048,12,0.013856406460551,"Knotted Wrack","Ascophyllum nodosum","Species",11331,"brown algae species","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","BARSPP",0.025,0.028,12,0.00808290376865476,"Barnacles","pimarily Semibalanus balanoides","Species Group",-882,"barnacle species group (dominated by Semibalanus balanoides)","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","BOLT",0.001,0.005,12,0.00144337567297406,"Bolt","Bolt","Substrate",-881,"Washer or bolt","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","CHOMAS",0.05,0.035,12,0.0101036297108185,"Irish Moss","Chondrus / Mastocarpus","Species Group",-887,"red algae genera","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","CRUCOR",0.001,0.005,12,0.00144337567297406,"Crustose coraline","Crustose coraline","Species Group",-885,"crust forming red algae group","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","ENTSPP",0.001,0.003,12,0.000866025403784439,"Grass kelp","Enteromorpha spp.","Species Group",6515,"grass kelp genus","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","FUCEPI",0.029,0.017,12,0.00490747728811182,"Fucus epibiont","Fucus epibiont","Species Group",-11334,"organism that lives on the surface of Fucus Spp.","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","FUCSPP",0.196,0.095,12,0.0274241377865072,"Rockweed","Fucus spp.","Genus",11334,"brown algae genus","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","KELP",0.01,0.013,12,0.00375277674973257,"Kelp","Laminaria/Alaria","Species Group",-888,"brown algae - kelp","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","NONCOR",0.099,0.075,12,0.021650635094611,"Crustose non-coraline","Crustose non-coraline","Species Group",-884,"crust forming algae other than Coraline","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","OTHSUB",0.001,0.002,12,0.000577350269189626,"Other Substrate","Other Substrate","Substrate",-894,"substrate other than Rock, Sand, or Tar","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","PALPAL",0.015,0.018,12,0.00519615242270663,"Dulse","Palmaria palmata","Species",12842,"red algae species","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","PORSPP",0.006,0.009,12,0.00259807621135332,"Laver","Porphyra spp.","Genus",11540,"seaweed genus","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","ROCK",0.123,0.083,12,0.0239600361713695,"Rock","Rock","Substrate",-893,"rock","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","ULVSPP",0.013,0.017,12,0.00490747728811182,"Sea Lettuce","Ulva spp.","Genus",6559,"green algae genus; used to be named Enteromorpha","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","UNIDEN",0.004,0.011,12,0.00317542648054294,"Unidentified","Unidentified","",-891,"species, species group, or substrate that cannot be identified.","Acadia NP","ACAD","Otter Point"
+"OTTPOI","0","WATER",0.095,0.036,12,0.0103923048454133,"Water","Water","Substrate",-899,"","Acadia NP","ACAD","Otter Point"
+"OTTPOI","1","ALGGRE",0.006,0.01,12,0.00288675134594813,"Other Algae - Green","Other Algae - Green","Species Group",-897,"green algae species other than those listed","Acadia NP","ACAD","Otter Point"
+"OTTPOI","1","ALGRED",0.003,0.005,12,0.00144337567297406,"Other Algae - Red","Other Algae - Red","Species Group",-898,"red algae species other than those listed","Acadia NP","ACAD","Otter Point"
+"OTTPOI","1","ARTCOR",0.003,0.005,12,0.00144337567297406,"Articulated Corallines","Articulated Corallines","Species Group",-886,"branched, calcified red algae","Acadia NP","ACAD","Otter Point"
+"OTTPOI","1","ASCEPI",0.103,0.033,12,0.00952627944162883,"Ascophyllum epibont","Ascophyllum epibont","Species Group",-11331,"organism that lives on the surface of Ascophyllum Spp.","Acadia NP","ACAD","Otter Point"
+"OTTPOI","1","ASCNOD",0.228,0.051,12,0.0147224318643355,"Knotted Wrack","Ascophyllum nodosum","Species",11331,"brown algae species","Acadia NP","ACAD","Otter Point"
+"OTTPOI","1","BARSPP",0.018,0.024,12,0.00692820323027551,"Barnacles","pimarily Semibalanus balanoides","Species Group",-882,"barnacle species group (dominated by Semibalanus balanoides)","Acadia NP","ACAD","Otter Point"
+"OTTPOI","1","CHOMAS",0.055,0.044,12,0.0127017059221718,"Irish Moss","Chondrus / Mastocarpus","Species Group",-887,"red algae genera","Acadia NP","ACAD","Otter Point"
+"OTTPOI","1","FUCEPI",0.006,0.005,12,0.00144337567297406,"Fucus epibiont","Fucus epibiont","Species Group",-11334,"organism that lives on the surface of Fucus Spp.","Acadia NP","ACAD","Otter Point"
+"OTTPOI","1","FUCSPP",0.21,0.129,12,0.0372390923627309,"Rockweed","Fucus spp.","Genus",11334,"brown algae genus","Acadia NP","ACAD","Otter Point"
+"OTTPOI","1","KELP",0.005,0.009,12,0.00259807621135332,"Kelp","Laminaria/Alaria","Species Group",-888,"brown algae - kelp","Acadia NP","ACAD","Otter Point"
+"OTTPOI","1","NONCOR",0.14,0.02,12,0.00577350269189626,"Crustose non-coraline","Crustose non-coraline","Species Group",-884,"crust forming algae other than Coraline","Acadia NP","ACAD","Otter Point"
+"OTTPOI","1","PALPAL",0.008,0.008,12,0.0023094010767585,"Dulse","Palmaria palmata","Species",12842,"red algae species","Acadia NP","ACAD","Otter Point"
+"OTTPOI","1","ROCK",0.08,0.025,12,0.00721687836487032,"Rock","Rock","Substrate",-893,"rock","Acadia NP","ACAD","Otter Point"
+"OTTPOI","1","ULVSPP",0.009,0.015,12,0.00433012701892219,"Sea Lettuce","Ulva spp.","Genus",6559,"green algae genus; used to be named Enteromorpha","Acadia NP","ACAD","Otter Point"
+"OTTPOI","1","WATER",0.125,0.079,12,0.0228053356329902,"Water","Water","Substrate",-899,"","Acadia NP","ACAD","Otter Point"
+"OUTBRE","0","ALGGRE",0.012,0.016,12,0.00461880215351701,"Other Algae - Green","Other Algae - Green","Species Group",-897,"green algae species other than those listed","Boston Harbor NRA","BOHA","Outer Brewster"
+"OUTBRE","0","ALGRED",0.006,0.009,12,0.00259807621135332,"Other Algae - Red","Other Algae - Red","Species Group",-898,"red algae species other than those listed","Boston Harbor NRA","BOHA","Outer Brewster"
+"OUTBRE","0","ASCEPI",0.003,0.006,12,0.00173205080756888,"Ascophyllum epibont","Ascophyllum epibont","Species Group",-11331,"organism that lives on the surface of Ascophyllum Spp.","Boston Harbor NRA","BOHA","Outer Brewster"
+"OUTBRE","0","ASCNOD",0.012,0.013,12,0.00375277674973257,"Knotted Wrack","Ascophyllum nodosum","Species",11331,"brown algae species","Boston Harbor NRA","BOHA","Outer Brewster"
+"OUTBRE","0","BARSPP",0.15,0.089,12,0.0256920869789383,"Barnacles","pimarily Semibalanus balanoides","Species Group",-882,"barnacle species group (dominated by Semibalanus balanoides)","Boston Harbor NRA","BOHA","Outer Brewster"
+"OUTBRE","0","CHOMAS",0.077,0.034,12,0.00981495457622364,"Irish Moss","Chondrus / Mastocarpus","Species Group",-887,"red algae genera","Boston Harbor NRA","BOHA","Outer Brewster"
+"OUTBRE","0","FUCEPI",0.025,0.016,12,0.00461880215351701,"Fucus epibiont","Fucus epibiont","Species Group",-11334,"organism that lives on the surface of Fucus Spp.","Boston Harbor NRA","BOHA","Outer Brewster"
+"OUTBRE","0","FUCSPP",0.395,0.113,12,0.0326202902092139,"Rockweed","Fucus spp.","Genus",11334,"brown algae genus","Boston Harbor NRA","BOHA","Outer Brewster"
+"OUTBRE","0","MUSSPP",0.036,0.026,12,0.00750555349946513,"Mussel","primarily Mytilus edulis","Species Group",-883,"mussel species group (dominated by Mytilus edulis)","Boston Harbor NRA","BOHA","Outer Brewster"
+"OUTBRE","0","NONCOR",0.15,0.07,12,0.0202072594216369,"Crustose non-coraline","Crustose non-coraline","Species Group",-884,"crust forming algae other than Coraline","Boston Harbor NRA","BOHA","Outer Brewster"
+"OUTBRE","0","OTHSUB",0.001,0.004,12,0.00115470053837925,"Other Substrate","Other Substrate","Substrate",-894,"substrate other than Rock, Sand, or Tar","Boston Harbor NRA","BOHA","Outer Brewster"
+"OUTBRE","0","PALPAL",0.001,0.004,12,0.00115470053837925,"Dulse","Palmaria palmata","Species",12842,"red algae species","Boston Harbor NRA","BOHA","Outer Brewster"
+"OUTBRE","0","PORSPP",0.024,0.02,12,0.00577350269189626,"Laver","Porphyra spp.","Genus",11540,"seaweed genus","Boston Harbor NRA","BOHA","Outer Brewster"
+"OUTBRE","0","ROCK",0.07,0.051,12,0.0147224318643355,"Rock","Rock","Substrate",-893,"rock","Boston Harbor NRA","BOHA","Outer Brewster"
+"OUTBRE","0","ULVENT",0.001,0.004,12,0.00115470053837925,"Ulva/Enteromorpha","Ulva/Enteromorpha","Genus Group",-900,"used  in 2013 and earlier when these two species were lumped during ID","Boston Harbor NRA","BOHA","Outer Brewster"
+"OUTBRE","0","ULVSPP",0.019,0.019,12,0.00548482755730144,"Sea Lettuce","Ulva spp.","Genus",6559,"green algae genus; used to be named Enteromorpha","Boston Harbor NRA","BOHA","Outer Brewster"
+"OUTBRE","0","WATER",0.016,0.013,12,0.00375277674973257,"Water","Water","Substrate",-899,"","Boston Harbor NRA","BOHA","Outer Brewster"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"SCHPOI","0","ALGGRE",0.006,0.011,12,0.00317542648054294,"Other Algae - Green","Other Algae - Green","Species Group",-897,"green algae species other than those listed","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","ALGRED",0.003,0.005,12,0.00144337567297406,"Other Algae - Red","Other Algae - Red","Species Group",-898,"red algae species other than those listed","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","ARTCOR",0.003,0.005,12,0.00144337567297406,"Articulated Corallines","Articulated Corallines","Species Group",-886,"branched, calcified red algae","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","ASCEPI",0.001,0.003,12,0.000866025403784439,"Ascophyllum epibont","Ascophyllum epibont","Species Group",-11331,"organism that lives on the surface of Ascophyllum Spp.","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","ASCNOD",0.037,0.019,12,0.00548482755730144,"Knotted Wrack","Ascophyllum nodosum","Species",11331,"brown algae species","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","BARSPP",0.175,0.049,12,0.0141450815951458,"Barnacles","pimarily Semibalanus balanoides","Species Group",-882,"barnacle species group (dominated by Semibalanus balanoides)","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","BOLT",0.001,0.002,12,0.000577350269189626,"Bolt","Bolt","Substrate",-881,"Washer or bolt","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","CHOMAS",0.064,0.033,12,0.00952627944162883,"Irish Moss","Chondrus / Mastocarpus","Species Group",-887,"red algae genera","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","ENTSPP",0.001,0.005,12,0.00144337567297406,"Grass kelp","Enteromorpha spp.","Species Group",6515,"grass kelp genus","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","FUCEPI",0.038,0.023,12,0.0066395280956807,"Fucus epibiont","Fucus epibiont","Species Group",-11334,"organism that lives on the surface of Fucus Spp.","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","FUCSPP",0.39,0.056,12,0.0161658075373095,"Rockweed","Fucus spp.","Genus",11334,"brown algae genus","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","KELP",0.001,0.002,12,0.000577350269189626,"Kelp","Laminaria/Alaria","Species Group",-888,"brown algae - kelp","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","MUSSPP",0.018,0.024,12,0.00692820323027551,"Mussel","primarily Mytilus edulis","Species Group",-883,"mussel species group (dominated by Mytilus edulis)","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","NONCOR",0.048,0.045,12,0.0129903810567666,"Crustose non-coraline","Crustose non-coraline","Species Group",-884,"crust forming algae other than Coraline","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","OTHSUB",0.003,0.006,12,0.00173205080756888,"Other Substrate","Other Substrate","Substrate",-894,"substrate other than Rock, Sand, or Tar","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","PALPAL",0.023,0.019,12,0.00548482755730144,"Dulse","Palmaria palmata","Species",12842,"red algae species","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","PORSPP",0.003,0.008,12,0.0023094010767585,"Laver","Porphyra spp.","Genus",11540,"seaweed genus","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","ROCK",0.132,0.052,12,0.0150111069989303,"Rock","Rock","Substrate",-893,"rock","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","ULVENT",0.001,0.005,12,0.00144337567297406,"Ulva/Enteromorpha","Ulva/Enteromorpha","Genus Group",-900,"used  in 2013 and earlier when these two species were lumped during ID","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","ULVSPP",0.026,0.016,12,0.00461880215351701,"Sea Lettuce","Ulva spp.","Genus",6559,"green algae genus; used to be named Enteromorpha","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","UNIDEN",0.004,0.007,12,0.00202072594216369,"Unidentified","Unidentified","",-891,"species, species group, or substrate that cannot be identified.","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","0","WATER",0.021,0.011,12,0.00317542648054294,"Water","Water","Substrate",-899,"","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","1","ALGGRE",0.005,0.005,12,0.00144337567297406,"Other Algae - Green","Other Algae - Green","Species Group",-897,"green algae species other than those listed","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","1","ALGRED",0.003,0.005,12,0.00144337567297406,"Other Algae - Red","Other Algae - Red","Species Group",-898,"red algae species other than those listed","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","1","ASCNOD",0.027,0.023,12,0.0066395280956807,"Knotted Wrack","Ascophyllum nodosum","Species",11331,"brown algae species","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","1","BARSPP",0.177,0.056,12,0.0161658075373095,"Barnacles","pimarily Semibalanus balanoides","Species Group",-882,"barnacle species group (dominated by Semibalanus balanoides)","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","1","BOLT",0.003,0.005,12,0.00144337567297406,"Bolt","Bolt","Substrate",-881,"Washer or bolt","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","1","CHOMAS",0.07,0.017,12,0.00490747728811182,"Irish Moss","Chondrus / Mastocarpus","Species Group",-887,"red algae genera","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","1","ENTSPP",0.003,0.005,12,0.00144337567297406,"Grass kelp","Enteromorpha spp.","Species Group",6515,"grass kelp genus","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","1","FUCEPI",0.05,0.007,12,0.00202072594216369,"Fucus epibiont","Fucus epibiont","Species Group",-11334,"organism that lives on the surface of Fucus Spp.","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","1","FUCSPP",0.433,0.042,12,0.0121243556529821,"Rockweed","Fucus spp.","Genus",11334,"brown algae genus","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","1","MUSSPP",0.011,0.013,12,0.00375277674973257,"Mussel","primarily Mytilus edulis","Species Group",-883,"mussel species group (dominated by Mytilus edulis)","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","1","NONCOR",0.022,0.005,12,0.00144337567297406,"Crustose non-coraline","Crustose non-coraline","Species Group",-884,"crust forming algae other than Coraline","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","1","OTHSUB",0.01,0.012,12,0.00346410161513775,"Other Substrate","Other Substrate","Substrate",-894,"substrate other than Rock, Sand, or Tar","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","1","PALPAL",0.022,0.024,12,0.00692820323027551,"Dulse","Palmaria palmata","Species",12842,"red algae species","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","1","ROCK",0.119,0.039,12,0.0112583302491977,"Rock","Rock","Substrate",-893,"rock","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","1","ULVSPP",0.028,0.003,12,0.000866025403784439,"Sea Lettuce","Ulva spp.","Genus",6559,"green algae genus; used to be named Enteromorpha","Acadia NP","ACAD","Schoodic Point"
+"SCHPOI","1","WATER",0.017,0.009,12,0.00259807621135332,"Water","Water","Substrate",-899,"","Acadia NP","ACAD","Schoodic Point"
+"SHIHAR","0","ALGGRE",0.017,0.017,12,0.00490747728811182,"Other Algae - Green","Other Algae - Green","Species Group",-897,"green algae species other than those listed","Acadia NP","ACAD","Ship Harbor"
+"SHIHAR","0","ALGRED",0.008,0.009,12,0.00259807621135332,"Other Algae - Red","Other Algae - Red","Species Group",-898,"red algae species other than those listed","Acadia NP","ACAD","Ship Harbor"
+"SHIHAR","0","ARTCOR",0.005,0.007,12,0.00202072594216369,"Articulated Corallines","Articulated Corallines","Species Group",-886,"branched, calcified red algae","Acadia NP","ACAD","Ship Harbor"
+"SHIHAR","0","ASCEPI",0.041,0.018,12,0.00519615242270663,"Ascophyllum epibont","Ascophyllum epibont","Species Group",-11331,"organism that lives on the surface of Ascophyllum Spp.","Acadia NP","ACAD","Ship Harbor"
+"SHIHAR","0","ASCNOD",0.226,0.028,12,0.00808290376865476,"Knotted Wrack","Ascophyllum nodosum","Species",11331,"brown algae species","Acadia NP","ACAD","Ship Harbor"
+"SHIHAR","0","BARSPP",0.01,0.01,12,0.00288675134594813,"Barnacles","pimarily Semibalanus balanoides","Species Group",-882,"barnacle species group (dominated by Semibalanus balanoides)","Acadia NP","ACAD","Ship Harbor"
+"SHIHAR","0","BOLT",0.002,0.004,12,0.00115470053837925,"Bolt","Bolt","Substrate",-881,"Washer or bolt","Acadia NP","ACAD","Ship Harbor"
+"SHIHAR","0","CHOMAS",0.069,0.033,12,0.00952627944162883,"Irish Moss","Chondrus / Mastocarpus","Species Group",-887,"red algae genera","Acadia NP","ACAD","Ship Harbor"
+"SHIHAR","0","ENTSPP",0.002,0.006,12,0.00173205080756888,"Grass kelp","Enteromorpha spp.","Species Group",6515,"grass kelp genus","Acadia NP","ACAD","Ship Harbor"
+"SHIHAR","0","FUCEPI",0.034,0.012,12,0.00346410161513775,"Fucus epibiont","Fucus epibiont","Species Group",-11334,"organism that lives on the surface of Fucus Spp.","Acadia NP","ACAD","Ship Harbor"
+"SHIHAR","0","FUCSPP",0.363,0.062,12,0.0178978583448784,"Rockweed","Fucus spp.","Genus",11334,"brown algae genus","Acadia NP","ACAD","Ship Harbor"
+"SHIHAR","0","NONCOR",0.075,0.03,12,0.00866025403784439,"Crustose non-coraline","Crustose non-coraline","Species Group",-884,"crust forming algae other than Coraline","Acadia NP","ACAD","Ship Harbor"
+"SHIHAR","0","PALPAL",0.001,0.002,12,0.000577350269189626,"Dulse","Palmaria palmata","Species",12842,"red algae species","Acadia NP","ACAD","Ship Harbor"
+"SHIHAR","0","PORSPP",0.002,0.004,12,0.00115470053837925,"Laver","Porphyra spp.","Genus",11540,"seaweed genus","Acadia NP","ACAD","Ship Harbor"
+"SHIHAR","0","ROCK",0.074,0.036,12,0.0103923048454133,"Rock","Rock","Substrate",-893,"rock","Acadia NP","ACAD","Ship Harbor"
+"SHIHAR","0","ULVSPP",0.031,0.033,12,0.00952627944162883,"Sea Lettuce","Ulva spp.","Genus",6559,"green algae genus; used to be named Enteromorpha","Acadia NP","ACAD","Ship Harbor"
+"SHIHAR","0","WATER",0.04,0.047,12,0.0135677313259562,"Water","Water","Substrate",-899,"","Acadia NP","ACAD","Ship Harbor"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

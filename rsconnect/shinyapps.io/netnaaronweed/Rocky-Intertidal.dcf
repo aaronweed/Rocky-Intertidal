@@ -1,0 +1,10 @@
+name: Rocky-Intertidal
+account: netnaaronweed
+server: shinyapps.io
+appId: 159044
+bundleId: 840550
+url: https://netnaaronweed.shinyapps.io/Rocky-Intertidal/
+when: 1495720636.53361
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Import and summ Echino data.R|Import and summ motile invert data.R|import and summ transect data.R|NETN_Echinoderm_Counts.csv|NETN_Echinoderm_Measurements.csv|NETN_MotileInvert_Counts.csv|NETN_MotileInvert_Measurements.csv|qryR_FlatFile_Echinoderm_Counts_tall.csv|qryR_FlatFile_Echinoderm_Counts_wide.csv|qryR_FlatFile_MotileInvert_Counts.csv|qryR_FlatFile_MotileInvert_Counts.txt|qryR_FlatFile_PointIntercept_BoltDist_parta.xlsx|qryR_FlatFile_PointIntercept_BoltDist_partc.txt|qryR_FlatFile_PointIntercept_BoltDist_partc.xlsx|qryR_FlatFile_PointIntercept_SppDetections.csv|qryR_FlatFile_PointIntercept_SppDetections.txt|Query_Logic for vertical transects.docx|rockyintertidalflatfiles.zip|tlu_echino_Spp.csv|tlu_motile_spp.csv|tlu_Point_Intercept_Species.csv|tlu_Point_Intercept_Species.txt|tlu_sites.csv|QC of calculations/qryR_FlatFile_Echinoderm_Counts_tall.xlsx|QC of calculations/qryR_FlatFile_MotileInvert_Counts.xlsx|QC of calculations/qryR_FlatFile_PointIntercept_SppDetections.xlsx|QC of calculations/Vert Transect PointIntercept_SppDetections.xlsx

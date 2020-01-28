@@ -44,20 +44,20 @@ shinyServer(function(input,output){
     ############## DATA MANIPULATION ##############################        
     if(input$many == "All sites"){
       
-      plot.df<-subset(transect_yr, Site_Name %in% input$park & QAQC == 0) # select by park and drop the QAQC plots
+      plot.df<-subset(transect_yr, Site_Name %in% input$park & QAQC == FALSE) # select by park and drop the QAQC plots
       plot.df<-droplevels(plot.df)
       plot.df$Year<-as.factor(plot.df$Year)
-      plot.df$Year<- ordered(plot.df$Year, levels = c("2016", "2015", "2014", "2013"))
+      #plot.df$Year<- ordered(plot.df$Year, levels = c("2016", "2015", "2014", "2013"))
       
     }else{
       
       ## SUBSET BY SITE 
       
       
-      plot.df<-subset(transect_yr, Loc_Name %in% input$site & QAQC == 0)# select by site and drop the QAQC plots
+      plot.df<-subset(transect_yr, Loc_Name %in% input$site & QAQC == FALSE)# select by site and drop the QAQC plots
       plot.df<-droplevels(plot.df)
       plot.df$Year<-as.factor(plot.df$Year)
-      plot.df$Year<- ordered(plot.df$Year, levels = c("2016", "2015", "2014", "2013"))
+      #plot.df$Year<- ordered(plot.df$Year, levels = c("2016", "2015", "2014", "2013"))
     }
     ############## PLOT mean over time  ##############################
     dodge <- position_dodge(width=0.9)
@@ -65,7 +65,7 @@ shinyServer(function(input,output){
     if(input$many == "All sites"){
       if(input$compare == "Cover types within a site" ){
         
-        y2<-ggplot(plot.df[plot.df$QAQC == 0,], aes(x=Common_Name, y= as.numeric(mean), fill= Year))+
+        y2<-ggplot(plot.df[plot.df$QAQC == FALSE,], aes(x=Common_Name, y= as.numeric(mean), fill= Year))+
           geom_bar(stat ="identity", position = dodge,colour="black") + labs(y = "Average proportion of cover + SE", x= "") +
           
           geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")
@@ -84,7 +84,7 @@ shinyServer(function(input,output){
                theme(strip.background= element_rect(size=10, color="gray" )))
       }else{
         
-        y2<-ggplot(plot.df[plot.df$QAQC == 0,], aes(x=Loc_Name, y= as.numeric(mean), fill= Year))+
+        y2<-ggplot(plot.df[plot.df$QAQC == FALSE,], aes(x=Loc_Name, y= as.numeric(mean), fill= Year))+
           geom_bar(stat ="identity", position = dodge,colour="black") + labs(y = "Average proportion of cover + SE", x= "") +
           
           geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")
@@ -104,7 +104,7 @@ shinyServer(function(input,output){
         
       }
     }else{
-      y2<-ggplot(plot.df[plot.df$QAQC == 0,], aes(x=Common_Name, y= as.numeric(mean), fill= Year))+
+      y2<-ggplot(plot.df[plot.df$QAQC == FALSE,], aes(x=Common_Name, y= as.numeric(mean), fill= Year))+
         geom_bar(stat ="identity", position = dodge,colour="black") + labs(y = "Average proportion of cover + SE", x= "") +
         
         geom_errorbar(aes(ymax = mean + se, ymin=mean), position=dodge, width=0.1)+scale_fill_brewer(palette="Blues")
@@ -155,14 +155,14 @@ shinyServer(function(input,output){
   datasetInput <- reactive({
     if(input$manyB == "All sites"){
       
-      table.df<-subset(transect_yr, Site_Name %in% input$park & QAQC == 0) # select by park and drop the QAQC plots
+      table.df<-subset(transect_yr, Site_Name %in% input$park & QAQC == FALSE) # select by park and drop the QAQC plots
       table.df<-table.df[!is.na(table.df$mean),]
       table.df<-droplevels(table.df)
       
     }else{
       
       ## SUBSET BY SITE
-      table.df<-subset(transect_yr, Loc_Name %in% input$siteb & QAQC == 0)# select by site and drop the QAQC plots
+      table.df<-subset(transect_yr, Loc_Name %in% input$siteb & QAQC == FALSE)# select by site and drop the QAQC plots
       table.df<-table.df[!is.na(table.df$mean),]
       table.df<-droplevels(table.df)
     }
@@ -194,13 +194,13 @@ shinyServer(function(input,output){
   datasetInputRaw <- reactive({
     if(input$manyB == "All sites"){
       
-      out.df<-subset(transect_raw, Site_Name %in% input$park & QAQC == 0) # select by park and drop the QAQC plots
+      out.df<-subset(transect_raw, Site_Name %in% input$park & QAQC == FALSE) # select by park and drop the QAQC plots
       out.df<-droplevels(out.df)
       
     }else{
       
       ## SUBSET BY SITE
-      out.df<-subset(transect_raw, Loc_Name %in% input$siteb & QAQC == 0)# select by site and drop the QAQC plots
+      out.df<-subset(transect_raw, Loc_Name %in% input$siteb & QAQC == FALSE)# select by site and drop the QAQC plots
       out.df<-droplevels(out.df)
     }
     
@@ -224,7 +224,7 @@ shinyServer(function(input,output){
     df_sub<-subset(motile, Site_Name %in% input$parkMoll)
     df_sub<-droplevels(df_sub)
     
-    selectInput(inputId='siteMoll', label='Select Site',   unique(levels(df_sub$Loc_Name)))
+    selectInput(inputId='siteMoll', label='Select Site', unique(levels(df_sub$Loc_Name)))
   })
   ### Summary plot by site and intertidal zone
   
@@ -732,7 +732,7 @@ shinyServer(function(input,output){
   ### select site based on park
   output$SiteResultsSS <- renderUI({ 
     
-    df_sub<-subset(echino, Site_Name %in% input$parkSS)
+    df_sub<-subset(echino, Site_Name %in% input$parkSS & QAQC == "FALSE")
     df_sub<-droplevels(df_sub)
     
     selectInput(inputId='siteSS', label='Select Site',   unique(levels(df_sub$Loc_Name)))
@@ -745,16 +745,16 @@ shinyServer(function(input,output){
     ############## DATA MANIPULATION ##############################        
     if(input$logscaleSS == FALSE){
       if(input$manySS == "All sites"){
-        plot.df<-subset(echino, Site_Name %in% input$parkSS & variable == "Abundance") # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
+        plot.df<-subset(echino, Site_Name %in% input$parkSS & variable == "Abundance" & QAQC == "FALSE") # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
       }else{
-        plot.df<-subset(echino, Loc_Name %in% input$siteSS & variable == "Abundance") # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
+        plot.df<-subset(echino, Loc_Name %in% input$siteSS & variable == "Abundance"& QAQC == "FALSE") # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
       }
       
     }else{
       if(input$manySS == "All sites"){
-        plot.df<-subset(echino, Site_Name %in% input$parkSS & variable == "logAbundance") # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
+        plot.df<-subset(echino, Site_Name %in% input$parkSS & variable == "logAbundance"& QAQC == "FALSE") # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
       }else{
-        plot.df<-subset(echino, Loc_Name %in% input$siteSS & variable == "logAbundance") # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
+        plot.df<-subset(echino, Loc_Name %in% input$siteSS & variable == "logAbundance"& QAQC == "FALSE") # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
       }
     }
     
@@ -838,7 +838,7 @@ shinyServer(function(input,output){
   ### select site based on park
   output$SiteResultsSSTab <- renderUI({ 
     
-    df_sub<-subset(echino, Site_Name %in% input$park)
+    df_sub<-subset(echino, Site_Name %in% input$parkSSTab & QAQC == "FALSE")
     df_sub<-droplevels(df_sub)
     
     selectInput(inputId='siteSSTab', label='Select Site',   unique(levels(df_sub$Loc_Name)))
@@ -849,16 +849,16 @@ shinyServer(function(input,output){
 
     if(input$logscaleSSTab == FALSE){
       if(input$manySSTab == "All sites"){
-        table.df<-subset(echino, Site_Name %in% input$park & variable == "Abundance") # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
+        table.df<-subset(echino, Site_Name %in% input$parkSSTab & variable == "Abundance"& QAQC == "FALSE") # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
       }else{
-        table.df<-subset(echino, Loc_Name %in% input$siteSSTab & variable == "Abundance") # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
+        table.df<-subset(echino, Loc_Name %in% input$siteSSTab & variable == "Abundance"& QAQC == "FALSE") # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
       }
       
     }else{
       if(input$manySSTab == "All sites"){
-        table.df<-subset(echino, Site_Name %in% input$park & variable == "logAbundance") # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
+        table.df<-subset(echino, Site_Name %in% input$parkSSTab & variable == "logAbundance"& QAQC == "FALSE") # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
       }else{
-        table.df<-subset(echino, Loc_Name %in% input$siteSSTab & variable == "logAbundance") # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
+        table.df<-subset(echino, Loc_Name %in% input$siteSSTab & variable == "logAbundance"& QAQC == "FALSE") # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
       }
     }
     
@@ -894,16 +894,16 @@ shinyServer(function(input,output){
     
     if(input$logscaleSSTab == FALSE){
       if(input$manySSTab == "All sites"){
-        table.df<-subset(echino_raw, Site_Name %in% input$park & variable == "Abundance" & QAQC ==0) # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
+        table.df<-subset(echino_raw, Site_Name %in% input$parkSSTab & variable == "Abundance") # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
       }else{
-        table.df<-subset(echino_raw, Loc_Name %in% input$siteSSTab & variable == "Abundance"  & QAQC ==0) # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
+        table.df<-subset(echino_raw, Loc_Name %in% input$siteSSTab & variable == "Abundance" ) # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
       }
       
     }else{
       if(input$manySSTab == "All sites"){
-        table.df<-subset(echino_raw, Site_Name %in% input$park & variable == "logAbundance"  & QAQC ==0) # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
+        table.df<-subset(echino_raw, Site_Name %in% input$parkSSTab & variable == "logAbundance" ) # select by park and variable ("value" is the raw data, "logAbundance the log transformed)
       }else{
-        table.df<-subset(echino_raw, Loc_Name %in% input$siteSSTab & variable == "logAbundance"  & QAQC ==0) # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
+        table.df<-subset(echino_raw, Loc_Name %in% input$siteSSTab & variable == "logAbundance") # select by site and variable ("value" is the raw data, "logAbundance the log transformed)
       }
     }
     
