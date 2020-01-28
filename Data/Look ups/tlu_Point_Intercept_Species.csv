@@ -1,0 +1,45 @@
+Common_Name,Spp_Name,Spp_Code,Category,TSN,Comments
+Limpet species (Tortoiseshell),Acmaea testudinalis,ACMTES,Species,69668,Limpet species (Tortoiseshell)
+Articulated Corallines,Articulated Corallines,ARTCOR,Species Group,-886,"branched, calcified red algae"
+Ascophyllum epibont,Ascophyllum epibont,ASCEPI,Species Group,-11331,organism that lives on the surface of Ascophyllum Spp.
+Asian shore crab,Hemicrepidius sanguineus,HEMISAN,Species,621740,"crab species, invasive to U.S."
+Northern sea star,Asterias forbesi,ASTFOR,Species,157217,Northern sea star
+Common sea star,Asterias rubens,ASTRUB,Species,157220,Common sea star
+Barnacles,pimarily Semibalanus balanoides,BARSPP,Species Group,-882,barnacle species group (dominated by Semibalanus balanoides)
+Blood sea star ,Henricia sanguinolenta,HENSAN,Species,157165,blood sea star
+Bolt,Bolt,BOLT,Substrate,-881,Washer or bolt
+Common periwinkle,Littorina littorea,LITLIT,Species,70419,snail species (Periwinkle)
+Crustose coraline,Crustose coraline,CRUCOR,Species Group,-885,crust forming red algae group
+Crustose non-coraline,Crustose non-coraline,NONCOR,Species Group,-884,crust forming algae other than Coraline
+Dogwhelk,Nucella lapillus,NUCLAP,Species,73297,snail species (Dogwhelk)
+Dulse,Palmaria palmata,PALPAL,Species,12842,red algae species
+Edible crab,Cancer spp.,CANSPP,Genus,98671,crab genus
+Fucus epibiont,Fucus epibiont,FUCEPI,Species Group,-11334,organism that lives on the surface of Fucus Spp.
+Grass kelp,Enteromorpha spp.,ENTSPP,Species Group,6515,grass kelp genus
+Green crab,Carcinus maenas,CARMAE,Species,98734,"crab species, invasive to U.S."
+Irish Moss,Chondrus / Mastocarpus,CHOMAS,Species Group,-887,red algae genera
+Kelp,Laminaria/Alaria,KELP,Species Group,-888,brown algae - kelp
+Knotted Wrack,Ascophyllum nodosum,ASCNOD,Species,11331,brown algae species
+Laver,Porphyra spp.,PORSPP,Genus,11540,seaweed genus
+Limpet,Tectura testudinalis,TECTES,Species,204945,tortoise-shell limpet
+Mussel,primarily Mytilus edulis,MUSSPP,Species Group,-883,mussel species group (dominated by Mytilus edulis)
+Not Sampled,Not Sampled,NOSAMP,Substrate,-880,"photo point not sampled (e.g., covered by bungee)"
+Other Algae - Brown,Other Algae - Brown,ALGBRO,Species Group,-890,brown algae species other than those listed
+Other Algae - Green,Other Algae - Green,ALGGRE,Species Group,-897,green algae species other than those listed
+Other Algae - Red,Other Algae - Red,ALGRED,Species Group,-898,red algae species other than those listed
+Other Invertebrate,Other Invertebrate,OTHINV,Species Group,-896,invertebrate not covered by other categories
+Other Plant,Other Plant,OTHPLA,Species Group,-895,plant species other than those listed
+Other Substrate,Other Substrate,OTHSUB,Substrate,-894,"substrate other than Rock, Sand, or Tar"
+Rock,Rock,ROCK,Substrate,-893,rock
+Rockweed,Fucus spp.,FUCSPP,Genus,11334,brown algae genus
+Rough periwinkle,Littorina saxatilis,LITSAX,Species,70405,snail species (Periwinkle)
+Sand,Sand,SAND,Substrate,-889,area with sand depth > 5cm
+Sea anenome,Metridium senile,METSEN,Species,52737,anemone species
+Sea Lettuce,Ulva spp.,ULVSPP,Genus,6559,green algae genus; used to be named Enteromorpha
+Sea stars,Asterias spp.,ASTSPP,Genus,157215,sea star genus
+Sea urchin,Strongylocentrotus droebachiensis,STRDRO,Species,157969,green sea urchin
+Smooth periwinkle,Littorina obtusata,LITOBT,Species,70420,snail species (Periwinkle)
+Tar,Tar,TAR,Substrate,-892,presence of fresh or weathered tar/oil
+Ulva/Enteromorpha,Ulva/Enteromorpha,ULVENT,Genus Group,-900,used  in 2013 and earlier when these two species were lumped during ID
+Unidentified,Unidentified,UNIDEN,,-891,"species, species group, or substrate that cannot be identified."
+Water,Water,WATER,Substrate,-899,

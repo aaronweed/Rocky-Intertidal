@@ -1,14 +1,13 @@
 library(plyr)
-library(ggplot2)
 library(reshape)
-
+library(readxl)
+library(tidyverse)
 
 # import count data of echinos
 
-
-echino <- read.csv("~/R/NETN/Rocky-Intertidal/qryR_FlatFile_Echinoderm_Counts_wide.csv")
-echino_size <- read.csv("~/R/NETN/Rocky-Intertidal/NETN_Echinoderm_Measurements.csv")
-tlu_echino_spp <- read.csv("~/R/NETN/Rocky-Intertidal/tlu_echino_Spp.csv")
+echino <- qryR_FlatFile_Echinoderm_Counts_wide <- read_excel("Data/Data from DB/2019/qryR_FlatFile_Echinoderm_Counts_wide.xlsx")
+echino_size <-read_excel("Data/Data from DB/2019/qryR_FlatFile_MotileInvert_Measurements_wNulls_partb.xlsx")
+tlu_echino_spp <- read.csv("Data/Look ups/tlu_echino_Spp.csv")
 
 tlu_echino_sites<-unique(echino[,c("Site_Name","Loc_Name")])
 
@@ -24,13 +23,15 @@ echino$Year<-as.factor(format(echino$Start_Date,"%Y")) #convert to Year
 
 head(echino)
 ## create molten data frame (all values are represented for each site*time combination)
-echino.melt<-melt(echino, id.vars=c("Site_Name", "Loc_Name" ,"Start_Date", "Year", "Plot_Name", "QAQC"), measure.vars=c("Count_STRDRO", "Count_HENSAN", "Count_ASTRUB", "Count_ASTFOR"))
+echino.melt<-echino %>% select(-State_Code, -Target_Species) %>%  
+        gather(variable,value ,-Site_Name,-Loc_Name, -Start_Date, -Year, -Plot_Name, -QAQC)
+
 head(echino.melt)
 
 #### scale counts to a per m2 basis; each transect is 20m2
 echino.melt$Abundance<-echino.melt$value/20
 
-## create logscaled values
+## create log-scaled values
 echino.melt$logAbundance<-log(echino.melt$Abundance+1) # calc log
 echino.melt$logAbundance[is.infinite(echino.melt$logAbundance)]=0
 
@@ -44,34 +45,36 @@ head(echino.melt)
 
 ## recreate molten data frame to include logAbundance (all values are represented for each site*time combination)
 
- echino.melt2<-melt(echino.melt, id.vars=c("Site_Name", "Loc_Name" ,"Start_Date", "Year", "Plot_Name", "QAQC","Spp_Name"), measure.vars=c("Abundance","logAbundance"))
- head(echino.melt2)             
- max(echino.melt2$QAQC)
+ echino.melt2<-echino.melt %>% select(-value) %>% gather(variable, value, -Site_Name,-Loc_Name,-Start_Date,-Year,-Plot_Name,-QAQC, -Spp_Name)
+ 
+head(echino.melt2)
 
  #### Export as raw data for R viz downloader
  # add in species names
- echino.raw<-join(echino.melt2, tlu_echino_spp, by ="Spp_Name")
- echino.raw<-echino.raw[,c("Site_Name", "Loc_Name" ,"Start_Date", "Year", "Plot_Name", "QAQC","Com_Sp", "variable","value")]
+ echino.raw<-join(echino.melt2, tlu_echino_spp, by ="Spp_Name") %>% filter(QAQC == "FALSE")
+ echino.raw<-echino.raw[,c("Site_Name", "Loc_Name" ,"Start_Date", "Year", "Plot_Name", "Com_Sp", "variable","value")]
  head(echino.raw)
  
  ### export to use in R viz
- write.table(echino.raw, "./Data/echino_count_raw.csv", sep= ",", row.names= FALSE)
+ write.table(echino.raw, "./Data/For RShiny/echino_count_raw.csv", sep= ",", row.names= FALSE)
  
  
 ############ Summarize species counts by site, zone, and Year
-summ<-function (x) c(mean = round(mean(x,na.rm = TRUE),2),se= round(sd(x,na.rm = TRUE)/sqrt(length(!is.na(x))),2), N= length(!is.na(x)))
+ # imported data inlcudes zeroes for all species, even when missing from a plot
+summ<-function (x) tibble(mean = round(mean(x,na.rm = TRUE),2),se= round(sd(x,na.rm = TRUE)/sqrt(length(!is.na(x))),2), N= length(!is.na(x)))
 
-# aggregate data by site and year leaving out park to fill in missing obs with 0s correctly and remove the QAQC plots 
-sum.echino<-cast(echino.melt2, Loc_Name + Year +QAQC+ Spp_Name + variable ~ . , value = "value", fun = summ, fill=0, add.missing = TRUE , subset= echino.melt2$QAQC == "0")
+# aggregate data by site and year, data imported from 2019 includes all 0 counts so no need to complete matrix for correct calculations
+# in 2014 only 2 plots were sampled in Green and Petit Manan; did they not do 3?
 
-# add back SIte_name
-sum.echino<-join(sum.echino, tlu_echino_sites, by ="Loc_Name")
-# add in species names
-sum.echino<-join(sum.echino, tlu_echino_spp, by ="Spp_Name")
+sum.echino<-echino.melt2 %>% 
+        group_by(Site_Name, Loc_Name,Year, Spp_Name, variable, QAQC) %>% 
+        group_modify(~summ(.$value), keep= TRUE) %>%  # applies function across df
+        left_join(., tlu_echino_spp, by ="Spp_Name") %>%  # add in species names
+        select(Site_Name,Loc_Name,Year,Common, Spp_Name, Spp_Code,Com_Sp, variable, QAQC, mean, se, N)
 
 head(sum.echino)
 
 ### export to use in R viz
-write.table(sum.echino, "./Data/echino_count.csv", sep= ",", row.names= FALSE)
+write.table(sum.echino, "./Data/For RShiny/echino_count.csv", sep= ",", row.names= FALSE)
 
 

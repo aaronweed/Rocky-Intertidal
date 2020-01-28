@@ -61,7 +61,7 @@ shinyUI(navbarPage(title=HTML("<div> <a href='https://science.nature.nps.gov/im/
                                          ),
                                          
                                          mainPanel(h3(textOutput("captionVertTrans",  container = span)),
-                                                   plotOutput("plot1",  width = "100%") #tableOutput("Transectsumtable")
+                                                   plotOutput("plot1",  width = "auto", height= "auto") #tableOutput("Transectsumtable")
                                                    
                                          )
                                          
@@ -171,7 +171,7 @@ shinyUI(navbarPage(title=HTML("<div> <a href='https://science.nature.nps.gov/im/
                                          #img(src = "transects.jpg", height = 280, width = 360),
                                          
                                          mainPanel(h3(textOutput("captionMoll",  container = span)),
-                                                   plotOutput("plot",  width = "100%")
+                                                   plotOutput("plot",  width = "40%")
                                                    
                                          )
                                          
@@ -282,7 +282,7 @@ shinyUI(navbarPage(title=HTML("<div> <a href='https://science.nature.nps.gov/im/
                               
                               
                               mainPanel(h3(textOutput("captionSS",  container = span)),
-                                        plotOutput("plot2",  width = "100%")
+                                        plotOutput("plot2",  width = "40%")
                                         
                                         
                               )
@@ -303,7 +303,7 @@ shinyUI(navbarPage(title=HTML("<div> <a href='https://science.nature.nps.gov/im/
                                          h3("View average abundance of tidal pools within the rocky intertidal."),
                                          br(),
                                          #Park selection
-                                         tags$div(title="Choose the park you want to work with",selectInput(inputId='parkSS', label='Select Park', choices= ParkList, selectize = TRUE)),
+                                         tags$div(title="Choose the park you want to work with",selectInput(inputId='parkSSTab', label='Select Park', choices= ParkList, selectize = TRUE)),
                                          
                                          
                                          # # Selection to plot single or multple sites

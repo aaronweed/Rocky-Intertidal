@@ -4,24 +4,24 @@
 
 ######## Vertical transect data ###########
 
-transect<-read.csv("./Data/site_transect_cover.csv") ## summarized point intercept data by site from 'import and summ transect data.R'
+transect<-read.csv("./Data/For RShiny/site_transect_cover.csv") ## summarized point intercept data by site from 'import and summ transect data.R'
 
-transect_yr<-read.csv("./Data/site_transect_cover_per_year.csv") ## summarized point intercept data by site AND YEAR from 'import and summ transect data.R'
+transect_yr<-read.csv("./Data/For RShiny/site_transect_cover_per_year.csv") ## summarized point intercept data by site AND YEAR from 'import and summ transect data.R'
 ## data only includes non-QAQC plots
 
-transect_raw<-read.csv("./Data/site_transect_cover_raw.csv") ## raw point intercept data by transect from 'import and summ transect data.R' for downloading
+transect_raw<-read.csv("./Data/For RShiny/site_transect_cover_raw.csv") ## raw point intercept data by transect from 'import and summ transect data.R' for downloading
 # data includes QAQC plots
 
 ParkList_trans<-unique(levels(transect$Site_Name)) ## Pak lookup table for UI
 
 ######## Mollusks #########
 
-motile<-read.csv("./Data/motile_count.csv") # summarized count data by site and year from 'import and summ motile invert data.R'
+motile<-read.csv("./Data/For RShiny/motile_count.csv") # summarized count data by site and year from 'import and summ motile invert data.R'
 ## data only includes non-QAQC plots
  
-motile_spp <- read.csv("./Data/motile_spp.csv") # lookup table for species names
+motile_spp <- read.csv("./Data/Look ups/tlu_motile_spp.csv") # lookup table for species names
 
-motile_raw<-read.csv("./Data/motile_count_raw.csv") # raw plot-level data with labels from from 'import and summ motile invert data.R' for downloading
+motile_raw<-read.csv("./Data/For RShiny/motile_count_raw.csv") # raw plot-level data with labels from from 'import and summ motile invert data.R' for downloading
 
 
 ParkList<-unique(levels(motile$Site_Name))
@@ -35,10 +35,10 @@ VarList<-unique(levels(motile$variable))
 
 ###### Tidepools #########
 
-echino<-read.csv("./Data/echino_count.csv") ## summarized count data by site and year from 'import and summ echino data.R' 
+echino<-read.csv("./Data/For RShiny/echino_count.csv") ## summarized count data by site and year from 'import and summ echino data.R' 
 ## data only includes non-QAQC plots
 
-echino_raw<-read.csv("./Data/echino_count_raw.csv")# raw plot-level data with labels from from 'import and summ echino data.R' for downloading
+echino_raw<-read.csv("./Data/For RShiny/echino_count_raw.csv")# raw plot-level data with labels from from 'import and summ echino data.R' for downloading
 ## data  includes QAQC plots
 
 
